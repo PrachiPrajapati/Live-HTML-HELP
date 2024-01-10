@@ -1,0 +1,95 @@
+@import '../abstracts/variables';
+
+.front-pages .content-center{
+    padding: 30px 0;
+    min-height: calc(100vh - 76px);
+}
+.content-center {
+    min-height: calc(100vh - 156px);
+    overflow-x: hidden;
+    h1{
+        margin-bottom: 15px;
+    }
+    .choose-user_type {
+        .common-btn{
+            margin-top: 40px;
+        }
+    }   
+    .choose-account .form-check {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 50px 46px 34px;
+        vertical-align: middle;
+        background-color: #fff;
+        border-radius: 4px;
+        width: calc(50% - 23px);
+        position: relative;
+        border: 1px solid $color_light_blue;   
+        input{
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            cursor: pointer;
+            border: none;
+        }
+        img{
+            display: inline-block;
+            margin-bottom: 10px;
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+            object-position: top center;
+        }
+        &.active{
+            border-color: $color_medium_blue;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.11);
+            &::after{
+                content: "";
+                display: inline-block;
+                height: 36px;
+                width: 36px;
+                background: url(../images/checked-icon.svg) no-repeat center / cover;
+                position: absolute;
+                bottom: -18px;
+                right: -18px;
+            }
+            img{
+                object-position: bottom center;
+            }
+        }
+    }    
+    .choose-user_type-form-footer p{
+        margin: 0;
+        a{
+            display: inline-block;
+            color: $color_medium_blue;
+            font-weight: $font_weight_700;
+            text-decoration: underline;
+            &:hover{
+                color: $color_red;
+            }
+        }
+    }
+}
+
+/** responsive **/
+@media (max-width: 767px){    
+    .content-center {
+        .choose-account .form-check { 
+            margin: 0 0 20px;
+            width: 100%;
+        }
+        .choose-user_type {
+            .common-btn{
+                margin-top: 20px;
+            }
+        }   
+        .choose-user_type-form-footer p{
+            margin-bottom: 15px;
+        }
+    }
+}

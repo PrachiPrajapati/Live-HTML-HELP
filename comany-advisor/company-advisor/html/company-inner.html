@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Company Advisor</title>
+    <!--Favicon Included-->
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--Extra Style Included-->
+    <link href="css/slick-theme.css" type="text/css" rel="stylesheet" />
+    <link href="css/slick.css" type="text/css" rel="stylesheet" />
+    <link href="css/jcf.css" type="text/css" rel="stylesheet" />
+    <!--Main Style Included-->
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <!--Font Awesome Included-->
+    <link href="css/all.min.css" type="text/css" rel="stylesheet" />
+    <!--Main Js Included-->
+	  <script src="js/lib/jquery.min.js" type="text/javascript"></script>
+    <script src="js/modernizr.js" type="text/javascript"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!--Font Awesome Included-->
+    <script src="js/all.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jcf.js"></script>
+    <script src="js/jcf.checkbox.js"></script>
+    <script src="js/scripts.js"></script>
+    <!--Extra Js Included-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--******************* Header Section Start *********************-->
+<header>
+  <nav class="navbar navbar-expand-xl">
+    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+    <ul class="sd-user-icon">
+        <li>
+            <a href="#"><i class="fas fa-user-circle"></i></a>
+        </li>
+    </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+      aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <form>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search here..." aria-label="Search here"
+          aria-describedby="search">
+        <div class="input-group-append">
+          <button type="button" id="search" onclick="document.location.href='search.html'"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </form>
+  
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav main-nav ml-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="category-inner.html">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about-us.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-us.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">Faq</a>
+        </li>
+        <li class="nav-item user">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link common-btn" href="#">Add Listing</a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+</header>
+<!--******************* Header Section End *********************-->
+<!--******************* Banner Section Start ******************-->
+<div class="banner company-banner d-flex align-items-end">
+      <div class="container">
+        <div class="title d-md-flex justify-content-md-between align-items-md-center">
+          <div class="title_block">
+            <p class="large-font font-weight-bold">Category</p>
+            <h1>Company Name Placeholder</h1>
+            <address>Cluster W, Tiffany Tower, Office 1406, Jumeirah Lakes Towers, Dubai, UAE</address>
+          </div>
+          <ul class="slider-btns">
+            <li>
+              <a href="javascript:;" class="prev-nav"><img src="images/slider-arrow-white-left.svg" alt="slider-arrow"></a>
+            </li>
+            <li>
+              <a href="javascript:;" class="next-nav"><img src="images/slider-arrow-white-right.svg" alt="slider-arrow"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="slider company-inner-slider">
+          <div class="slider-item" style="background-image: url('images/company-slider-bg.jpg');"></div>
+          <div class="slider-item" style="background-image: url('images/company-slider-bg.jpg');"></div>
+          <div class="slider-item" style="background-image: url('images/company-slider-bg.jpg');"></div>
+      </div>
+</div>
+<!--******************* Banner Section End ******************-->
+<!--******************* Middle Section Start ******************-->
+<main class="bg-white">
+    <!-- Description -->
+    <section class="company-description">
+        <article class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xl-6">
+                    <h4>DESCRIPTION</h4>
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate
+                    strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world
+                    view of disruptive innovation via workplace diversity and empowerment.</p>
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate
+                    strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world
+                    view of disruptive innovation via workplace diversity and empowerment.</p>
+                    <div class="discount-note">
+                        <h3>DISCOUNT NOTE</h3>
+                        <h5>On first signup you get 20% discount</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-3">
+                    <div class="rating-box">
+                      <div class="rating">
+                        <h4>RATING</h4>
+                        <div class="rating-no circle rating-five">5.0</div>
+                        <p>Excellent</p>
+                      </div>
+                      <a href="#review" class="common-btn big">Add Review</a>
+                      <div class="review-rating">
+                        <h4>Your Rating</h4>
+                        <div class='rating-stars'>
+                          <ul id='stars' class="d-flex align-items-center">
+                            <li class='star selected' data-value='1' disabled="disabled">
+                              <i class='fas fa-star'></i>
+                            </li>
+                            <li class='star selected' data-value='2' disabled="disabled">
+                              <i class='fas fa-star'></i>
+                            </li>
+                            <li class='star selected' data-value='3' disabled="disabled">
+                              <i class='fas fa-star'></i>
+                            </li>
+                            <li class='star selected' data-value='4' disabled="disabled">
+                              <i class='fas fa-star'></i>
+                            </li>
+                            <li class='star' data-value='5' disabled="disabled">
+                              <i class='fas fa-star'></i>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="contact-details">
+                        <h4>CONTACT</h4>
+                        <div class="filled-data_list-contact">
+                          <ul>
+                            <li>
+                              <a href="tel:+9171231231452">+917 123 123 1452</a><img src="images/phone-icon.svg" alt="phone">
+                            </li>
+                            <li>
+                              <a href="www.website.com" target="_blank" rel="nofollow">www.website.com</a><img src="images/at-icon.svg"
+                              alt="website">
+                            </li>
+                            <li>
+                              <a href="mailto:email@company.com">email@company.com</a><img src="images/mail-icon.svg" alt="email">
+                            </li>
+                            <li>
+                              <a href="https://wa.me/+9171231231452">+917 123 123 1452</a><img src="images/whatsapp-icon.svg" alt="whatsapp">
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                          <label class="btn common-btn">
+                            <input type="checkbox" name="fav" id="fav" autocomplete="off">
+                            <i class="fas fa-heart"></i>
+                            Make favourite
+                          </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Services -->
+    <section class="company-services">
+        <article class="container">
+            <h4>SERVICES</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-card_content">
+                        <span>10% off</span>
+                        <img src="images/services-img.jpg" alt="service">
+                        <h3>Service Title Placeholder</h3>
+                        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate
+                        strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world
+                        view of disruptive innovation via workplace diversity and empowerment.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card_content">
+                        <span>10% off</span>
+                        <img src="images/services-img.jpg" alt="service">
+                        <h3>Service Title Placeholder</h3>
+                        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate
+                        strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world
+                        view of disruptive innovation via workplace diversity and empowerment.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card_content">
+                        <span>10% off</span>
+                        <img src="images/services-img.jpg" alt="service">
+                        <h3>Service Title Placeholder</h3>
+                        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate
+                        strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world
+                        view of disruptive innovation via workplace diversity and empowerment.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Working Hours -->
+    <section class="company-working-hours">
+      <article class="container">
+          <h4>WORKING HOURS</h4>
+          <div class="table-responsive">
+              <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                      <td>Monday</td>
+                      <td>8:00am - 11:00pm</td>
+                  </tr>
+                  <tr>
+                      <td>Tuesday</td>
+                      <td>8:00am - 11:00pm</td>
+                  </tr>
+                  <tr>
+                      <td>Wedenesday</td>
+                      <td>Closed</td>
+                  </tr>
+                  <tr>
+                      <td>Thursday</td>
+                      <td>8:00am - 11:00pm</td>
+                  </tr>
+                  <tr>
+                      <td>Friday</td>
+                      <td>8:00am - 11:00pm</td>
+                  </tr>
+                  <tr>
+                      <td>Saturday</td>
+                      <td>8:00am - 11:00pm</td>
+                  </tr>
+                  <tr>
+                      <td>Sunday</td>
+                      <td>8:00am - 11:00pm</td>
+                  </tr>
+              </table>
+          </div>
+      </article>
+    </section>  
+
+    <!-- Reviews -->
+    <section class="company-reviews">
+      <article>         
+          <div class="review-title-block_holder">
+              <div class="container">
+                  <div class="d-md-flex justify-content-md-between align-items-md-center">
+                      <div class="review-title-block_left">
+                        <div class="d-flex align-items-center">
+                          <span>04</span>
+                          <div class="review-title-block">
+                            <h3>REVIEWS</h3>
+                            <p>What people say about us</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="review-title-block_right">
+                        <div class="d-flex align-items-center">
+                          <h3>Excellent</h3>
+                          <div class="rating">
+                            <div class="rating-no rating-five">5.0</div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          <!-- Write Review -->
+          <div class="company-write-review" id="review">
+            <div class="container">
+              <div class="row justify-content-md-center">
+                <div class="col-lg-10 col-xl-8">
+                  <div class="text-center">
+                    <h1>Write a <span class="font-weight-light">Review</span></h1>
+                    <p>You have to be logged in to publish a review.</p>
+                  </div>
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="criteria-list">
+                          <div class="criteria-list_item">
+                            <ul>
+                              <li>
+                                <p class="font-weight-bold">Sample Criteria</p>
+                              </li>
+                              <li>
+                                <div class='rating-stars red'>
+                                  <ul id='stars' class="d-flex align-items-center">
+                                    <li class='star selected' data-value='1'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='2'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='3'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='4'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star' data-value='5'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="criteria-list_item">
+                            <ul>
+                              <li>
+                                <p class="font-weight-bold">Sample Criteria</p>
+                              </li>
+                              <li>
+                                <div class='rating-stars red'>
+                                  <ul id='stars' class="d-flex align-items-center">
+                                    <li class='star selected' data-value='1'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='2'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='3'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='4'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star' data-value='5'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="criteria-list_item">
+                            <ul>
+                              <li>
+                                <p class="font-weight-bold">Sample Criteria</p>
+                              </li>
+                              <li>
+                                <div class='rating-stars red'>
+                                  <ul id='stars' class="d-flex align-items-center">
+                                    <li class='star selected' data-value='1'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='2'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='3'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='4'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star' data-value='5'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="criteria-list_item">
+                            <ul>
+                              <li>
+                                <p class="font-weight-bold">Sample Criteria</p>
+                              </li>
+                              <li>
+                                <div class='rating-stars red'>
+                                  <ul id='stars' class="d-flex align-items-center">
+                                    <li class='star selected' data-value='1'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='2'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='3'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='4'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star' data-value='5'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="criteria-list_item">
+                            <ul>
+                              <li>
+                                <p class="font-weight-bold">Sample Criteria</p>
+                              </li>
+                              <li>
+                                <div class='rating-stars red'>
+                                  <ul id='stars' class="d-flex align-items-center">
+                                    <li class='star selected' data-value='1'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='2'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='3'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='4'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star' data-value='5'>
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Review Title">
+                          <span class="error">Your error here</span>
+                        </div>
+                        <div class="form-group">
+                          <textarea class="form-control" placeholder="Your Review..." rows="8"></textarea>
+                          <span class="error">Your error here</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-footer d-md-flex justify-content-md-between align-items-md-center">
+                      <div class="form-box-holder">
+                        <input class="form-check-input" type="checkbox" value="" id="publish">
+                        <label class="form-check-label" for="publish">
+                          Publish annonymously
+                        </label>
+                      </div>
+                      <button type="submit" class="common-btn">Publish</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recent-reviews">
+              <div class="container">
+                  <div class="recent-reviews_list">
+                    <div class="recent-reviews_list-items">
+                      <ul>
+                        <li>
+                          <div class="user-profile" style="background-image: url(images/review-pic.jpg)"></div>
+                          <div class="review-detail">
+                            <div class="review-header">
+                              <div class="review-name">
+                                <h4>Great place and I love it!</h4>
+                                <p>by Anna Molly | 15 hours ago</p>
+                              </div>
+                              <div class="review-rating">
+                                <div class='rating-stars red'>
+                                  <ul id='stars' class="d-flex align-items-center">
+                                    <li class='star selected' data-value='1' disabled="disabled">
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='2' disabled="disabled">
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='3' disabled="disabled">
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='4' disabled="disabled">
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star' data-value='5' disabled="disabled">
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="review-description">
+                              <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to
+                                corporate
+                                strategy foster collaborative thinking to further the overall value proposition. Organically grow the
+                                holistic world
+                                view of disruptive innovation via workplace diversity and empowerment.</p>
+                            </div>
+                          </div>
+                          <div class="admin-reply">
+                              <blockquote>
+                                  <span></span>
+                                  <div class="review-detail">
+                                    <div class="review-header">
+                                      <div class="review-name">
+                                        <h4>Admin</h4>
+                                        <p>15 hours ago</p>
+                                      </div>
+                                    </div>
+                                    <div class="review-description">
+                                      <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to
+                                        corporate
+                                        strategy foster collaborative thinking to further the overall value proposition. Organically grow the
+                                        holistic world
+                                        view of disruptive innovation via workplace diversity and empowerment.</p>
+                                    </div>
+                                  </div>
+                              </blockquote>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="user-profile" style="background-image: url(images/review-pic.jpg)"></div>
+                          <div class="review-detail">
+                            <div class="review-header">
+                              <div class="review-name">
+                                <h4>Great place and I love it!</h4>
+                                <p>by Anna Molly | 15 hours ago</p>
+                              </div>
+                              <div class="review-rating">
+                                <div class='rating-stars red'>
+                                  <ul id='stars' class="d-flex align-items-center">
+                                    <li class='star selected' data-value='1' disabled="disabled">
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='2' disabled="disabled">
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='3' disabled="disabled">
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star selected' data-value='4' disabled="disabled">
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                    <li class='star' data-value='5' disabled="disabled">
+                                      <i class='fas fa-star'></i>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="review-description">
+                              <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to
+                                corporate
+                                strategy foster collaborative thinking to further the overall value proposition. Organically grow the
+                                holistic world
+                                view of disruptive innovation via workplace diversity and empowerment.</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <nav aria-label="reviews pagination">
+                    <ul class="pagination align-items-center">
+                      <li class="page-item">
+                        <a class="page-link" href="#"><i class="fas fa-chevron-left"></i></a>
+                      </li>
+                      <li>
+                        <p>Page 2 of 3</p>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+          </div>
+      </article>
+    </section>
+   
+</main>
+<!--******************* Middle Section End ******************-->
+<!--******************* Footer Section Start ******************-->
+<footer>
+    <div class="footer-info">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="images/footer-logo.png" alt="logo">
+                    </a>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4 col-xl-3">
+                <div class="footer-links">
+                    <p class="large-font">QUICK LINKS</p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="category-inner.html">Categories</a></li>
+                          <li><a href="#">Classified Ads</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul>
+                          <li><a href="about-us.html">About Us</a></li>
+                          <li><a href="contact-us.html">Contact Us</a></li>
+                          <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 col-xl-3"></div>
+            <div class="col-md-3 col-xl-2">
+                <p class="large-font">FOLLOW US</p>
+                <ul class="footer-social">
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-google"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="site-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>© 2020 All rights reserved</p>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--******************* Footer Section End ******************-->
+<script>
+  $(document).ready(function(){
+      $('.company-inner-slider').slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        rows: 0
+      });
+      $('.slider-btns .prev-nav').click(function(){
+          $(this).closest('.container').siblings('.slider').slick('prev');
+      });
+      $('.slider-btns .next-nav').click(function(){
+          $(this).closest('.container').siblings('.slider').slick('next');
+      });     
+
+      var customCheckbox = $('.form-footer input[type="checkbox"]');
+      // Options for custom Checkbox
+      jcf.setOptions('Checkbox', {
+        wrapNative: false
+      });
+      jcf.replace(customCheckbox);
+      
+      if (window.location.hash) scroll(0, 0);
+      setTimeout(function () { scroll(0, 0); }, 1);
+      $(function () {
+        $('a[href*="#"]:not([href="#"])').click(function () {
+          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top 
+              }, 2000);
+              return false;
+            }
+          }
+        });
+        if (window.location.hash) {
+
+          // smooth scroll to the anchor id
+          $('html, body').animate({
+            scrollTop: $(window.location.hash).offset().top 
+          }, 2000, 'swing');
+        }
+      });      
+  });
+</script>
+<!--*********************** All End ************************-->
+</body>
+</html>

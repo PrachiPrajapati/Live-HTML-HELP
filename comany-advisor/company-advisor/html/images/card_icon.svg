@@ -1,0 +1,8 @@
+<svg id="card_icon" xmlns="http://www.w3.org/2000/svg" width="30" height="18" viewBox="0 0 30 18">
+  <g id="Rectangle_4" data-name="Rectangle 4" fill="none" stroke="#161d43" stroke-miterlimit="10" stroke-width="1">
+    <rect width="30" height="18" rx="2" stroke="none"/>
+    <rect x="0.5" y="0.5" width="29" height="17" rx="1.5" fill="none"/>
+  </g>
+  <rect id="Rectangle_5" data-name="Rectangle 5" width="5" height="3" rx="1" transform="translate(6 5)" fill="#788995"/>
+  <path id="Line" d="M0,1H18" transform="translate(6 11.5)" fill="none" stroke="#161d43" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1"/>
+</svg>

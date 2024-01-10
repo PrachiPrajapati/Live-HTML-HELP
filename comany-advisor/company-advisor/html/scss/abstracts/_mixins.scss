@@ -1,0 +1,91 @@
+@import 'variables';
+
+@mixin common_btn {
+    display: inline-block;
+    padding: 14px 24px;
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: $font_weight_700;
+    color: $color_white;
+    background-color: $color_red;
+    border-radius: 4px;
+    border: 1px solid $color_red;
+    &:hover,&:focus{
+        background-color: $color_indigo;
+        border-color: $color_indigo;
+        color: $color_white;
+    }
+}
+
+@mixin common_btn_outline {
+    @include common_btn;
+    color: $color_indigo;
+    background: none;
+    border-color: $color_indigo;
+    &:hover,&:focus{
+        color: $color_white;
+    }
+}
+
+@mixin common_btn_color_blue {
+    @include common_btn;
+    color: $color_white;
+    background: $color_medium_blue;
+    border-color: $color_medium_blue;
+    &:hover,&:focus{
+        background: $color_red;
+        border-color: $color_red;
+    }
+}
+
+@mixin form_control{
+    padding: 15px 24px;
+    color: $base_color;
+    height: auto;
+    border-color: rgba(0,0,0,0.22);
+    border-radius: 4px;
+    &::placeholder{
+        color: $base_color;
+    }
+    &::-moz-placeholder{
+        color: $base_color;
+    }
+    &::-webkit-input-placeholder{
+        color: $base_color;
+    }
+    &:-ms-input-placeholder{
+        color: $base_color;
+    }
+    &::-o-placeholder{
+        color: $base_color;
+    }
+    &:focus{
+        box-shadow: none;
+        border-color: $color_medium_blue;;
+    }
+}
+@mixin login_input_group_text{
+    padding: 6px 21px;
+    background: none;
+    color: $color_medium_blue;
+    border: none;
+    position: relative;
+    &::before{
+        content: "";
+        display: inline-block;
+        height: 60%;
+        width: 1px;
+        background-color: rgba(0,0,0,0.12);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        left: 0;
+        z-index: 3;
+    }
+    &:hover{
+        color: $color_red;
+    }
+}

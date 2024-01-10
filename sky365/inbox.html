@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>:: SKY 365 ::</title>
+    <!--Favicon Included-->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"> -->
+
+    <!--Font Awsome Included-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" type="text/css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+    <!--Extra Style Included-->
+     <link href="css/slick.css" type="text/css" rel="stylesheet" />
+    <link href="css/slick-theme.css" type="text/css" rel="stylesheet" />
+    <!--Main Style Included-->
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <!--******************* Desktop View Start ******************-->
+    <div class="main d-none d-md-block">
+        <!--******************* Header Section Start *********************-->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <div class="leftnav d-flex align-items-center">
+                        <nav role="navigation">
+                          <div id="menuToggle">
+                            <button class="side-menu-toggle"></button>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <!-- SideMenu -->
+                            <ul id="menu" class="sidebar-menu">
+                              <li><a href="#">Menu 1</a></li>
+                              <li><a href="#">Menu 2</a></li>
+                              <li><a href="#">Menu 3</a></li>
+                              <li><a href="#">Menu 4</a></li>
+                              <li><a href="https://erikterwan.com/" target="_blank">Show me more</a></li>
+                            </ul>
+                          </div>
+                        </nav>
+                        <ul class="navbar-nav">
+                          <li class="nav-item active"><a class="nav-link" href="#"><img src="images/exchange-icon.svg" alt="exchange">exchange</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#"><img src="images/sports-icon.svg">sports</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#"><img src="images/casino-icon.svg">casino</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#paymentmethnod"><img src="images/hot-icon.svg">hot</a></li>
+                        </ul>
+                    </div>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+                    <form class=" login-user-info my-2 my-lg-0">
+                       <div class="user-btn-login">
+                            <button class="btn btn-small deposit-btn">Deposit</button>
+                            <button type="button" class="user-login-icon"><img src="images/user-icon.svg" alt="user-icon"></button>
+                       </div>
+                        <span class="user-amount">544371,10 (₹)</span>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <!--******************* Header Section End *********************-->
+        
+        <!--******************* Middle Section Start ******************-->
+        <section class="middle">
+            <!--***** Container ********-->
+            <article class="container-fluid">
+                <h2 class="page-title">Deposit</h2>
+                <div class="dashboard-select-page-wrapper">
+                    <ul>
+                        <li>
+                            <a href="my-profile.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/profile-ic.svg" alt="profile-ic">
+                                </div>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="deposit.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/deposite-ic-active.svg" alt="deposit-ic">
+                                </div>
+                                <span>Deposit</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="withdraw.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/withdraw-ic.svg" alt="withdraw-ic">
+                                </div>
+                                <span>Withdraw</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="transaction.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/transaction-ic.svg" alt="withdraw-ic">
+                                </div>
+                                <span>Transactions</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/refer-ic.svg" alt="profile-ic">
+                                </div>
+                                <span>Ref. Friend</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="bonus.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/bonus-ic.svg" alt="deposit-ic">
+                                </div>
+                                <span>Bonus</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="inbox.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/inbox-ic.svg" alt="inbox-ic">
+                                </div>
+                                <span>Inbox</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="game-list.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/game-limit-ic.svg" alt="withdraw-ic">
+                                </div>
+                                <span>Game Limits</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="verification.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/verification.svg" alt="withdraw-ic">
+                                </div>
+                                <span>Verification</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inbox-content mt-5">
+                    <article class="container-fluid">
+                        <div class="inbox-content-wrapper">
+                            <div class="inbox-box new-mail">
+                                <div class="header-box">
+                                    <div class="date-box">
+                                        <h6>2023-01-15 10:24</h6>
+                                    </div>
+                                    <div class="new-notification"><span>New</span></div>
+                                </div>
+                                <div class="info-content">
+                                    <p> Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience.  Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. 
+                                        Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. <br /> Thank you for your patience! </p>
+                                        <div class="button-box">
+                                            <button class="delete-btn" type="button"><img src="images/delete-ic.svg" alt="delete-btn"/></button>
+                                            <button class="open-close-btn" onclick="return false;" type="button">Open</button>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            <div class="inbox-box new-mail">
+                                <div class="header-box">
+                                    <div class="date-box">
+                                        <h6>2023-01-15 10:24</h6>
+                                    </div>
+                                    <div class="new-notification"><span>New</span></div>
+                                </div>
+                                <div class="info-content">
+                                    <p> Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience.  Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. 
+                                        Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. <br /> Thank you for your patience! </p>
+                                        <div class="button-box">
+                                            <button class="delete-btn" type="button"><img src="images/delete-ic.svg" alt="delete-btn"/></button>
+                                            <button class="open-close-btn" onclick="return false;" type="button">Open</button>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            <div class="inbox-box">
+                                <div class="date-box">
+                                    <h6>2023-01-15 10:24</h6>
+                                </div>
+                                <div class="info-content">
+                                    <p> Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. <br /> Thank you for your patience! </p>
+                                    <div class="button-box">
+                                        <button class="delete-btn" type="button"><img src="images/delete-ic.svg" alt="delete-btn"/></button>
+                                        <button class="open-close-btn" onclick="return false;" type="button">Open</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section>
+        <!--******************* Middle Section End ******************-->
+        <!--******************* Footer Section Start ******************-->
+        <footer>
+            <div class="wrapper">
+                <!--***** Footer Menu ********-->
+                <nav>
+                    <ul class="footer-top-nav">
+                        <li><a href="#"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+        <!--******************* Footer Section End ******************-->
+    </div>
+    <!--******************* Desktop View End ******************-->
+    <!--******************* Mobile View Start ******************-->
+    <div class="main d-block d-md-none userlogin">
+        <div class="mob-header">
+            <ul class="d-flex justify-content-between align-items-center">
+                <li class="text-uppercase"><a class="mob-head-link" href=""><img src="images/win-img.svg" alt="win"> winners</a></li>
+                <form class=" login-user-info my-2 my-lg-0">
+                    <div class="user-btn-login">
+                         <button class="btn btn-small deposit-btn">Deposit</button>
+                         <button type="button" class="user-login-icon"><img src="images/user-icon.svg" alt="user-icon"></button>
+                    </div>
+                     <span class="user-amount">544371,10 (₹)</span>
+                 </form>
+            </ul>
+            <div class="logo-mob">
+                <figure><a href="index.html"><img src="images/mob-logo.svg" alt="logo"></a></figure>
+            </div>
+        </div>
+         <!--******************* Middle Section Start ******************-->
+         <section class="mob-middle">
+            <!--***** Container ********-->
+            <article class="container-fluid">
+                <h2 class="page-title">Deposit</h2>
+                <div class="dashboard-select-page-wrapper">
+                    <ul>
+                        <li>
+                            <a href="my-profile.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/profile-ic.svg" alt="profile-ic">
+                                </div>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="deposit.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/deposite-ic-active.svg" alt="deposit-ic">
+                                </div>
+                                <span>Deposit</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="withdraw.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/withdraw-ic.svg" alt="withdraw-ic">
+                                </div>
+                                <span>Withdraw</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="transaction.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/transaction-ic.svg" alt="withdraw-ic">
+                                </div>
+                                <span>Transactions</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/refer-ic.svg" alt="profile-ic">
+                                </div>
+                                <span>Ref. Friend</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="bonus.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/bonus-ic.svg" alt="deposit-ic">
+                                </div>
+                                <span>Bonus</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="game-list.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/game-limit-ic.svg" alt="withdraw-ic">
+                                </div>
+                                <span>Game Limits</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="verification.html" class="dashboard-select-tabitem">
+                                <div class="page-tab-icon">
+                                    <img src="images/verification.svg" alt="withdraw-ic">
+                                </div>
+                                <span>Verification</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inbox-content mt-5">
+                    <article class="container-fluid">
+                        <div class="inbox-content-wrapper">
+                            <div class="inbox-box new-mail">
+                                <div class="header-box">
+                                    <div class="date-box">
+                                        <h6>2023-01-15 10:24</h6>
+                                    </div>
+                                    <div class="new-notification"><span>New</span></div>
+                                </div>
+                                <div class="info-content">
+                                    <p> Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience.  Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. 
+                                        Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. <br /> Thank you for your patience! </p>
+                                        <div class="button-box">
+                                            <button class="delete-btn" type="button"><img src="images/delete-ic.svg" alt="delete-btn"/></button>
+                                            <button class="open-close-btn" onclick="return false;" type="button">Open</button>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            <div class="inbox-box new-mail">
+                                <div class="header-box">
+                                    <div class="date-box">
+                                        <h6>2023-01-15 10:24</h6>
+                                    </div>
+                                    <div class="new-notification"><span>New</span></div>
+                                </div>
+                                <div class="info-content ">
+                                    <p> Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience.  Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. 
+                                        Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. <br /> Thank you for your patience! </p>
+                                        <div class="button-box">
+                                            <button class="delete-btn" type="button"><img src="images/delete-ic.svg" alt="delete-btn"/></button>
+                                            <button class="open-close-btn" onclick="return false;" type="button">Open</button>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            <div class="inbox-box">
+                                <div class="date-box">
+                                    <h6>2023-01-15 10:24</h6>
+                                </div>
+                                <div class="info-content">
+                                    <p> Please be informed that Exchange Section will be under maintenance tomorrow at 20:00h. We are working hard to improve your experience. <br /> Thank you for your patience! </p>
+                                    <div class="button-box">
+                                        <button class="delete-btn" type="button"><img src="images/delete-ic.svg" alt="delete-btn"/></button>
+                                        <button class="open-close-btn" onclick="return false;" type="button">Open</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section>
+        <!--******************* Middle Section End ******************-->
+        <div class="mob-footer" id="footernav">
+            <div class="footer-nav-list d-flex align-items-center">
+                <ul class="d-flex align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#"><figure><img src="images/exchange-icon.svg" alt="exchange"></figure> exchange</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><figure><img src="images/sports-icon.svg"></figure> sports</a></li>
+                </ul>
+                <ul class="d-flex align-items-center ml-auto">
+                    <li class="nav-item ml-auto"><a class="nav-link" href="#"><figure><img src="images/casino-icon.svg"></figure> casino</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><figure><img src="images/hot-icon.svg"></figure> hot</a></li>
+                </ul>
+            </div>
+            <div class="ham-burger-menu">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse menu-show" id="navbarNav">
+                <div class="logo-area d-flex align-items-center justify-content-center">
+                    <a href="index.html"><img src="images/mob-logo.svg" alt="logo"></a>
+                </div>
+                <div class="main-menu-area">
+                    <form class="btn-box">
+                      <button type="button" class="btn login-btn cmn-btn" data-toggle="modal" data-target="#loginModal"><img src="images/login-icon.svg" alt="icon"> login</button>
+                      <button type="button" class="btn signup-btn cmn-btn" data-toggle="modal" data-target="#signup-main-modal"><img src="images/signup-icon.svg" alt="icon"> sign up</button>
+                    </form>
+                    <div class="select-country">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Country</button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#"><img src="images/city-img1.svg" alt="city-img"></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="images/city-img2.svg" alt="city-img"></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="images/city-img3.svg" alt="city-img"></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="images/city-img4.svg" alt="city-img"></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="images/city-img5.svg" alt="city-img"></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="images/city-img6.svg" alt="city-img"></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="images/city-img7.svg" alt="city-img"></a></li>
+                          </div>
+                        </div>
+                    </div>
+                    <nav class="navbar">
+                        <ul class="navbar-nav">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                          </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--******************* Modal Section Start ******************-->
+    <!-- Login -->
+    <div class="login-modal modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="signup-screen d-flex">
+                    <div class="banner-img" style="background-image: url(images/signup-img.svg);"></div>
+                    <div class="signup-content">
+                        <figure class="text-center modal-logo"><img src="images/logo.svg" alt="logo"></figure>
+                        <div class="signup-box-area">
+                            <h2 class="text-uppercase">Login</h2>
+                            <div class="form-group labeleffectbox">
+                                <input type="text" class="form-control" placeholder="Username" id="usr"/>
+                                <label for="usr">Username</label>
+                                <ul class="icon-area d-flex">
+                                    <li><a class="info-icon"><img src="images/info-icon.svg" alt="info-icon"></a></li>
+                                </ul>
+                            </div>
+                            <div class="form-group labeleffectbox">
+                                <input type="password" class="form-control password-input" placeholder="password" id="pwd"  >
+                                <label for="pwd">Password</label>
+                                <ul class="icon-area d-flex align-items-center">
+                                    <!-- <li><a class="info-icon"><img src="images/info-icon.svg" alt="info-icon"></a></li> -->
+                                    <li><a class="eye-icon" onclick="myFunction()"></a></li>
+                                </ul>
+                            </div>
+                            <div class="form-group labeleffectbox forget-pass-box text-center">
+                                <a href="#" class="forget-pass">Forgot Password?</a>
+                            </div>
+                            <form class="form-inline my-2 my-lg-0">
+                                <button type="submit" class="btn login-btn cmn-btn" ><img src="images/login-icon.svg" alt="icon"> login</button>
+                                <button type="button" class="btn signup-btn cmn-btn" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal"><img src="images/signup-icon.svg" alt="icon"> sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                    <button type="button" class="close close-btn-icon" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><i class="fa-sharp fa-solid fa-xmark"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sign Up Modal -->
+    <!-- signup-main-screen-modal -->
+    <div class="signup-main-modal modal fade" id="signup-main-modal" tabindex="-1" role="dialog" aria-labelledby="signup-main-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="signup-screen d-flex">
+                    <div class="banner-img" style="background-image: url(images/signup-img.svg);"></div>
+                    <div class="signup-content">
+                        <figure class="text-center modal-logo"><img src="images/logo.svg" alt="logo"></figure>
+                        <div class="signup-box-area">
+                            <div class="box">
+                                <h2 class="text-uppercase">sign up</h2>
+                                <ul class="signup-mode-box">
+                                    <li class="sign-up-mode-item">
+                                       <button type="button" class="sign-up-wrap">
+                                            <div class="icon-box">
+                                                <img src="images/mail-ic.svg" alt="mail">
+                                            </div>
+                                            <div class="sign-up-mode-desc">
+                                                <h5>Email</h5>
+                                            </div>
+                                        </button>    
+                                    </li>
+                                    <li class="sign-up-mode-item">
+                                        <button type="button" class="sign-up-wrap" data-toggle="modal" data-target="#mainoneclickmodal" data-dismiss="modal" aria-hidden="true">
+                                            <div class="icon-box">
+                                                <img src="images/phone-ic.svg" alt="mail">
+                                            </div>
+                                            <div class="sign-up-mode-desc">
+                                                <h5>Phone</h5>
+                                            </div>
+                                        </button> 
+                                    </li>
+                                    <li class="sign-up-mode-item">
+                                        <button type="button" class="sign-up-wrap" data-toggle="modal" data-target="#oneclickmodal" data-dismiss="modal" aria-hidden="true">
+                                            <div class="icon-box">
+                                                <img src="images/one-click-ic.svg" alt="mail">
+                                            </div>
+                                            <div class="sign-up-mode-desc">
+                                                <h5>One Click</h5>
+                                            </div>
+                                        </button> 
+                                    </li>
+                                    <li class="sign-up-mode-item">
+                                        <button type="button" class="sign-up-wrap">
+                                            <div class="icon-box">
+                                                <img src="images/wp-ic.svg" alt="mail">
+                                            </div>
+                                            <div class="sign-up-mode-desc">
+                                                <h5>WhatsApp</h5>
+                                            </div>
+                                        </button> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mob-img-slider-box">
+                                <div class="mob-img-slider">
+                                    <div>
+                                        <div class="mob-slider-img">
+                                            <img src="images/banner-mobile.png" alt="banner-img"/>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="mob-slider-img">
+                                            <img src="images/banner-mobile.png" alt="banner-img"/>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="mob-slider-img">
+                                            <img src="images/banner-mobile.png" alt="banner-img"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="close close-btn-icon" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><i class="fa-sharp fa-solid fa-xmark"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="signup-modal modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="signup-screen d-flex">
+                    <div class="banner-img" style="background-image: url(images/signup-img.svg);"></div>
+                    <div class="signup-content">
+                        <figure class="text-center modal-logo"><img src="images/logo.svg" alt="logo"></figure>
+                        <div class="signup-box-area">
+                            <h2 class="text-uppercase">sign up</h2>
+                            <div class="form-group labeleffectbox">
+                                <input type="text" class="form-control" id="usr" placeholder="Username">
+                                <ul class="icon-area d-flex">
+                                    <li><a class="info-icon"><img src="images/info-icon.svg" alt="info-icon"></a></li>
+                                </ul>
+                            </div>
+                            <div class="form-group labeleffectbox">
+                                <input type="password" class="form-control password-input" id="pwd" placeholder="Password" value="FakePSW">
+                                <ul class="icon-area d-flex align-items-center">
+                                    <li><a class="info-icon"><img src="images/info-icon.svg" alt="info-icon"></a></li>
+                                    <li><a class="eye-icon" onclick="myFunction()"></a></li>
+                                </ul>
+                            </div>
+                            <div class="connect-us">
+                                <ul class="d-flex align-items-center">
+                                    <li class="phone-btn text-capitalize"><a href="tel:0123456789"><img src="images/phone-icon.svg" alt="phone-icon"> phone</a></li>
+                                    <li class="mail-btn text-capitalize"><a href="mailto:someone@example.com" target="_blank"><img src="images/mail-icon.svg" alt="mail-icon"> email</a></li>
+                                </ul>
+                            </div>
+                            <div class="form-group labeleffectbox">
+                                <input type="text" id="mobile_code" class="form-control" placeholder="Phone Number" name="name">
+                            </div>
+                            <div class="form-check">
+                                <label class="form-label">I’m over 18 years old.
+                                  <input type="checkbox" checked="checked">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-label">I agree to the Terms & Conditions
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button class="btn submit-btn cmn-btn text-uppercase">submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="close close-btn-icon" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><i class="fa-sharp fa-solid fa-xmark"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal -->
+    <!-- On Click modal -->
+    <div class="oneclickmodal cmn-modal-popup modal fade" id="oneclickmodal" tabindex="-1" role="dialog" aria-labelledby="oneclickmodal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="oneclickmodal-content">
+                    <div class="signup-content transform-block">
+                        <div class="d-flex align-items-center title-icon-bar">
+                            <figure><img src="images/energy.svg" alt="energy"></figure>
+                            <h6 class="text-capitalize ml-1">please confirm</h6>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-label">I’m over 18 years old.
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-label">I agree to the Terms & Conditions.
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="button" class="close close-btn-icon" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><i class="fa-sharp fa-solid fa-xmark"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- On Click modal -->
+    <div class="mainoneclickmodal cmn-modal-popup modal fade" id="mainoneclickmodal" tabindex="-1" role="dialog" aria-labelledby="mainoneclickmodal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="signup-screen d-flex">
+                    <div class="banner-img" style="background-image: url(images/signup-img.svg);"></div>
+                    <div class="signup-content">
+                        <figure class="text-center modal-logo"><img src="images/logo.svg" alt="logo"></figure>
+                        <div class="signup-box-area">
+                            <div class="box">
+                                <div class="d-flex align-items-center">
+                                    <h2 class="text-uppercase mr-1">sign up</h2>
+                                    <div class="d-flex align-items-center title-icon-bar ml-auto">
+                                        <h6 class="text-capitalize">once click</h6>
+                                        <figure><img src="images/energy.svg" alt="energy"></figure>
+                                    </div>
+                                </div>
+                                <div class="inner-content-onclick">
+                                    <p class="title">Your account was created!</p>
+                                    <div class="form-field">
+                                        <div class="account-title-area">
+                                            <label class="text-capitalize">your username</label>
+                                            <h6>Sky_13489389</h6>
+                                        </div>
+                                        <button class="copy-btn"><i class="fa-regular fa-copy"></i> copy</button>
+                                    </div>
+                                    <div class="form-field">
+                                        <div class="account-title-area">
+                                            <label class="text-capitalize">your password</label>
+                                            <h6>At4jhdGf&db#</h6>
+                                        </div>
+                                        <button class="copy-btn"><i class="fa-regular fa-copy"></i> copy</button>
+                                    </div>
+                                    <button class="save-img">Save as Image<img class="ml-2" src="images/save-img.svg" alt="save-img"></button>
+                                    <p class="mb-2">Send details to Email or Phone</p>
+                                    <div class="form-group labeleffectbox">
+                                        <input type="text" class="form-control" placeholder="Username" id="usr"/>
+                                        <label for="usr">Enter your Email or Phone Nr.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mob-img-slider-box">
+                                <div class="mob-img-slider">
+                                    <div>
+                                        <div class="mob-slider-img">
+                                            <img src="images/banner-mobile.png" alt="banner-img"/>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="mob-slider-img">
+                                            <img src="images/banner-mobile.png" alt="banner-img"/>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="mob-slider-img">
+                                            <img src="images/banner-mobile.png" alt="banner-img"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="close close-btn-icon" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"><i class="fa-sharp fa-solid fa-xmark"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Payment modal -->
+    <div class="paymentmethnod cmn-modal-popup modal fade" id="paymentmethnod" tabindex="-1" role="dialog" aria-labelledby="paymentmethnod" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="signup-content transform-block">
+                    <div class="paymentmethnod-content">
+                        <div class="payment-methnod-title">
+                            <h2 class="text-capitalize">deposit</h2>
+                            <div class="changesmode-area">
+                                <figure><img src="images/ic-paytm.svg" alt="paytm"></figure>
+                                <div class="blink-box text-capitalize"><p>change method</p></div>
+                            </div>
+                        </div>
+                        <div class="paymentamount-area">
+                            <label>amount</label>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="pwd" placeholder="">
+                            </div>
+                            <ul class="amount-btn justify-content-center d-flex flex-wrap">
+                                <li><button>₹200</button></li>
+                                <li><button>₹1000</button></li>
+                                <li class="active"><button>₹5000</button></li>
+                                <li><button>₹10000</button></li>
+                                <li><button>₹25000</button></li>
+                            </ul>
+                            <label class="ur-bonus-label">your bonuses</label>
+                            <div class="bonus-slider">
+                                <div class="bonus-section active" style="background: url(images/game-img1.svg) no-repeat center center / cover;">
+                                    <figure class="tick-img"><img src="images/tick-icon.svg" alt="tick-icon"></figure>
+                                    <button class="applied-btn">applied</button>
+                                </div>
+                                <div class="bonus-section" style="background: url(images/game-img2.svg) no-repeat center center / cover;">
+                                    <figure class="tick-img"><img src="images/tick-icon.svg" alt="tick-icon"></figure>
+                                </div>
+                                <div class="bonus-section" style="background: url(images/game-img3.svg) no-repeat center center / cover;">
+                                    <figure class="tick-img"><img src="images/tick-icon.svg" alt="tick-icon"></figure>
+                                </div>
+                                <div class="bonus-section" style="background: url(images/game-img4.svg) no-repeat center center / cover;">
+                                    <figure class="tick-img"><img src="images/tick-icon.svg" alt="tick-icon"></figure>
+                                </div>
+                                <div class="bonus-section" style="background: url(images/game-img5.svg) no-repeat center center / cover;">
+                                    <figure class="tick-img"><img src="images/tick-icon.svg" alt="tick-icon"></figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <button class="btn cmn-btn proceed-btn deposit-btn text-uppercase" data-dismiss="modal" data-toggle="modal" data-target="#proceed-modal">deposit</button>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="close close-btn-icon" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fa-sharp fa-solid fa-xmark"></i></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Deposite modal -->
+    <div class="proceed-modal cmn-modal-popup modal fade" id="proceed-modal" tabindex="-1" role="dialog" aria-labelledby="proceed-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="signup-content transform-block">
+                    <div class="paymentmethnod-content">
+                        <div class="payment-methnod-title">
+                            <h2 class="text-capitalize">deposit</h2>
+                            <div class="changesmode-area">
+                                <figure><img src="images/ic-paytm.svg" alt="paytm"></figure>
+                                <div class="blink-box text-capitalize"><p>change method</p></div>
+                            </div>
+                        </div>
+                        <div class="proceed-paymentamount-area">
+                            <div class="form-group labeleffectbox">
+                                <input type="text" class="form-control" placeholder="Username" id="usr"/>
+                                <label for="usr">Bonus Code</label>
+                            </div>
+                            <div class="form-field">
+                                <div class="account-title-area">
+                                    <label class="text-capitalize">wallet</label>
+                                    <h6>9433256674</h6>
+                                </div>
+                                <button class="copy-btn"><i class="fa-regular fa-copy"></i> copy</button>
+                            </div>
+                            <div class="form-field">
+                                <div class="account-title-area">
+                                    <label class="text-capitalize">account name</label>
+                                    <h6 class="text-uppercase">valter comp</h6>
+                                </div>
+                            </div>
+                            <div class="form-group labeleffectbox">
+                                <input type="text" class="form-control" placeholder="Username" id="usr"/>
+                                <label for="usr">Ref. No. / Trans. ID / UTR</label>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <button class="btn cmn-btn proceed-btn text-uppercase" data-toggle="modal" data-target="#proceed-modal">proceed</button>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="close close-btn-icon" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fa-sharp fa-solid fa-xmark"></i></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--******************* Modal Section End ******************-->
+
+    <!--*********************** All End ************************-->
+<!-- Slider -->
+<!--Main Js Included-->
+<script src="js/lib/jquery.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<!--Extra Js Included-->
+<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    // 
+    $(document).ready(function(e) {
+        $(".side-menu-toggle").click(function(event) {
+            $("#side-menu-toggle").addClass("mobile-open");
+            $('.sidebar-menu').addClass("active");
+            $('.side-menu-toggle').addClass("active-menu");
+            event.stopPropagation();
+        });
+       
+        $(document).click(function(event){
+            if (!$(event.target).hasClass('link')) {
+                $(".sidebar-menu").removeClass("active");
+                $('.side-menu-toggle').removeClass("active-menu");
+            }
+        });
+        $('.eye-icon').click(function() {
+          $(this).toggleClass("active");
+        });
+    });
+    $(".mob-img-slider").slick({
+        dots: true,
+        infinite: true,
+        arrows: false,
+        autoplay: true,
+        fadeIn: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        cssEase: 'linear'
+      }); 
+</script>
+<script type="text/javascript">
+    // Footer On Scroll View
+    var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("footernav").style.bottom = "0";
+          } else {
+            document.getElementById("footernav").style.bottom = "-75px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+</script>
+<script type="text/javascript">
+    //notification 
+    $(document).ready(function(e) {
+        $('.info-content').addClass('close-box');
+        $('.open-close-btn').on('click', function () {
+            $(this).parent().parent().toggleClass('close-box');
+            if ($(this).text() == "Open"){
+                $(this).text("Close")
+            }
+            else{
+                $(this).text("Open");
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="32" viewBox="0 0 20 32">
+  <defs>
+    <clipPath id="clip-Artboard_1">
+      <rect width="20" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" clip-path="url(#clip-Artboard_1)">
+    <rect width="20" height="32" fill="#fff"/>
+    <path id="heart" d="M16.984,4.288a4.4,4.4,0,0,0-6.225,0l-.848.848-.848-.848a4.4,4.4,0,1,0-6.225,6.225l.848.848,6.225,6.225,6.225-6.225.848-.848a4.4,4.4,0,0,0,0-6.225Z" transform="translate(-0.049 -2.498)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="heart-2" data-name="heart" d="M16.984,4.288a4.4,4.4,0,0,0-6.225,0l-.848.848-.848-.848a4.4,4.4,0,1,0-6.225,6.225l.848.848,6.225,6.225,6.225-6.225.848-.848a4.4,4.4,0,0,0,0-6.225Z" transform="translate(-0.049 13.502)" fill="red" stroke="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>

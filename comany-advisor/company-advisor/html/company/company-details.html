@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Company Advisor</title>
+    <!--Favicon Included-->
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/site.webmanifest">
+    <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!--Main Style Included-->
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+    <!--Font Awesome Included-->
+    <link href="../css/all.min.css" type="text/css" rel="stylesheet" />
+    <!--Extra Style Included-->
+    <link href="../css/jcf.css" type="text/css" rel="stylesheet" />
+    <link href="../css/select2.min.css" type="text/css" rel="stylesheet" />
+    <!--Main Js Included-->
+	  <script src="../js/lib/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/modernizr.js" type="text/javascript"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <!--Font Awesome Included-->
+    <script src="../js/all.min.js"></script>
+    <script src="../js/jcf.js"></script>
+    <script src="../js/jcf.select.js"></script>
+    <script src="../js/jcf.checkbox.js"></script>
+    <script src="../js/select2.full.min.js"></script>
+    <script src="../js/scripts.js"></script>
+    <!--Extra Js Included-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+      <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&display=swap" rel="stylesheet">
+</head>
+<body class="logged-in">
+<!--******************* Header Section Start *********************-->
+<header>
+  <nav class="navbar navbar-expand-xl">
+    <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+    <ul class="sd-user-icon">
+      <li>
+        <a href="#"><i class="fas fa-user-circle"></i></a>
+      </li>
+      <li class="nav-item icon-item dropdown">
+        <a class="nav-link dropdown-toggle" href="account-settings.html" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false"><i class="fas fa-shopping-cart"></i><span
+            class="badge badge-light">1</span></a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <form>
+            <table class="table">
+              <tr>
+                <td>
+                  <a href="#">Category 1</a>
+                </td>
+                <td>AED 400</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#">Category 1</a>
+                </td>
+                <td>AED 400</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#">Category 1</a>
+                </td>
+                <td>AED 400</td>
+              </tr>
+              <tr>
+                <td class="spacer" colspan="2" height="40"></td>
+              </tr>
+              <tr>
+                <td>
+                  Total
+                </td>
+                <td>AED 1200</td>
+              </tr>
+            </table>
+            <button type="submit" class="common-btn outline mb-2 btn-block" onclick="document.location.href='cart.html'">View
+              Cart</button>
+            <button type="submit" class="common-btn color-blue btn-block"
+              onclick="document.location.href='checkout.html'">Checkout</button>
+          </form>
+        </div>
+      </li>
+    </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <form>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search here..." aria-label="Search here"
+          aria-describedby="search">
+        <div class="input-group-append">
+          <button type="button" id="search" onclick="document.location.href='../search.html'"><i
+              class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </form>
+  
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav main-nav ml-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../category-inner.html">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about-us.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../contact-us.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../faq.html">Faq</a>
+        </li>
+        <li class="seperator d-none d-xl-inline-block"> </li>
+        <li class="nav-item icon-item dropdown">
+          <a class="nav-link dropdown-toggle" href="account-settings.html" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"><i class="fas fa-shopping-cart"></i><span
+              class="badge badge-light">1</span></a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <form>
+              <table class="table">
+                <tr>
+                  <td>
+                    <a href="#">Category 1</a>
+                  </td>
+                  <td>AED 400</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">Category 1</a>
+                  </td>
+                  <td>AED 400</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">Category 1</a>
+                  </td>
+                  <td>AED 400</td>
+                </tr>
+                <tr>
+                  <td class="spacer" colspan="2" height="40"></td>
+                </tr>
+                <tr>
+                  <td>
+                    Total
+                  </td>
+                  <td>AED 1200</td>
+                </tr>
+              </table>
+              <button type="submit" class="common-btn outline mb-2 btn-block">View Cart</button>
+              <button type="submit" class="common-btn color-blue btn-block">Checkout</button>
+            </form>
+          </div>
+        </li>
+        <li class="nav-item icon-item">
+          <a class="nav-link" href="account-settings.html"><i class="fas fa-user-circle"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link common-btn" href="#">Add Listing</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav secondary-nav align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="dashboard.html"><img src="../images/dashboard-icon.svg" alt="icon">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="my-ads.html"><img src="../images/ads-icon.svg" alt="icon">My Ads</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="my-reviews.html"><img src="../images/review-icon.svg" alt="icon">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="billing.html"><img src="../images/billing-icon.svg" alt="icon">Billing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="account-settings.html"><img src="../images/profile-icon.svg" alt="icon">Account
+            Settings</a>
+        </li>
+        <li class="nav-item ml-auto">
+          <a class="nav-link" href="#">Logout<img src="../images/logout-icon.svg" alt="icon"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!--******************* Header Section End *********************-->
+<!--******************* Middle Section Start ******************-->
+<main class="bg-white">
+    <!-- Company Details -->
+    <section class="company-details">
+        <article class="container">
+            <div class="content-center">
+                <h2>Edit Company Profile </h2>
+                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate
+                strategy foster collaborative thinking to further the overall value proposition.</p>
+                <div class="d-md-flex">
+                  <p class="large-font font-weight-bold mr-md-4">Check our <a href="../faq.html">FAQ</a> page for more details.</p>
+                  <p class="large-font font-weight-bold"><a href="#">Put your Company featured on TOP</a></p>
+                </div>
+                <form>
+                  <div class="category-selection mt-5">
+                      <h3>Choose Category</h3>
+                      <div class="category-selection_add">
+                          <ul class="form-box-holder">
+                            <li>
+                              <select class="category">
+                                <option hidden selected disabled>Choose Category</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                              </select>
+                              <span class="error">Your error here</span>
+                            </li>
+                            <li>
+                              <select class="subcategory">
+                                <option hidden selected disabled>Choose Subcategory</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                              </select>
+                              <span class="error">Your error here</span>
+                            </li>
+                            <li>
+                              <select class="subcategory">
+                                <option hidden selected disabled>Choose Subcategory</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                              </select>
+                              <span class="error">Your error here</span>
+                            </li>
+                            <li>
+                              <select class="subcategory">
+                                <option hidden selected disabled>Choose Subcategory</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                              </select>
+                              <span class="error">Your error here</span>
+                            </li>
+                          </ul>
+                      </div>
+                      <!-- <div class="add-new-cat">
+                        <a href="javascript:;" class="add-new-cat_btn" data-toggle="modal" data-target="#addCategory"><i class="fas fa-plus-circle"></i>Add a new category for AED 100</a>
+                      </div> -->
+                      <div class="category-selection_add disabled">
+                          <div class="disabled-text">
+                              <a href="#">
+                                <p class="font-weight-bold">Upgrade Now</p>
+                                <p>Unlock new category for AED 180</p>
+                              </a>
+                          </div>
+                          <ul class="form-box-holder">
+                            <li>
+                              <select class="category" disabled>
+                                <option hidden selected disabled>Choose Category</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                              </select>
+                              <span class="error">Your error here</span>
+                            </li>
+                            <li>
+                              <select class="subcategory" disabled>
+                                <option hidden selected disabled>Choose Subcategory</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                              </select>
+                              <span class="error">Your error here</span>
+                            </li>
+                            <li>
+                              <select class="subcategory" disabled>
+                                <option hidden selected disabled>Choose Subcategory</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                              </select>
+                              <span class="error">Your error here</span>
+                            </li>
+                            <li>
+                              <select class="subcategory" disabled>
+                                <option hidden selected disabled>Choose Subcategory</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                                <option>Category</option>
+                              </select>
+                              <span class="error">Your error here</span>
+                            </li>
+                          </ul>
+                          <a href="javascript:;" class="add-category"><i class="fas fa-plus-circle"></i></a>
+                          <a href="javascript:;" class="remove-category"><i class="fas fa-times-circle"></i></a>
+                      </div>
+                  </div>
+                  <div class="upload-images">
+                      <h3>Upload Images</h3>
+                      <ul>
+                          <li>
+                              <div class="add-image-holder">
+                                  <div class="add-image">
+                                      <img src="../images/add.svg" alt="add">
+                                      <p>Upload a high quality images</p>
+                                      <input type="file" accept=".png,.jpg,.jpeg">
+                                    </div>
+                                    <div class="remove-image">
+                                        <a href="javascript:;"><img src="../images/add.svg" alt="add"></a>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="add-image-holder">
+                                  <div class="add-image">
+                                      <img src="../images/add.svg" alt="add">
+                                      <p>Upload a high quality images</p>
+                                      <input type="file" accept=".png,.jpg,.jpeg">
+                                    </div>
+                                    <div class="remove-image">
+                                        <a href="javascript:;"><img src="../images/add.svg" alt="add"></a>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="add-image-holder">
+                                  <div class="add-image">
+                                      <img src="../images/add.svg" alt="add">
+                                      <p>Upload a high quality images</p>
+                                      <input type="file" accept=".png,.jpg,.jpeg">
+                                    </div>
+                                    <div class="remove-image">
+                                        <a href="javascript:;"><img src="../images/add.svg" alt="add"></a>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="add-image-holder">
+                                  <div class="add-image">
+                                      <img src="../images/add.svg" alt="add">
+                                      <p>Upload a high quality images</p>
+                                      <input type="file" accept=".png,.jpg,.jpeg">
+                                    </div>
+                                    <div class="remove-image">
+                                        <a href="javascript:;"><img src="../images/add.svg" alt="add"></a>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="add-image-holder">
+                                  <div class="add-image">
+                                      <img src="../images/add.svg" alt="add">
+                                      <p>Upload a high quality images</p>
+                                      <input type="file" accept=".png,.jpg,.jpeg">
+                                    </div>
+                                    <div class="remove-image">
+                                        <a href="javascript:;"><img src="../images/add.svg" alt="add"></a>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="company-info">
+                      <p class="large-font font-weight-bold">Company Information</p>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Company Name">
+                                  <span class="error">Your error here</span>
+                              </div>
+                              <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Contact Number">
+                                  <span class="error">Your error here</span>
+                              </div>
+                              <div class="form-group">
+                                  <input type="email" class="form-control" placeholder="Email Address">
+                                  <span class="error">Your error here</span>
+                              </div>
+                              <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Website">
+                                  <span class="error">Your error here</span>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                <textarea class="form-control" rows="5" placeholder="Company Description"></textarea>
+                                <span class="error">Your error here</span>
+                              </div>                             
+                              <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Discount Note">
+                                <small>Note: This discount is for community members</small>
+                                <span class="error">Your error here</span>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                            <h3>Select Company Address</h3>
+                            <div class="form-group">
+                              <input type="text" class="form-control map-input" id="map-input" placeholder="Search Location">
+                            </div>
+                            <div id="map"></div>
+                            <div class="row">
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="form-group">
+                                      <input type="text" class="form-control" placeholder="Company Address">
+                                      <span class="error">Your error here</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="form-group">
+                                      <div class="form-box-holder">
+                                        <select class="company-select">
+                                            <option hidden selected disabled>Select Country</option>
+                                            <option>Country</option>
+                                            <option>Country</option>
+                                            <option>Country</option>
+                                        </select>
+                                      </div>
+                                      <span class="error">Your error here</span>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="form-group">
+                                      <div class="form-box-holder">
+                                        <select class="company-select">
+                                          <option hidden selected disabled>Select Emirates</option>
+                                          <option>Emirates</option>
+                                          <option>Emirates</option>
+                                          <option>Emirates</option>
+                                        </select>
+                                      </div>
+                                      <span class="error">Your error here</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xl-3">
+                                    <div class="form-group">
+                                      <div class="form-box-holder">
+                                        <select class="company-select">
+                                          <option hidden selected disabled>Select City</option>
+                                          <option>City</option>
+                                          <option>City</option>
+                                          <option>City</option>
+                                        </select>
+                                      </div>
+                                      <span class="error">Your error here</span>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="add-community">
+                      <p class="large-font font-weight-bold">Community <a href="#" data-toggle="modal" data-target="#modal"><span class="badge badge-dark badge-circle">i</span></a></p>
+                      <p>You can add up to 3 communities ( You can add up to 3 services.  )</p>
+                      <div class="form-box-holder">
+                        <select class="select2 jcf-ignore">
+                          <option hidden disabled>Choose Community</option>
+                          <option>Community</option>
+                          <option>Community</option>
+                          <option>Community</option>
+                        </select>                       
+                        <span class="error">Your error here</span>
+                      </div>
+                      <ul class="selected-community d-md-flex align-items-md-center">
+                          <li>Community 1</li>
+                          <li>Community 2</li>
+                          <li>Community 3</li>
+                          <li class="disabled">
+                            <div class="disabled-text">
+                              <a href="#">
+                                <p class="font-weight-bold">Upgrade Now</p>
+                                <p>Unlock 5 new communities for AED 150</p>
+                              </a>
+                            </div>
+                            <ul>
+                              <li>Community 4</li>
+                              <li>Community 5</li>
+                              <li>Community 6</li>
+                              <li>Community 7</li>
+                              <li>Community 8</li>
+                            </ul>
+                          </li>
+                          <!-- <li class="locked"><a href="#" data-toggle="modal" data-target="#addCommunity">Add 5 communities for AED150</a></li> -->
+                      </ul>
+                  </div>
+                  <div class="upload-images services">
+                    <p class="large-font font-weight-bold">Services <a href="#" data-toggle="modal" data-target="#servicesModal"><span class="badge badge-dark badge-circle">i</span></a></p>
+                    <p>You can add up to 3 services ( You can add up to 3 services. )</p>
+                    <ul>
+                      <li>
+                        <div class="add-image-holder">
+                          <div class="add-image">
+                            <img src="../images/camera-icon.svg" alt="add">
+                            <p>Upload the service image</p>
+                            <input type="file" accept=".png,.jpg,.jpeg">
+                          </div>
+                          <div class="remove-image">
+                            <a href="javascript:;"><img src="../images/add.svg" alt="add"></a>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Service Name">
+                          <span class="error">Your error here</span>
+                        </div>
+                        <div class="form-group">
+                          <textarea type="text" class="form-control" rows="5" placeholder="Service Name"></textarea>
+                          <span class="error">Your error here</span>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Prices/Rates">
+                          <span class="error">Your error here</span>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Discount">
+                          <span class="error">Your error here</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="add-image-holder">
+                          <div class="add-image">
+                            <img src="../images/camera-icon.svg" alt="add">
+                            <p>Upload the service image</p>
+                            <input type="file" accept=".png,.jpg,.jpeg">
+                          </div>
+                          <div class="remove-image">
+                            <a href="javascript:;"><img src="../images/add.svg" alt="add"></a>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Service Name">
+                          <span class="error">Your error here</span>
+                        </div>
+                        <div class="form-group">
+                          <textarea type="text" class="form-control" rows="5" placeholder="Service Name"></textarea>
+                          <span class="error">Your error here</span>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Prices/Rates">
+                          <span class="error">Your error here</span>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Discount">
+                          <span class="error">Your error here</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="add-image-holder">
+                          <div class="add-image">
+                            <img src="../images/camera-icon.svg" alt="add">
+                            <p>Upload the service image</p>
+                            <input type="file" accept=".png,.jpg,.jpeg">
+                          </div>
+                          <div class="remove-image">
+                            <a href="javascript:;"><img src="../images/add.svg" alt="add"></a>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Service Name">
+                          <span class="error">Your error here</span>
+                        </div>
+                        <div class="form-group">
+                          <textarea type="text" class="form-control" rows="5" placeholder="Service Name"></textarea>
+                          <span class="error">Your error here</span>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Prices/Rates">
+                          <span class="error">Your error here</span>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Discount">
+                          <span class="error">Your error here</span>
+                        </div>
+                      </li>
+                      <li class="disabled">
+                        <div class="disabled-text">
+                          <a href="#">
+                            <p class="font-weight-bold">Upgrade Now</p>
+                            <p>Click here to unlock</p>
+                          </a>
+                        </div>
+                        <div class="add-image-holder">
+                          <div class="add-image">
+                            <img src="../images/camera-icon.svg" alt="add">
+                            <p>Upload the service image</p>
+                            <input type="file" accept=".png,.jpg,.jpeg">
+                          </div>
+                          <div class="remove-image">
+                            <a href="javascript:;"><img src="../images/add.svg" alt="add"></a>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Service Name">
+                          <span class="error">Your error here</span>
+                        </div>
+                        <div class="form-group">
+                          <textarea type="text" class="form-control" rows="5" placeholder="Service Name"></textarea>
+                          <span class="error">Your error here</span>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Prices/Rates">
+                          <span class="error">Your error here</span>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Discount">
+                          <span class="error">Your error here</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="mt-3">Discount provided to our community members</p>
+                  <div class="opening-hours">
+                      <p class="large-font font-weight-bold">Opening Hours</p>
+                      <div class="day">
+                          <p>Monday</p>
+                          <ul class="form-box-holder">
+                              <li>
+                                  <select>
+                                      <option hidden selected disabled>Open Time</option>
+                                      <option>6:00 am</option>
+                                      <option>6:00 am</option>
+                                      <option>6:00 am</option>
+                                  </select>
+                                  <span class="error">Your error here</span>
+                                </li>
+                                <li>
+                                  <select>
+                                    <option hidden selected disabled>Close Time</option>
+                                    <option>6:00 am</option>
+                                    <option>6:00 am</option>
+                                    <option>6:00 am</option>
+                                  </select>
+                                  <span class="error">Your error here</span>
+                              </li>
+                              <li>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="day-off">
+                                    <label class="form-check-label" for="day-off">
+                                      Day Off
+                                    </label>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="day">
+                          <p>Tuesday</p>
+                          <ul class="form-box-holder">
+                              <li>
+                                  <select>
+                                      <option hidden selected disabled>Open Time</option>
+                                      <option>6:00 am</option>
+                                      <option>6:00 am</option>
+                                      <option>6:00 am</option>
+                                  </select>
+                                  <span class="error">Your error here</span>
+                                </li>
+                                <li>
+                                  <select>
+                                    <option hidden selected disabled>Close Time</option>
+                                    <option>6:00 am</option>
+                                    <option>6:00 am</option>
+                                    <option>6:00 am</option>
+                                  </select>
+                                  <span class="error">Your error here</span>
+                              </li>
+                              <li>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="day-off1">
+                                    <label class="form-check-label" for="day-off1">
+                                      Day Off
+                                    </label>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="day">
+                          <p>Wednesday</p>
+                          <ul class="form-box-holder">
+                              <li>
+                                  <select>
+                                      <option hidden selected disabled>Open Time</option>
+                                      <option>6:00 am</option>
+                                      <option>6:00 am</option>
+                                      <option>6:00 am</option>
+                                  </select>
+                                  <span class="error">Your error here</span>
+                                </li>
+                                <li>
+                                  <select>
+                                    <option hidden selected disabled>Close Time</option>
+                                    <option>6:00 am</option>
+                                    <option>6:00 am</option>
+                                    <option>6:00 am</option>
+                                  </select>
+                                  <span class="error">Your error here</span>
+                              </li>
+                              <li>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="day-off2">
+                                    <label class="form-check-label" for="day-off2">
+                                      Day Off
+                                    </label>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="day">
+                          <p>Thursday</p>
+                          <ul class="form-box-holder">
+                              <li>
+                                  <select>
+                                      <option hidden selected disabled>Open Time</option>
+                                      <option>6:00 am</option>
+                                      <option>6:00 am</option>
+                                      <option>6:00 am</option>
+                                  </select>
+                                  <span class="error">Your error here</span>
+                                </li>
+                                <li>
+                                  <select>
+                                    <option hidden selected disabled>Close Time</option>
+                                    <option>6:00 am</option>
+                                    <option>6:00 am</option>
+                                    <option>6:00 am</option>
+                                  </select>
+                                  <span class="error">Your error here</span>
+                              </li>
+                              <li>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="day-off3">
+                                    <label class="form-check-label" for="day-off3">
+                                      Day Off
+                                    </label>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="day">
+                          <p>Friday</p>
+                          <ul class="form-box-holder">
+                              <li>
+                                  <select>
+                                      <option hidden selected disabled>Open Time</option>
+                                      <option>6:00 am</option>
+                                      <option>6:00 am</option>
+                                      <option>6:00 am</option>
+                                  </select>
+                                  <span class="error">Your error here</span>
+                                </li>
+                                <li>
+                                  <select>
+                                    <option hidden selected disabled>Close Time</option>
+                                    <option>6:00 am</option>
+                                    <option>6:00 am</option>
+                                    <option>6:00 am</option>
+                                  </select>
+                                  <span class="error">Your error here</span>
+                              </li>
+                              <li>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="day-off4">
+                                    <label class="form-check-label" for="day-off4">
+                                      Day Off
+                                    </label>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="day">
+                          <p>Saturday</p>
+                          <ul class="form-box-holder">
+                              <li>
+                                  <select>
+                                      <option hidden selected disabled>Open Time</option>
+                                      <option>6:00 am</option>
+                                      <option>6:00 am</option>
+                                      <option>6:00 am</option>
+                                  </select>
+                                  <span class="error">Your error here</span>
+                                </li>
+                                <li>
+                                  <select>
+                                    <option hidden selected disabled>Close Time</option>
+                                    <option>6:00 am</option>
+                                    <option>6:00 am</option>
+                                    <option>6:00 am</option>
+                                  </select>
+                                  <span class="error">Your error here</span>
+                              </li>
+                              <li>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="day-off5">
+                                    <label class="form-check-label" for="day-off5">
+                                      Day Off
+                                    </label>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="day">
+                          <p>Sunday</p>
+                          <ul class="form-box-holder">
+                              <li>
+                                  <select>
+                                      <option hidden selected disabled>Open Time</option>
+                                      <option>6:00 am</option>
+                                      <option>6:00 am</option>
+                                      <option>6:00 am</option>
+                                  </select>
+                                  <span class="error">Your error here</span>
+                                </li>
+                                <li>
+                                  <select>
+                                    <option hidden selected disabled>Close Time</option>
+                                    <option>6:00 am</option>
+                                    <option>6:00 am</option>
+                                    <option>6:00 am</option>
+                                  </select>
+                                  <span class="error">Your error here</span>
+                              </li>
+                              <li>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="day-off6">
+                                    <label class="form-check-label" for="day-off6">
+                                      Day Off
+                                    </label>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <button type="submit" class="common-btn color-blue mt-4">Submit</button>
+                </form>
+            </div>
+        </article>
+    </section>
+</main>
+
+<!-- Modals -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        If you need more categories, please contact admin at <a href="mailto:admin@xxx.com">admin@xxx.com</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="common-btn outline" data-dismiss="modal">Close</button>
+        <button type="button" class="common-btn" data-dismiss="modal">Okay</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="servicesModal" tabindex="-1" role="dialog" aria-labelledby="servicesModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        If you need more services, please contact admin at <a href="mailto:admin@xxx.com">admin@xxx.com</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="common-btn outline" data-dismiss="modal">Close</button>
+        <button type="button" class="common-btn" data-dismiss="modal">Okay</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addCategory" tabindex="-1" role="dialog" aria-labelledby="addCategoryLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <form>
+        <div class="modal-header">
+          <h3 class="modal-title">Unlock to add new category</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          I want to unlock new category for AED 100
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="common-btn outline" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="common-btn" data-dismiss="modal">Submit</button>
+        </div>
+     </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addService" tabindex="-1" role="dialog" aria-labelledby="addServiceLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <form>
+        <div class="modal-header">
+          <h3 class="modal-title">Unlock to add new service</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          I want to unlock new service for AED 100
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="common-btn outline" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="common-btn" data-dismiss="modal">Submit</button>
+        </div>
+     </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addCommunity" tabindex="-1" role="dialog" aria-labelledby="addCommunityLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <form>
+        <div class="modal-header">
+          <h3 class="modal-title">Unlock to add new community</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          I want to unlock new community for AED 100
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="common-btn outline" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="common-btn" data-dismiss="modal">Submit</button>
+        </div>
+     </form>
+    </div>
+  </div>
+</div>
+<!--******************* Middle Section End ******************-->
+<script>
+    $(document).ready(function(){
+      var customSelect = $('select:not(.jcf-ignore)');
+      // Options for custom Select
+      jcf.setOptions('Select', {
+        wrapNative: false,
+        wrapNativeOnMobile: false,
+        fakeDropInBody: false
+      });
+      jcf.replace(customSelect);
+      jcf.refresh();
+
+      var customCheckbox = $('input[type="checkbox"]');
+      // Options for custom Checkbox
+      jcf.setOptions('Checkbox', {
+        wrapNative: false
+      });
+      jcf.replace(customCheckbox);
+
+
+      $(".upload-images input").change(function () {
+        readURL(this);
+      });
+      $('.remove-image a').click(function(){
+          $(this).closest('.add-image-holder').removeAttr('style');
+          $(this).closest('.add-image-holder').removeClass('added');
+          $(this).parent().hide();
+          $(this).parent().siblings('.add-image').show();
+      });
+     $('.select2').select2({
+       width: 'auto'
+     });
+    });
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        var input_element = input;
+
+        reader.onload = function (e) {
+          $(input_element).closest('.add-image-holder').css('background-image', 'url(' + e.target.result + ')');
+          max_height($(input_element).closest('.add-image-holder'));
+          $(input_element).closest('.add-image-holder').addClass('added');
+          $(input_element).parent().hide();
+          $(input_element).parent().siblings('.remove-image').show();
+        }
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+    function max_height(element){
+      var maxHeight = -1;
+
+      $(element).each(function () {
+        maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+      });
+
+      $(element).each(function () {
+        $(this).height(maxHeight);
+      });
+
+    }
+    function initMap() {
+        var mapDiv = document.getElementById('map');
+        var latlng = new google.maps.LatLng(38.945000, -77.393330);
+        var map = new google.maps.Map(mapDiv, {
+          center: latlng,
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.MAP
+        });
+        var marker = new google.maps.Marker({
+          position: latlng,
+        });
+        marker.setMap(map);
+        // Create the search box and link it to the UI element.
+      var input = document.getElementById("map-input");
+      var searchBox = new google.maps.places.SearchBox(input);
+
+      // Bias the SearchBox results towards current map's viewport.
+      map.addListener("bounds_changed", function () {
+        searchBox.setBounds(map.getBounds());
+      });
+
+      var markers = [];
+      // Listen for the event fired when the user selects a prediction and retrieve
+      // more details for that place.
+      searchBox.addListener("places_changed", function () {
+        var places = searchBox.getPlaces();
+
+        if (places.length == 0) {
+          return;
+        }
+
+        // Clear out the old markers.
+        markers.forEach(function (marker) {
+          marker.setMap(null);
+        });
+        markers = [];
+
+        // For each place, get the icon, name and location.
+        var bounds = new google.maps.LatLngBounds();
+        places.forEach(function (place) {
+          if (!place.geometry) {
+            console.log("Returned place contains no geometry");
+            return;
+          }
+          var icon = {
+            url: place.icon,
+            size: new google.maps.Size(71, 71),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(17, 34),
+            scaledSize: new google.maps.Size(25, 25)
+          };
+
+          // Create a marker for each place.
+          markers.push(
+            new google.maps.Marker({
+              map: map,
+              icon: icon,
+              title: place.name,
+              position: place.geometry.location
+            })
+          );
+
+          if (place.geometry.viewport) {
+            // Only geocodes have viewport.
+            bounds.union(place.geometry.viewport);
+          } else {
+            bounds.extend(place.geometry.location);
+          }
+        });
+        map.fitBounds(bounds);
+      });
+
+      }
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtc0b_oAykroc2auPTfMoHDcbaESZzNqk&libraries=places&callback=initMap">
+  </script>
+<!--*********************** All End ************************-->
+</body>
+</html>

@@ -1,0 +1,398 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******* Fonts Face CSS Start **********/
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../fonts/Cinzel-Regular.eot');
+    src: url('../fonts/Cinzel-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Cinzel-Regular.woff2') format('woff2'),
+        url('../fonts/Cinzel-Regular.woff') format('woff'),
+        url('../fonts/Cinzel-Regular.ttf') format('truetype'),
+        url('../fonts/Cinzel-Regular.svg#Cinzel-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel Bold';
+    src: url('../fonts/Cinzel-Bold.eot');
+    src: url('../fonts/Cinzel-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Cinzel-Bold.woff2') format('woff2'),
+        url('../fonts/Cinzel-Bold.woff') format('woff'),
+        url('../fonts/Cinzel-Bold.ttf') format('truetype'),
+        url('../fonts/Cinzel-Bold.svg#Cinzel-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+        url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Semi-Bold';
+    src: url('../fonts/Montserrat-SemiBold.eot');
+    src: url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-SemiBold.woff') format('woff'),
+        url('../fonts/Montserrat-SemiBold.ttf') format('truetype'),
+        url('../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans.eot');
+    src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans.woff2') format('woff2'),
+        url('../fonts/OpenSans.woff') format('woff'),
+        url('../fonts/OpenSans.ttf') format('truetype'),
+        url('../fonts/OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+        url('../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/OpenSans-Light.eot');
+    src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/OpenSans-Light.woff') format('woff'),
+        url('../fonts/OpenSans-Light.ttf') format('truetype'),
+        url('../fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Extrabold';
+    src: url('../fonts/OpenSans-Extrabold.eot');
+    src: url('../fonts/OpenSans-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Extrabold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Extrabold.woff') format('woff'),
+        url('../fonts/OpenSans-Extrabold.ttf') format('truetype'),
+        url('../fonts/OpenSans-Extrabold.svg#OpenSans-Extrabold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Semi-Bold';
+    src: url('../fonts/OpenSans-Semibold.eot');
+    src: url('../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Semibold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Semibold.woff') format('woff'),
+        url('../fonts/OpenSans-Semibold.ttf') format('truetype'),
+        url('../fonts/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+* 						{ margin: 0px; padding: 0px; outline: none;}
+body 					{ font-size:14px; line-height: 18px; color: #4A4A4A; font-family: 'Open Sans'; background: #fff;}
+.clear 					{ clear:both;}
+img 					{ border: 0px;}
+ul,ol 					{ list-style: none;}
+a 						{ text-decoration: none; outline: none; color: #0F75BD;}
+a:focus, a:active, a:visited, a:HOVER	{ text-decoration: none; outline: none; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; }
+a:focus, a:active, a:HOVER				{ color: #0C5E99; }
+h1                      { font-family: 'Cinzel Bold'; font-size: 40px; line-height: 50px; color: #c49a6c; }
+h2 						{  }
+h3 						{ }
+h4 						{ }
+h5 						{ }
+h6 						{ }
+p 						{ margin-bottom: 10px; font-size: 16px; line-height: 24px; }
+button 					{ transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in;}
+::-moz-selection        { color: #fff; background: #0F75BD; }
+::selection             { color: #fff; background: #0F75BD; }
+img                     { max-width: 100%; }
+.full-img               { width: 100%; }
+.white-text             { color: #fff; }
+.right-border           { position: relative; }
+.right-border:before    { content: ""; display: block; width: 2px; height: 100%; position: absolute; right: -17px; top: 0px; background: #F5F5F5; }
+.common-shadow          {  }
+/******* Common Element CSS End *********/
+/* -------- title style ------- */
+.heading-block              { margin-bottom: 40px;  }
+.heading-block h2           { float: left; margin: 0px; }
+.heading-block .theme-btn   { float: right; }
+/* -------- Button style ------- */
+.theme-btn                  { padding: 6px 27px 6px 17px; display: inline-block; background-color: #0F75BD; font-size: 20px; line-height: 24px; border: 2px solid #0F75BD; color: #fff; border-radius: 2em; text-transform: capitalize; text-align: center; font-family: 'Circular Std Bold'; position: relative; }
+.theme-btn:focus,
+.theme-btn:active,
+.theme-btn:hover            { background: transparent; color: #0F75BD; border-color: #0F75BD; }
+.theme-btn:before           { content: "\f105"; display: block; position: absolute; top: calc(50% - 6px); right: 8px; width: 14px; height: 14px; text-align: center; font-size: 22px; line-height: 14px; font-family: FontAwesome; }
+
+/* -------- Button style ------- */
+.common-overlay             { position: relative; }
+.common-overlay:before      { content: ""; display: block; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; background: rgba(0,0,0,0.4);}
+
+/******* Header Section CSS Start *******/
+.nav-topbar 					{ padding: 6px 0px; background: #0C5E98; }
+.nav-social-menu 				{ float: right; margin: 0px; }
+.nav-social-menu li 			{ float: left; }
+.nav-social-menu li a			{ display: block; margin-left: 8px; min-width: 22px; font-size: 16px; line-height: 22px; color: #fff; text-align: center; }
+.nav-social-menu li a:hover 	{ opacity: 0.8; }
+.navbar.navbar-default 			{ margin-bottom: 0px; background: transparent; border: none; border-radius: 0px; min-height: inherit; }
+.navbar .navbar-brand 			{ height: auto; padding: 0px 0px 0px 15px; z-index: 2;  }
+.navbar .navbar-brand img 		{ box-shadow: 0px 2px 4px rgba(15,17,189,0.04), 0px 2px 4px rgba(0,0,0,0.04); -webkit-box-shadow: 0px 2px 4px rgba(15,17,189,0.04), 0px 2px 4px rgba(0,0,0,0.04); border-radius: 0px;  }
+.navbar.navbar-default .navbar-nav 			{ padding: 20px 0px; }
+.navbar.navbar-default .navbar-nav li a 	{ margin-left: 32px; padding: 12px 0px; background: transparent; font-size: 12px; line-height: 20px; color: #c7c7c7; font-family: 'Montserrat Semi-Bold'; border-bottom: 2px solid transparent; text-transform: uppercase; }
+.navbar.navbar-default .navbar-nav > .active > a, 
+.navbar.navbar-default .navbar-nav > .active > a:hover, 
+.navbar.navbar-default .navbar-nav > .active > a:focus,
+.navbar.navbar-default .navbar-nav > li > a:hover, 
+.navbar.navbar-default .navbar-nav > li > a:focus 	{ background: transparent; color: #c49a6c; }
+.navbar.navbar-default .navbar-nav li:first-child a { margin-left: 15px; }
+.tagline-container              { float: left; margin-left: 190px; width: 400px; }
+.tagline-container h3           { margin: 20px 0px 10px; font-size: 28px; color: #fff; font-family: 'Circular Std Medium'; }
+/******* Header Section CSS End *********/
+.ticker-section                     { box-shadow: inset 0 -1px 0px #EBEBEB; -webkit-box-shadow: inset 0 -1px 0px #EBEBEB;  }
+.ticker-section .barchart-ticker,
+.ticker-section .barchart-search    { padding: 24px 0px; float: left; }
+.ticker-section .barchart-ticker    { width: calc(100% - 370px); }
+.ticker-section .barchart-search    { width: 370px; padding: 13px 24px; }
+.ticker-section .barchart-search    { box-shadow: -2px 0px 4px 0px rgba(0,0,0,0.08), inset 0px -1px 0px 0px #EBEBEB; -webkit-box-shadow: -2px 0px 4px 0px rgba(0,0,0,0.08), inset 0px -1px 0px 0px #EBEBEB;  }
+/******* Banner section CSS Start *******/
+.home-banner-slider .slick-slide        { background: no-repeat center center / cover; position: relative; }
+.home-banner-slider .slick-slide:before { content: ""; display: block; position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.4);}
+.home-banner-slider .slide-container    { height: 536px; position: relative; text-align: right; }
+.home-banner-slider .slide-info         { position: absolute; width: 55%; right: 0; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); }
+.home-banner-slider h1,
+.home-banner-slider p                   { color: #fff; }
+.home-banner-slider p                   { font-family: 'Circular Std Medium';}
+.home-banner-slider .slick-arrow         { width: 48px; height: 48px; z-index: 5; border-radius: 50%; background: rgba(255,255,255,0.22); box-shadow: 0px 2px 4px rgba(0,0,0,0.50); -webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.50); text-align: center;   }
+.home-banner-slider .slick-prev         { left: 48px; }
+.home-banner-slider .slick-next         { right: 48px; }
+.home-banner-slider .slick-arrow::before { width: 48px; height: 48px; display: block; background: no-repeat center center / 90% auto;}
+.home-banner-slider .slick-prev::before { content: " "; background-image: url(../images/left-arrow.svg);  }
+.home-banner-slider .slick-next::before { content: " "; background-image: url(../images/right-arrow.svg); }
+/******* Banner section CSS End *********/
+
+/******* Middle section CSS Start ******/
+.common-section                         { padding: 40px 0px; }
+.common-page-section                    { padding: 48px 0px 28px; }
+/* ------- Home Page ------- */
+/* ---- Articles Section ---- */
+.articles-section                       { padding: 48px 0px 0px; }
+.featured-articles                      { height: 320px; background: url(../images/article-bg.jpg) no-repeat center center / cover; position: relative; }
+.featured-articles .article-tag         { display: block; padding: 7px 17px 7px 8px; position: absolute; left: 0px; top: 24px; color: #fff; background: rgba(0,0,0,0.50); border-radius: 0px 2em 2em 0px; font-family: 'Circular Std Bold'; }
+.featured-articles .article-tag:hover   { background: rgba(0,0,0,1); }
+.featured-articles .desc-block          { position: absolute; width: 75%; padding: 24px; left: 0px; bottom: 0px;  }
+.featured-articles h3                   { margin: 0px; color: #fff; text-shadow: 0px 2px 4px rgba(0,0,0,0.51); -webkit-text-shadow: 0px 2px 4px rgba(0,0,0,0.51); }
+.featured-articles h3 a                 { display: block; color: #fff; }
+.featured-articles h3 a:hover           { color: #fff; }
+.articles-inner                         { padding: 40px 0px 5px; border-bottom: 2px solid #EDEDED;  }
+.horizontal-tab.article-horizontal-tab  { padding-top: 32px; border-top: 2px solid #EDEDED; }
+.horizontal-tab .resp-tabs-list li      { margin-right: 24px; padding: 0px !important; font-size: 18px; line-height: 23px; color: #CECECE; font-family: 'Circular Std Medium'; font-weight: 500; }
+.horizontal-tab .resp-tabs-list li:last-child       { margin-right: 0; }
+.horizontal-tab .resp-tabs-list li:hover,
+.horizontal-tab .resp-tabs-list li.resp-tab-active  { color: #0F76BD; }
+.horizontal-tab li.resp-tab-active      { border: none; }
+.horizontal-tab .resp-tab-content       { padding: 0px; border: none; }
+.article-tab-item                       { padding: 40px 0px 48px; border-bottom: 2px solid #EDEDED; }
+.resp-tab-content .article-tab-item:last-child     { border: none; }
+.article-tab-item .article-img,
+.article-tab-item .article-desc         { float: left; } 
+.article-tab-item .article-img          { width: 176px; }
+.article-tab-item .article-img img      { border-radius: 2px; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in;}
+.article-tab-item .article-img img:hover{ border-radius: 2px; box-shadow: 0px 2px 2px rgba(0,0,0,0.1),0px 4px 4px rgba(0,0,0,0.1),0px 8px 8px rgba(0,0,0,0.1),0px 16px 16px rgba(0,0,0,0.05),0px 32px 32px rgba(0,0,0,0.05); -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.1),0px 4px 4px rgba(0,0,0,0.1),0px 8px 8px rgba(0,0,0,0.1),0px 16px 16px rgba(0,0,0,0.05),0px 32px 32px rgba(0,0,0,0.05); }
+.article-tab-item .article-desc         { width: calc(100% - 176px); padding: 0px 15px; }
+.article-tab-item h4                    { margin-bottom: 14px; color: #4A4A4A; }
+.article-tab-item h4 a                  { display: block; color: #4A4A4A; }
+.article-tab-item h4 a:hover            { color: #0F75BD; }
+.article-tab-item p                     { font-size: 16px; line-height: 24px; font-family: 'Avenir Next'; color: #5E5E5E; }
+.article-tab-item .article-desc p a     { font-family: 'Avenir Next Demi'; color: #0F76BD; }
+.article-tab-item .article-desc p a:hover  { color: #5E5E5E;  }
+.panel-group.articles-panel             { margin-bottom: 35px; }
+.panel-group .panel                     { border: none; border-radius: 0px; box-shadow: none; -webkit-box-shadow: none; }
+.panel-group .panel + .panel            { margin-top: 16px; }
+.panel.panel-default .panel-heading     { padding: 0px; background: transparent; border: 1px solid #F7F7F7; box-shadow: 0px 2px 4px rgba(0,0,0,0.08); -webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.08); border-radius: 2px;}
+.panel.panel-default .panel-heading h4 a        { display: block; padding: 10px 16px; font-size: 16px; line-height: 20px; color: #0F75BD; position: relative;}
+.panel.panel-default .panel-heading h4 a:after  { content: ""; display: block; position: absolute !important; width: 20px; height: 20px; top: calc(50% - 10px); right: 16px; background: url(../images/down-arrow.svg) no-repeat center center / cover; position: relative; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; }
+.panel.panel-default .panel-heading.active h4 a:after { transform: rotate(180deg); -webkit-transform: rotate(180deg);}
+.panel-group .panel.panel-default .panel-body   { padding: 8px 2px 0px; border: none; }
+/*.articles-panel.panel-group .panel-body { height: 392px; overflow-y: auto; overflow-x: hidden; }*/
+/* ---- Videos Section ---- */
+.videos-section                         { padding: 32px 0px 0px; }
+.videos-section .videos-inner           { padding-bottom: 32px; border-bottom: 2px solid #EDEDED;  }
+.video-item                             { margin-bottom: 32px; }
+.video-item iframe                      { height: 240px; border: none; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; }
+.video-item iframe:hover                { box-shadow: 0px 2px 2px rgba(0,0,0,0.1),0px 4px 4px rgba(0,0,0,0.1),0px 8px 8px rgba(0,0,0,0.1),0px 16px 16px rgba(0,0,0,0.05),0px 32px 32px rgba(0,0,0,0.05); -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.1),0px 4px 4px rgba(0,0,0,0.1),0px 8px 8px rgba(0,0,0,0.1),0px 16px 16px rgba(0,0,0,0.05),0px 32px 32px rgba(0,0,0,0.05); }
+.video-item .item-meta                  { margin: 16px 0px 8px; }
+
+.video-item h4                          { font-size: 20px; line-height: 25px; }
+.videos-section.reports-section         { padding-bottom: 48px; }
+/* ------- Video Page ------- */
+.heading-block .nav-tabs                { float: right; }
+ul.nav-tabs                             { border-bottom: none; }
+ul.nav-tabs > li > a                    { margin: 0px 8px; padding: 0px; background: transparent; font-size: 18px; line-height: 23px; color: #CECECE; border: none; border-radius: 0px; }
+ul.nav-tabs > li.active > a, 
+ul.nav-tabs > li.active > a:hover, 
+ul.nav-tabs > li.active > a:focus,
+ul.nav-tabs > li > a:focus,
+ul.nav-tabs > li > a:hover              { border: none; color: #0F76BD; background: transparent; }
+.heading-block ul.nav-tabs > li > a     { margin: 12px 0px 12px 16px; }
+
+.sidebar .ad-block                          { margin: 15px 0px }
+/* ------- Articles Page ------- */
+.article-page                                       {  }
+.latestarticle-horizontal-tab .resp-tabs-list       { margin: 12px 0px; }
+.article-top {}
+.article-list .featured-articles                    { height: 528px; margin-bottom: 40px;}
+.article-list .featured-articles .desc-block        { width: 100%; padding: 20px; }
+.article-list .article-img                          { margin-bottom: 10px; }
+/*.article-list [class*=col-]:nth-child(2) .article-img,
+.article-list [class*=col-]:nth-child(3) .article-img           { width: 248px;  }
+.article-list [class*=col-]:nth-child(2) .article-desc,
+.article-list [class*=col-]:nth-child(3) .article-desc          { width: calc(100% - 248px); }*/
+.latestarticle-horizontal-tab .article-list .article-tab-item   { padding: 32px 0px 22px; border-top: 2px solid #EDEDED; }
+/*.article-list [class*=col-]:nth-child(n+4) .article-tab-item    { padding: 32px 0px 22px; }
+.article-list [class*=col-]:nth-child(n+4) .article-tab-item    { padding: 32px 0px 22px; }
+.article-list [class*=col-]:nth-child(n+6) .article-tab-item    { border-top: 2px solid #EDEDED; }*/
+.latestarticle-horizontal-tab h4                    { margin-bottom: 10px; font-size: 20px; line-height: 25px; }
+.latestarticle-horizontal-tab .item-meta            { margin-bottom: 5px; }
+.latestarticle-horizontal-tab p                     { margin-bottom: 10px; font-size: 14px; line-height: 19px; }
+/* ------- Articles Detail Page ------- */
+
+
+
+
+
+
+
+.item-meta li                           { display: inline-block; margin-right: 6px; }
+.item-meta li:nth-child(2),
+.item-meta li:nth-child(3)              { color: #8E8E8E; }
+.item-meta li:nth-child(3) span         { color: #0F75BD; }
+.item-meta li:nth-child(3) span a:hover { color: #4A4A4A; }
+
+ol.breadcrumb                           { margin: 8px 0px 12px; padding: 0px; background: transparent; border-radius: 0px;  }
+ol.breadcrumb li a                      { margin-bottom: 3px; display: inline-block; vertical-align: middle; font-size: 18px; line-height: 20px; color: #8E8E8E; font-family: 'Circular Std Bold'; max-width: 194px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;   }
+ol.breadcrumb li a:hover                { color: #0F75BD; }
+.breadcrumb > li + li::before           { padding: 0px 2px; color: #8E8E8E; font-size: 16px; line-height: 20px; }
+.article-title                          { margin-bottom: 16px; color: #0F75BD; font-family: 'Circular Std Black'; }
+.article-detail-page .featured-articles { margin-bottom: 16px; }
+.articles-meta                          {  }
+.articles-meta .item-meta               { float: left; margin: 12px 0px; }
+.social-share-block                     { float: right; margin-bottom: 26px; text-align: right;}
+.social-share-block .share-label,
+.social-share-menu,
+.social-share-menu li                   { display: inline-block; margin: 0px;}
+.social-share-block .share-label        { margin-right: 12px; padding: 13px 16px 11px 0px; font-size: 16px; line-height: 16px; font-family: 'Circular Std Bold'; text-transform: uppercase; border-right: 1px solid #D8D8D8; }
+.social-share-menu li a                 { margin: 0px 3px; display: block; width: 24px; height: 24px; line-height: 24px; font-size: 20px; background: #CFCFCF; color: #fff; text-align: center; border-radius:   50%; }
+.social-share-menu li a:hover           { background: #CB2027; }
+.social-share-menu li a i               { line-height: 24px; font-size: 15px;  }
+.articles-content p                     { margin-bottom: 24px; color: #6D6D6D; font-family: 'Circular Std Book'; }
+.articles-content h4                    { margin-bottom: 24px; font-size: 18px; line-height: 26px; color: #6D6D6D; }
+.articles-tags li                       { display: inline-block; }
+.articles-tags li a                     { display: block; margin: 5px 5px 5px 0px; padding: 6px 8px; background: #EDEDED; font-size: 14px; line-height: 18px; color: #BBBBBB; border-radius: 2px; }
+.articles-tags li.active a,
+.articles-tags li a:hover               { background: #0F75BD; color: #fff; }
+
+
+.sidebar                                { padding: 0px 0px 12px 34px; }
+.sidebar ul.nav-tabs > li > a           { margin: 8px 16px 8px 0px; font-size: 24px; line-height: 30px; }
+.sidebar .article-tab-item              { padding: 10px 0px; border: none;}
+.sidebar .article-tab-item .article-img     { width: 80px; }
+.sidebar .article-tab-item .article-desc    { width: calc( 100% - 80px); padding: 0px 0px 0px 16px; }
+.sidebar .article-tab-item h4               { margin-bottom: 8px; font-size: 14px; line-height: 18px; }
+
+
+
+
+
+
+
+
+
+
+
+
+/******** Middle section CSS End *******/
+
+/***** Bottom section CSS Start *******/
+/* -------- Subscribe section ------- */
+.subscribe-section                      { background: #0F75BD; text-align: center; }
+.subscribe-form-block                   { max-width: 600px; margin: 24px auto 0px; }
+.subscribe-form-block .email-box        { float: left; margin-bottom: 16px; width: 428px; }
+.subscribe-form-block .form-control     { height: auto; padding: 16px 24px; background: #fff; border: none; font-size: 18px; line-height: 24px; color: #4A4A4A; border-radius: 2em; font-family: 'Circular Std Medium'; }
+form .form-group .form-control::-webkit-input-placeholder   { color: #CECECE; opacity: 1; }
+form .form-group .form-control::-moz-placeholder            { color: #CECECE; opacity: 1; }
+form .form-group .form-control:-ms-input-placeholder        { color: #CECECE; opacity: 1; }
+form .form-group .form-control:-moz-placeholder             { color: #CECECE; opacity: 1; }
+.subscribe-form-block .theme-btn        { padding: 14px 32px 14px 22px; float: right; border-color: #fff; opacity: 0.22;  }
+.subscribe-form-block .theme-btn:focus,
+.subscribe-form-block .theme-btn:active,
+.subscribe-form-block .theme-btn:hover  { opacity: 1; border-color: #fff; color: #fff; }
+.subscribe-form-block .theme-btn:before { right: 14px;  }
+/* -------- Follow us section ------- */
+.follow-us-section                      { background: #0C5E99; text-align: center; }
+.footer-social-menu                     { margin: 24px 0px 0px; }
+.footer-social-menu li                  { display: inline-block; }
+.footer-social-menu li a                { margin: 0px 8px; display: block; min-width: 48px; font-size: 32px; line-height: 48px; color: #fff; text-align: center; opacity: 0.7; }
+.footer-social-menu li a:hover          { opacity: 1; }
+.copyright-section                      { padding: 25px 0px; border-top: 2px solid #f5f5f5;}
+.copyright-section p,
+.copyright-section ul                   { margin: 0px; color: #C7C7C7; font-size: 14px; line-height: 18px;}
+.copyright-section ul                   { text-align: right;}
+.copyright-section ul li                { display: inline-block; }
+.copyright-section ul li a              { margin-left: 16px; display: block; color: #C7C7C7; }
+.copyright-section ul li a:hover        { color: #C49A6C; }
+/****** Bottom section CSS End *******/
+
+/***** Responsive CSS Start ******/
+@media (min-width: 1200px) and (max-width: 1400px) {
+    
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+@media (max-width: 991px) {
+    
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+
+}
+
+@media (max-width: 767px) {
+    
+/*---------------------------------- Header ----------------------------------*/
+.navbar.navbar-default .navbar-nav li:first-child a { margin-left: 32px; }
+/*----------------------------------//Header----------------------------------*/
+
+
+
+.copyright-section p,
+.copyright-section ul               { text-align: center; margin: 15px 0px; }
+}

@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Build On Me</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <!--Font Awsome Included-->
+    <link href="./css/fontawesome4.2.0.css" type="text/css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jcf.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <!--Main Style Included-->
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <main class="estate-page">
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html"><img src="./img/Logo.svg" alt="logo-image"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="estate.html">Estates</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="favourite.html">Favorites </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link signin-btn" href="#">Sign up</a>
+                            </li>
+                        </ul>
+                        <div class="dropdown d-none">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-expanded="false">
+                                <img src="./img/profile.svg" alt="profile-image" class="img-fluid">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="my-profile.html">My Profile</a>
+                                <a class="dropdown-item" href="change-password.html">Change Password</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="estate-page-inner">
+                <div class="container">
+                    <div class="estate-tabs wow fadeIn">
+                        <ul class="d-flex">
+                            <li><a href="#"> <img src="./img/suburb-icon.svg" alt="icon-image">
+                                    Lot size</a></li>
+                            <li><a href="#"> <img src="./img/estate-icon.svg" alt="icon-image"> estates</a></li>
+                            <li><a href="#"> <img src="./img/lot-size-icon.svg" alt="icon-image"> suburb</a></li>
+                            <li class="active"><a href="#"> <img src="./img/all-icon.svg" alt="icon-image"> All</a></li>
+                        </ul>
+                    </div>
+                    <div class="price-range-input wow fadeIn">
+                        <form class="d-flex justify-content-between">
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="number1" placeholder="From">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="number1" placeholder="To">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="search-bar d-flex flex-wrap wow fadeIn">
+                        <form class="flex-shrink-0">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="search-text" placeholder="Search By Suburb">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                        </form>
+                        <a href="#" class="flex-shrink-0 vector-icon" data-toggle="modal"
+                            data-target="#radius-modal"><img src="./img/Vector.svg" alt="vector-icon"
+                                class="img-fluid"></a>
+                        <div class="list-map-tab nav nav-tabs d-flex align-items-center" id="nav-tab" role="tablist">
+                            <!-- <ul class="d-flex align-items-center">
+                            <li class="active"><a href="#nav-home"><img src="./img/list-icon.svg" alt="icon-image"
+                                        class="imf-fluid"></a></li>
+                            <li><a href="#map-tab"><img src="./img/map.svg" alt="icon-image" class="img-fluid"></a></li>
+                        </ul> -->
+                            <a class="nav-link active" id="estate-grid-list-tab" data-toggle="tab"
+                                href="#estate-grid-list" role="tab" aria-controls="estate-grid-list"
+                                aria-selected="true"><img src="./img/list-icon.svg" alt="icon-image"
+                                    class="imf-fluid"></a>
+                            <a class="nav-link" id="map-tab" data-toggle="tab" href="#map" role="tab"
+                                aria-controls="map" aria-selected="false"><img src="./img/map.svg" alt="icon-image"
+                                    class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="estate-content d-flex flex-wrap">
+                        <div class="estate-left flex-shrink-0 sidebar">
+                            <div class="estate-left-tabs wow fadeIn">
+                                <ul class="d-flex justify-content-between">
+                                    <li class="active"><a href="#"> Only Estates</a></li>
+                                    <li><a href="#"> Only Lots</a></li>
+                                    <li><a href="#"> All</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-heading wow fadeIn">
+                                <h4>Filter</h4>
+                            </div>
+                            <div class="region wow fadeIn">
+                                <h5>Region</h5>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <button class="d-flex north-btn justify-content-between align-items-center"
+                                                type="button" data-toggle="collapse" data-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                <span class="change-title">North</span>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <form>
+                                                    <div
+                                                        class="form-group form-check d-flex justify-content-between align-items-center">
+                                                        <label class="form-check-label"
+                                                            for="exampleCheck1">North</label>
+                                                        <input type="checkbox" class="form-check-input flex-shrink-0"
+                                                            id="exampleCheck1" checked value="North">
+                                                    </div>
+                                                    <div
+                                                        class="form-group form-check d-flex justify-content-between align-items-center">
+                                                        <label class="form-check-label"
+                                                            for="exampleCheck2">South</label>
+                                                        <input type="checkbox" class="form-check-input flex-shrink-0"
+                                                            id="exampleCheck2" value="South">
+                                                    </div>
+                                                    <div
+                                                        class="form-group form-check d-flex justify-content-between align-items-center">
+                                                        <label class="form-check-label" for="exampleCheck3">North
+                                                            East</label>
+                                                        <input type="checkbox" class="form-check-input flex-shrink-0"
+                                                            id="exampleCheck3" value="North East">
+                                                    </div>
+                                                    <div
+                                                        class="form-group form-check d-flex justify-content-between align-items-center">
+                                                        <label class="form-check-label" for="exampleCheck4">South
+                                                            East</label>
+                                                        <input type="checkbox" class="form-check-input flex-shrink-0"
+                                                            id="exampleCheck4" value="South East">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loader-bal wow fadeIn">
+                                <div class="accordion" id="accordionExample2">
+                                    <div class="card">
+                                        <div class="card-header" id="headingtwo">
+                                            <button class="d-flex justify-content-between align-items-center"
+                                                type="button" data-toggle="collapse" data-target="#collapsetwo"
+                                                aria-expanded="true" aria-controls="collapsetwo">
+                                                <span>Loader type</span>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div id="collapsetwo" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample2">
+                                            <div class="card-body">
+                                                <form class="d-flex justify-content-between">
+                                                    <div class="form-check d-flex align-items-center">
+                                                        <input class="form-check-input" type="checkbox"
+                                                             id="examplecheckbox1" value="option1">
+                                                        <label class="form-check-label" for="examplecheckbox1">
+                                                            Front
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check d-flex align-items-center rear">
+                                                        <input class="form-check-input" type="checkbox"
+                                                             id="examplecheckbox2" value="option2">
+                                                        <label class="form-check-label" for="examplecheckbox2">
+                                                            Rear
+                                                        </label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loader-bal wow fadeIn">
+                                <div class="accordion">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <button class="d-flex justify-content-between align-items-center">
+                                                <span>Bal</span>
+                                            </button>
+                                        </div>
+                                        <div class="card-body">
+                                            <form class="d-flex justify-content-between">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" 
+                                                        id="examplecheckbox3" value="option1">
+                                                    <label class="form-check-label" for="examplecheckbox3">
+                                                        Yes
+                                                    </label>
+                                                </div>
+                                                <div class="form-check d-flex align-items-center rear">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="examplecheckbox4" value="option2">
+                                                    <label class="form-check-label" for="examplecheckbox4">
+                                                        No
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="frontage price-range wow fadeIn">
+                                <h5>Frontage</h5>
+                                <!-- <input type="text" class="js-range-slider" name="my_range" value="" /> -->
+                                <form class="d-flex justify-content-between align-items-center">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="number-1" placeholder="$0.00">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="number-2" placeholder="$100.00">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="price-range wow fadeIn">
+                                <h5>Price Range</h5>
+                                <form class="d-flex justify-content-between align-items-center">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="number-1" placeholder="$0.00">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="number-2" placeholder="$100.00">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="sorting wow fadeIn">
+                                <h5>Sorting</h5>
+                                <div class="accordion" id="sortingExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <button
+                                                class="d-flex sorting-btn justify-content-between align-items-center"
+                                                type="button" data-toggle="collapse" data-target="#sorting"
+                                                aria-expanded="true" aria-controls="sorting">
+                                                <span>Sorting</span>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div id="sorting" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#sortingExample">
+                                            <div class="card-body">
+                                                <div class="pnl">
+                                                    <span>Price</span>
+                                                    <ul>
+                                                        <li><a href="#"> Low to High</a></li>
+                                                        <li class="active"><a href="#">High to low</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="pnl">
+                                                    <span>Name</span>
+                                                    <ul>
+                                                        <li><a href="#">A - Z</a></li>
+                                                        <li><a href="#">Z - A</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="pnl">
+                                                    <span>Listing</span>
+                                                    <ul>
+                                                        <li><a href="#">Newest to Oldest</a></li>
+                                                        <li><a href="#">Oldest to Newest</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="pnl wow fadeIn">
+                            <div class="accordion" id="accordionExample3">
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <button class="d-flex justify-content-between align-items-center" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            <span>Price</span> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
+                                        data-parent="#accordionExample3">
+                                        <div class="card-body">
+                                            <form>
+                                                <div
+                                                    class="form-check d-flex justify-content-between align-items-center">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        low to high
+                                                    </label>
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios2" value="option2">
+                                                </div>
+                                                <div
+                                                    class="form-check d-flex justify-content-between align-items-center">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        high to low
+                                                    </label>
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios2" value="option2">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pnl wow fadeIn">
+                            <div class="accordion" id="accordionExample4">
+                                <div class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <button class="d-flex justify-content-between align-items-center" type="button"
+                                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            <span>Name</span> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div id="collapseFour" class="collapse show" aria-labelledby="headingFour"
+                                        data-parent="#accordionExample4">
+                                        <div class="card-body">
+                                            <form>
+                                                <div
+                                                    class="form-check d-flex justify-content-between align-items-center">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        A - Z
+                                                    </label>
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios2" value="option2">
+                                                </div>
+                                                <div
+                                                    class="form-check d-flex justify-content-between align-items-center">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        Z - A
+                                                    </label>
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios2" value="option2">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pnl wow fadeIn">
+                            <div class="accordion" id="accordionExample5">
+                                <div class="card">
+                                    <div class="card-header" id="headingFive">
+                                        <button class="d-flex justify-content-between align-items-center" type="button"
+                                            data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                            <span>Name</span> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                                        data-parent="#accordionExample5">
+                                        <div class="card-body">
+                                            <form>
+                                                <div
+                                                    class="form-check d-flex justify-content-between align-items-center">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        Newest to Oldest
+                                                    </label>
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios2" value="option2">
+                                                </div>
+                                                <div
+                                                    class="form-check d-flex justify-content-between align-items-center">
+                                                    <label class="form-check-label" for="exampleRadios2">
+                                                        Oldest to Newest
+                                                    </label>
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios2" value="option2">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                            <!-- <div class="relevent wow fadeIn">
+                                <h5>Most Relevent</h5>
+                                <div class="accordion" id="accordionExample6">
+                                    <div class="card">
+                                        <div class="card-header" id="headingSix">
+                                            <button
+                                                class="d-flex development-name-btn justify-content-between align-items-center"
+                                                type="button" data-toggle="collapse" data-target="#collapseSix"
+                                                aria-expanded="true" aria-controls="collapseSix">
+                                                <span class="change-title">developer name</span>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                            data-parent="#accordionExample6">
+                                            <div class="card-body">
+                                                <form>
+                                                    <div
+                                                        class="form-group form-check d-flex justify-content-between align-items-center">
+                                                        <label class="form-check-label" for="exampleCheck1">John
+                                                            Doe</label>
+                                                        <input type="checkbox" class="form-check-input flex-shrink-0"
+                                                            id="exampleCheck1" value="John Doe" checked>
+                                                    </div>
+                                                    <div
+                                                        class="form-group form-check d-flex justify-content-between align-items-center">
+                                                        <label class="form-check-label" for="exampleCheck2">John
+                                                            Doe</label>
+                                                        <input type="checkbox" class="form-check-input flex-shrink-0"
+                                                            id="exampleCheck2" value="John Doe">
+                                                    </div>
+                                                    <div
+                                                        class="form-group form-check d-flex justify-content-between align-items-center">
+                                                        <label class="form-check-label" for="exampleCheck3">John
+                                                            Doe</label>
+                                                        <input type="checkbox" class="form-check-input flex-shrink-0"
+                                                            id="exampleCheck3" value="John Doe">
+                                                    </div>
+                                                    <div
+                                                        class="form-group form-check d-flex justify-content-between align-items-center">
+                                                        <label class="form-check-label" for="exampleCheck4">John
+                                                            Doe</label>
+                                                        <input type="checkbox" class="form-check-input flex-shrink-0"
+                                                            id="exampleCheck4" value="John Doe">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="clear-apply-btn d-flex justify-content-between">
+                                <button class="clear-btn">Clear</button>
+                                <button class="apply-btn">Apply</button>
+                            </div>
+
+                        </div>
+                        <div class="estate-right flex-shrink-0">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="estate-grid-list" role="tabpanel"
+                                    aria-labelledby="estate-grid-list-tab">
+                                    <div class="estate-grid flex-wrap wow fadeIn">
+                                        <div class="estate-single-list wow fadeIn">
+                                            <figure>
+                                                <img src="./img/house-2.png" alt="house-image" class="img-fluid">
+                                            </figure>
+                                            <div class="estate-single-desc">
+                                                <div class="fav d-flex justify-content-between">
+                                                    <span>LeadGen</span>
+                                                    <a href="#" class="heart-icon"><i class="fa fa-heart-o"
+                                                            aria-hidden="true"></i></a>
+                                                </div>
+                                                <p class="area"><span><img src="./img/lot-size-icon.svg" alt=""></span>
+                                                    100
+                                                    -
+                                                    200
+                                                    M<sup>2</sup> </p>
+                                                <p class="location"><span><img src="./img/suburb-icon.svg"
+                                                            alt="icon-image" class="img-fluid"></span> Thornridge Cir.
+                                                    Syracuse</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>Price:</p>
+                                                <span>$150,000 - $ 190,000</span>
+                                            </div>
+                                            <a href="#" class="inner-link"></a>
+                                        </div>
+                                        <div class="estate-single-list wow fadeIn">
+                                            <figure class="new">
+                                                <img src="./img/house-3.png" alt="house-image" class="img-fluid">
+                                                <span>new</span>
+                                            </figure>
+                                            <div class="estate-single-desc">
+                                                <div class="fav d-flex justify-content-between">
+                                                    <span>LeadGen</span>
+                                                    <a href="#" class="heart-icon"><i class="fa fa-heart-o"
+                                                            aria-hidden="true"></i></a>
+                                                </div>
+                                                <p class="area"><span><img src="./img/lot-size-icon.svg" alt=""></span>
+                                                    100
+                                                    -
+                                                    200
+                                                    M<sup>2</sup> </p>
+                                                <p class="location"><span><img src="./img/suburb-icon.svg"
+                                                            alt="icon-image" class="img-fluid"></span> Thornridge Cir.
+                                                    Syracuse</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>Price:</p>
+                                                <span>$150,000 - $ 190,000</span>
+                                            </div>
+                                            <a href="#" class="inner-link"></a>
+                                        </div>
+                                        <div class="estate-single-list wow fadeIn">
+                                            <figure>
+                                                <img src="./img/house-4.png" alt="house-image" class="img-fluid">
+                                            </figure>
+                                            <div class="estate-single-desc">
+                                                <div class="fav d-flex justify-content-between">
+                                                    <span>LeadGen</span>
+                                                    <a href="#" class="heart-icon"><i class="fa fa-heart-o"
+                                                            aria-hidden="true"></i></a>
+                                                </div>
+                                                <p class="area"><span><img src="./img/lot-size-icon.svg" alt=""></span>
+                                                    100
+                                                    -
+                                                    200
+                                                    M<sup>2</sup> </p>
+                                                <p class="location"><span><img src="./img/suburb-icon.svg"
+                                                            alt="icon-image" class="img-fluid"></span> Thornridge Cir.
+                                                    Syracuse</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>Price:</p>
+                                                <span>$150,000 - $ 190,000</span>
+                                            </div>
+                                            <a href="#" class="inner-link"></a>
+                                        </div>
+                                        <div class="estate-single-list wow fadeIn">
+                                            <figure>
+                                                <img src="./img/house-5.png" alt="house-image" class="img-fluid">
+                                            </figure>
+                                            <div class="estate-single-desc">
+                                                <div class="fav d-flex justify-content-between">
+                                                    <span>LeadGen</span>
+                                                    <a href="#" class="heart-icon"><i class="fa fa-heart-o"
+                                                            aria-hidden="true"></i></a>
+                                                </div>
+                                                <p class="area"><span><img src="./img/lot-size-icon.svg" alt=""></span>
+                                                    100
+                                                    -
+                                                    200
+                                                    M<sup>2</sup> </p>
+                                                <p class="location"><span><img src="./img/suburb-icon.svg"
+                                                            alt="icon-image" class="img-fluid"></span> Thornridge Cir.
+                                                    Syracuse</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>Price:</p>
+                                                <span>$150,000 - $ 190,000</span>
+                                            </div>
+                                            <a href="#" class="inner-link"></a>
+                                        </div>
+                                        <div class="estate-single-list sold-estate wow fadeIn">
+                                            <figure class="sold">
+                                                <img src="./img/house-6.png" alt="house-image" class="img-fluid">
+                                                <span>Sold</span>
+                                            </figure>
+                                            <div class="estate-single-desc">
+                                                <div class="fav d-flex justify-content-between">
+                                                    <span>LeadGen</span>
+                                                    <a href="#" class="heart-icon"><i class="fa fa-heart-o"
+                                                            aria-hidden="true"></i></a>
+                                                </div>
+                                                <p class="area"><span><img src="./img/lot-size-icon.svg" alt=""></span>
+                                                    100
+                                                    -
+                                                    200
+                                                    M<sup>2</sup> </p>
+                                                <p class="location"><span><img src="./img/suburb-icon.svg"
+                                                            alt="icon-image" class="img-fluid"></span> Thornridge Cir.
+                                                    Syracuse</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>Price:</p>
+                                                <span>$150,000 - $ 190,000</span>
+                                            </div>
+                                            <a href="#" class="inner-link"></a>
+                                        </div>
+                                        <div class="estate-single-list wow fadeIn">
+                                            <figure>
+                                                <img src="./img/house-7.png" alt="house-image" class="img-fluid">
+                                            </figure>
+                                            <div class="estate-single-desc">
+                                                <div class="fav d-flex justify-content-between">
+                                                    <span>LeadGen</span>
+                                                    <a href="#" class="heart-icon"><i class="fa fa-heart-o"
+                                                            aria-hidden="true"></i></a>
+                                                </div>
+                                                <p class="area"><span><img src="./img/lot-size-icon.svg" alt=""></span>
+                                                    100
+                                                    -
+                                                    200
+                                                    M<sup>2</sup> </p>
+                                                <p class="location"><span><img src="./img/suburb-icon.svg"
+                                                            alt="icon-image" class="img-fluid"></span> Thornridge Cir.
+                                                    Syracuse</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>Price:</p>
+                                                <span>$150,000 - $ 190,000</span>
+                                            </div>
+                                            <a href="#" class="inner-link"></a>
+                                        </div>
+                                        <div class="estate-single-list wow fadeIn">
+                                            <figure class="new">
+                                                <img src="./img/house-8.png" alt="house-image" class="img-fluid">
+                                                <span>new</span>
+                                            </figure>
+                                            <div class="estate-single-desc">
+                                                <div class="fav d-flex justify-content-between">
+                                                    <span>LeadGen</span>
+                                                    <a href="#" class="heart-icon"><i class="fa fa-heart-o"
+                                                            aria-hidden="true"></i></a>
+                                                </div>
+                                                <p class="area"><span><img src="./img/lot-size-icon.svg" alt=""></span>
+                                                    100
+                                                    -
+                                                    200
+                                                    M<sup>2</sup> </p>
+                                                <p class="location"><span><img src="./img/suburb-icon.svg"
+                                                            alt="icon-image" class="img-fluid"></span> Thornridge Cir.
+                                                    Syracuse</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>Price:</p>
+                                                <span>$150,000 - $ 190,000</span>
+                                            </div>
+                                            <a href="#" class="inner-link"></a>
+                                        </div>
+                                        <div class="estate-single-list wow fadeIn">
+                                            <figure>
+                                                <img src="./img/house-9.png" alt="house-image" class="img-fluid">
+                                            </figure>
+                                            <div class="estate-single-desc">
+                                                <div class="fav d-flex justify-content-between">
+                                                    <span>LeadGen</span>
+                                                    <a href="#" class="heart-icon"><i class="fa fa-heart-o"
+                                                            aria-hidden="true"></i></a>
+                                                </div>
+                                                <p class="area"><span><img src="./img/lot-size-icon.svg" alt=""></span>
+                                                    100
+                                                    -
+                                                    200
+                                                    M<sup>2</sup> </p>
+                                                <p class="location"><span><img src="./img/suburb-icon.svg"
+                                                            alt="icon-image" class="img-fluid"></span> Thornridge Cir.
+                                                    Syracuse</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>Price:</p>
+                                                <span>$150,000 - $ 190,000</span>
+                                            </div>
+                                            <a href="#" class="inner-link"></a>
+                                        </div>
+                                        <div class="estate-single-list wow fadeIn">
+                                            <figure>
+                                                <img src="./img/house-10.png" alt="house-image" class="img-fluid">
+                                            </figure>
+                                            <div class="estate-single-desc">
+                                                <div class="fav d-flex justify-content-between">
+                                                    <span>LeadGen</span>
+                                                    <a href="#" class="heart-icon"><i class="fa fa-heart-o"
+                                                            aria-hidden="true"></i></a>
+                                                </div>
+                                                <p class="area"><span><img src="./img/lot-size-icon.svg" alt=""></span>
+                                                    100
+                                                    -
+                                                    200
+                                                    M<sup>2</sup> </p>
+                                                <p class="location"><span><img src="./img/suburb-icon.svg"
+                                                            alt="icon-image" class="img-fluid"></span> Thornridge Cir.
+                                                    Syracuse</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>Price:</p>
+                                                <span>$150,000 - $ 190,000</span>
+                                            </div>
+                                            <a href="#" class="inner-link"></a>
+                                        </div>
+                                        <div class="estate-single-list wow fadeIn">
+                                            <figure>
+                                                <img src="./img/house-11.png" alt="house-image" class="img-fluid">
+                                            </figure>
+                                            <div class="estate-single-desc">
+                                                <div class="fav d-flex justify-content-between">
+                                                    <span>LeadGen</span>
+                                                    <a href="#" class="heart-icon"><i class="fa fa-heart-o"
+                                                            aria-hidden="true"></i></a>
+                                                </div>
+                                                <p class="area"><span><img src="./img/lot-size-icon.svg" alt=""></span>
+                                                    100
+                                                    -
+                                                    200
+                                                    M<sup>2</sup> </p>
+                                                <p class="location"><span><img src="./img/suburb-icon.svg"
+                                                            alt="icon-image" class="img-fluid"></span> Thornridge Cir.
+                                                    Syracuse</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>Price:</p>
+                                                <span>$150,000 - $ 190,000</span>
+                                            </div>
+                                            <a href="#" class="inner-link"></a>
+                                        </div>
+                                        <div class="estate-single-list wow fadeIn">
+                                            <figure>
+                                                <img src="./img/house-12.png" alt="house-image" class="img-fluid">
+                                            </figure>
+                                            <div class="estate-single-desc">
+                                                <div class="fav d-flex justify-content-between">
+                                                    <span>LeadGen</span>
+                                                    <a href="#" class="heart-icon"><i class="fa fa-heart-o"
+                                                            aria-hidden="true"></i></a>
+                                                </div>
+                                                <p class="area"><span><img src="./img/lot-size-icon.svg" alt=""></span>
+                                                    100
+                                                    -
+                                                    200
+                                                    M<sup>2</sup> </p>
+                                                <p class="location"><span><img src="./img/suburb-icon.svg"
+                                                            alt="icon-image" class="img-fluid"></span> Thornridge Cir.
+                                                    Syracuse</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>Price:</p>
+                                                <span>$150,000 - $ 190,000</span>
+                                            </div>
+                                            <a href="#" class="inner-link"></a>
+                                        </div>
+                                        <div class="estate-single-list wow fadeIn">
+                                            <figure>
+                                                <img src="./img/house-12.png" alt="house-image" class="img-fluid">
+                                            </figure>
+                                            <div class="estate-single-desc">
+                                                <div class="fav d-flex justify-content-between">
+                                                    <span class="private-listing">Private Listing</span>
+                                                    <a href="#" class="heart-icon"><i class="fa fa-heart-o"
+                                                            aria-hidden="true"></i></a>
+                                                </div>
+                                                <div class="lot-size">
+                                                    <p>Lot Number : 103</p>
+                                                    <p>Size : 200 M2</p>
+                                                </div>
+                                                <!-- <p class="area"><span><img src="./img/lot-size-icon.svg" alt=""></span> 100
+                                                -
+                                                200
+                                                M<sup>2</sup> </p> -->
+
+                                                <p class="location"><span><img src="./img/suburb-icon.svg"
+                                                            alt="icon-image" class="img-fluid"></span> Thornridge Cir.
+                                                    Syracuse</p>
+                                            </div>
+                                            <div class="price">
+                                                <p>Price:</p>
+                                                <span>$150,000 - $ 190,000</span>
+                                            </div>
+                                            <a href="#" class="inner-link"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade map-tab" id="map" role="tabpanel" aria-labelledby="map-tab">
+                                    <div class="map-label d-flex justify-content-between align-items-center">
+                                        <span><img src="./img/red-ellipse.svg" alt="ellipse-image" class="img-fluid">
+                                            Estate</span>
+                                        <span><img src="./img/green-ellipse.svg" alt="ellipse-image" class="img-fluid">
+                                            Lots</span>
+                                    </div>
+
+                                    <div id="prop_map" class="prop-map">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content text-center wow fadeIn">
+                    <div class="footer-logo text-center">
+                        <a href="#">
+                            <img src="./img/white-logo.svg" alt="footer-logo" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="footer-link">
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#" class="common-link-style">Home</a></li>
+                            <li><a href="#" class="common-link-style">About Us</a></li>
+                            <li><a href="#" class="common-link-style">projects</a></li>
+                            <li><a href="#" class="common-link-style">Contact us</a></li>
+                            <li><a href="#" class="common-link-style">Privacy Policy</a></li>
+                            <li><a href="#" class="common-link-style">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <p class="copyright">Copyright @ buildonme 2021</p>
+                </div>
+            </div>
+            <img src="./img/footer-bottom-right.png" alt="faq-image" class="img-fluid bottom-right">
+        </footer>
+    </main>
+
+    <!-- set-radius modal -->
+    <div class="modal fade radius-modal" id="radius-modal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="radius-modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="radius-modalLabel">set radius</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="set-radius-content">
+                        <span class="label">Radius</span>
+                        <input type="text" class="js-range-slider-2" name="my_range" value="" />
+                        <button class="set-btn">set</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/lib/jquery2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jcf.js"></script>
+    <script src="js/jcf.checkbox.js"></script>
+    <script src="js/jcf.radio.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/sticky-kit.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                $("header").toggleClass("dark-bg", scroll > 100);
+            });
+
+            $('.estate-tabs ul li a').click(function (e) {
+                $('.estate-tabs ul li.active').removeClass('active');
+                var $parent = $(this).parent();
+                $parent.addClass('active');
+                e.preventDefault();
+            });
+            $('.estate-left-tabs ul li a').click(function (e) {
+                $('.estate-left-tabs ul li.active').removeClass('active');
+                var $parent = $(this).parent();
+                $parent.addClass('active');
+                e.preventDefault();
+            });
+            $('.estate-left .pnl ul li a').click(function (e) {
+                $('.estate-left .pnl ul li.active').removeClass('active');
+                var $parent = $(this).parent();
+                $parent.addClass('active');
+                e.preventDefault();
+            });
+            // $('.list-map-tab ul li a').click(function (e) {
+            //     $('.list-map-tab ul li.active').removeClass('active');
+            //     var $parent = $(this).parent();
+            //     $parent.addClass('active');
+            //     e.preventDefault();
+            // });
+
+
+            $(function () {
+                jcf.replaceAll();
+            });
+
+            $(".js-range-slider").ionRangeSlider({
+                skin: "big",
+                type: "double",
+                grid: true,
+                min: 0,
+                max: 50,
+                from: 15,
+                to: 25,
+                step: 1,
+                prettify: my_prettify
+            });
+
+            function my_prettify(n) {
+                return n + "M";
+            }
+
+            function my_km(n) {
+                return n + "KM";
+            }
+
+            $(".js-range-slider-2").ionRangeSlider({
+                skin: "big",
+                type: "double",
+                grid: true,
+                min: 0,
+                max: 20,
+                from: 3,
+                to: 6,
+                step: 1,
+                grid_num: 2,
+                prettify: my_km
+            });
+
+            $(".sidebar").stick_in_parent({
+                offset_top: 150
+            });
+            // $('.estate-left .form-check-input').on('change', function () {
+            //     $('.estate-left .form-check-input').not(this).prop('checked', false);
+            //     jcf.replaceAll();
+            //     jcf.refresh();
+            //     var value = $(this).val();
+            //     var cur_ele = $(this).parents('.card');
+            //     cur_ele.find('.change-title').html(value);
+            // });
+        });
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtc0b_oAykroc2auPTfMoHDcbaESZzNqk&callback=initMap"
+        async></script>
+    <script>
+        /** 
+        * Define an array of custom styles.
+        */
+        var CustomMapStyles = [
+            {
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#f5f5f5"
+                    }
+                ]
+            },
+            {
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#616161"
+                    }
+                ]
+            },
+            {
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {
+                        "color": "#f5f5f5"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative.land_parcel",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#bdbdbd"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#eeeeee"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#757575"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#e5e5e5"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#9e9e9e"
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#757575"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#dadada"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#616161"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#9e9e9e"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit.line",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#e5e5e5"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit.station",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#eeeeee"
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "color": "#c9c9c9"
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#9e9e9e"
+                    }
+                ]
+            }
+        ];
+        // Initialize and add the map
+        // function initMap() {
+        //     // The location of Uluru
+        //     const uluru = { lat: 41.495726, lng: -81.6761808 };
+        //     // The map, centered at Uluru
+        //     const map = new google.maps.Map(document.getElementById("prop_map"), {
+        //         zoom: 16,
+        //         center: uluru,
+        //         styles: CustomMapStyles
+        //     });
+        //     // The marker, positioned at Uluru
+
+        //     const marker = new google.maps.Marker({
+        //         position: uluru,
+        //         map: map,
+        //         icon: 'img/map-marker.svg'
+        //     });
+        // }
+        var markers = [
+            {
+                "title": 'Bombay Hospital',
+                "lat": '18.9409388',
+                "lng": '72.82819189999998',
+                "description": 'Bombay Hospital',
+                "type": 'Estate'
+            },
+            {
+                "title": 'Jaslok Hospital',
+                "lat": '18.9716956',
+                "lng": '72.80991180000001',
+                "description": 'Jaslok Hospital',
+                "type": 'Estate'
+            },
+            {
+                "title": 'Lilavati Hospital',
+                "lat": '19.0509488',
+                "lng": '72.8285644',
+                "description": 'Lilavati Hospital',
+                "type": 'Estate'
+            },
+            {
+                "title": 'Aksa Beach',
+                "lat": '19.1759668',
+                "lng": '72.79504659999998',
+                "description": 'Aksa Beach',
+                "type": 'Estate'
+            },
+            {
+                "title": 'Juhu Beach',
+                "lat": '19.0883595',
+                "lng": '72.82652380000002',
+                "description": 'Juhu Beach',
+                "type": 'Estate'
+            },
+            {
+                "title": 'Girgaum Beach',
+                "lat": '18.9542149',
+                "lng": '72.81203529999993',
+                "description": 'Girgaum Beach',
+                "type": 'Estate'
+            },
+            {
+                "title": 'Oberoi Mall',
+                "lat": '19.1737704',
+                "lng": '72.86062400000003',
+                "description": 'Oberoi Mall',
+                "type": 'Lots'
+            },
+            {
+                "title": 'Infinity Mall',
+                "lat": '19.1846511',
+                "lng": '72.83454899999992',
+                "description": 'Infinity Mall',
+                "type": 'Lots'
+            },
+            {
+                "title": 'Phoenix Mall',
+                "lat": '19.0759837',
+                "lng": '72.87765590000003',
+                "description": 'Phoenix Mall',
+                "type": 'Lots'
+            },
+            {
+                "title": 'Phoenix Mall',
+                "lat": '19.0759837',
+                "lng": '72.87765590000003',
+                "description": 'Phoenix Mall',
+                "type": 'Lots'
+            },
+            {
+                "title": 'Hanging Garden',
+                "lat": '18.9560279',
+                "lng": '72.80538039999999',
+                "description": 'Hanging Garden',
+                "type": 'Lots'
+            },
+            {
+                "title": 'Jijamata Udyan',
+                "lat": '18.979006',
+                "lng": '72.83388300000001',
+                "description": 'Jijamata Udyan',
+                "type": 'Lots'
+            }
+            ,
+            {
+                "title": 'Juhu Garden',
+                "lat": '19.0839704',
+                "lng": '72.83388300000001',
+                "description": 'Juhu Garden',
+                "type": 'Lots'
+            },
+            {
+                "title": 'Sanjay Gandhi National Park',
+                "lat": '19.2147067',
+                "lng": '72.91062020000004',
+                "description": 'Sanjay Gandhi National Park',
+                "type": 'Lots'
+            }
+        ];
+
+
+        $('a#map-tab').on('shown.bs.tab', function (event) {
+            var mapOptions = {
+                center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+                styles: CustomMapStyles,
+                zoom: 16,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var infoWindow = new google.maps.InfoWindow();
+            var latlngbounds = new google.maps.LatLngBounds();
+            var map = new google.maps.Map(document.getElementById("prop_map"), mapOptions);
+            var i = 0;
+            var interval = setInterval(function () {
+                var data = markers[i]
+                var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+                var icon = "";
+                switch (data.type) {
+                    case "Estate":
+                        icon = 'img/Estate-map-icon.svg'
+                        break;
+                    case "Lots":
+                        icon = 'img/Lots-map-icon.svg'
+                        break;
+                }
+                // icon = "http://maps.google.com/mapfiles/ms/icons/" + icon + ".png";
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: data.title,
+                    animation: google.maps.Animation.DROP,
+                    icon: new google.maps.MarkerImage(icon)
+                });
+                (function (marker, data) {
+                    google.maps.event.addListener(marker, "click", function (e) {
+                        let img = "";
+                        infoWindow.setContent('<div class="map-modal d-flex"><img src="./img/map-house-property.jpg" alt="property-image" class="img-fluid prop-image"> <div class="map-modal-desc"> <div class="top-desc"> <div class="fav d-flex justify-content-between"> <span>LeadGen</span> <a href="#" class="heart-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a> </div> <p class="area"><span><img src="./img/lot-size-icon.svg" alt=""></span> 100 - 200 M<sup>2</sup> </p> <p class="location"><span><img src="./img/suburb-icon.svg" alt="icon-image" class="img-fluid"></span> Thornridge Cir. Syracuse</p> </div> <div class="price"> <p>Price Range:</p> <span>$150,000 - $ 190,000</span></div> </div></div>');
+                        infoWindow.open(map, marker);
+                    });
+                })(marker, data);
+                latlngbounds.extend(marker.position);
+                i++;
+                if (i == markers.length) {
+                    clearInterval(interval);
+                    var bounds = new google.maps.LatLngBounds();
+                    map.setCenter(latlngbounds.getCenter());
+                    map.fitBounds(latlngbounds);
+                }
+            }, 80);
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="82px" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="shape-burger" transform="translate(-0.000000, 0.000000)" fill="#C71B4A" fill-rule="nonzero">
+            <path d="M81.8732984,82.3947843 L-8.26243371e-16,82.3947843 L-8.26243371e-16,12.7314843 C-8.26243371e-16,9.64058429 2.34806836,7.05547429 5.42468836,6.75909429 L75.2978984,0.0281912874 C78.8225984,-0.311346713 81.8732984,2.45951429 81.8732984,6.00055429 L81.8732984,82.3947843 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

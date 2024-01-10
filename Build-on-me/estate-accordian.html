@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Build On Me</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/animate.css">
+    <!--Font Awsome Included-->
+    <link href="./css/fontawesome4.2.0.css" type="text/css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jcf.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- star-rating.css -->
+    <link rel="stylesheet" href="css/star-rating.css">
+    <link rel="stylesheet" href="themes/krajee-fa/theme.css">
+    <!--Main Style Included-->
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <main class="estate-accordian-page">
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html"><img src="./img/Logo.svg" alt="logo-image"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="estate.html"> Estates</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="favourite.html">Favorites </a>
+                            </li>
+                            <li class="nav-item d-none">
+                                <a class="nav-link signin-btn" href="#">Sign up</a>
+                            </li>
+                        </ul>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-expanded="false">
+                                <img src="./img/profile.svg" alt="profile-image" class="img-fluid">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="my-profile.html">My Profile</a>
+                                <a class="dropdown-item" href="change-password.html">Change Password</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="estate-accordian">
+                <div class="container">
+                    <!-- <div class="common-search-bar">
+                    <div class="search-bar d-flex flex-wrap wow fadeIn">
+                        <form class="flex-shrink-0">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="search-text" placeholder="Search Here">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                        </form>
+                        <a href="#" class="flex-shrink-0 vector-icon" data-toggle="modal" data-target="#radius-modal"><img
+                            src="./img/Vector.svg" alt="vector-icon" class="img-fluid"></a>
+                    </div>
+                </div> -->
+                    <div class="accordion estate-accordian-content" id="accordionExample">
+                        <a href="#" class="back-arrow"> <img src="./img/back-arrow.svg" alt="arrow-image"
+                                class="img-fluid">
+                        </a>
+                        <div class="fav-pos">
+                            <div class="estate-slider">
+                                <div class="slider-img wow fadeIn">
+                                    <figure>
+                                        <img src="./img/slider-image.jpg" alt="property-image" class="img-fluid">
+                                        <!-- <a href="#" class="fav-icon"><i class="fa fa-heart-o"
+                                        aria-hidden="true"></i></a> -->
+                                    </figure>
+                                </div>
+                                <div class="slider-img wow fadeIn">
+                                    <figure>
+                                        <img src="./img/slider-image.jpg" alt="property-image" class="img-fluid">
+                                        <!-- <a href="#" class="fav-icon"><i class="fa fa-heart-o"
+                                        aria-hidden="true"></i></a> -->
+                                    </figure>
+                                </div>
+                                <div class="slider-img wow fadeIn">
+                                    <figure>
+                                        <img src="./img/slider-image.jpg" alt="property-image" class="img-fluid">
+                                        <!-- <a href="#" class="fav-icon"><i class="fa fa-heart-o"
+                                        aria-hidden="true"></i></a> -->
+                                    </figure>
+                                </div>
+                                <div class="slider-img wow fadeIn">
+                                    <figure>
+                                        <img src="./img/slider-image.jpg" alt="property-image" class="img-fluid">
+                                    </figure>
+                                </div>
+                            </div>
+                            <a href="#" class="fav-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="card">
+                            <div class="card-header wow fadeIn" id="headingOne">
+                                <button class="d-flex justify-content-between align-items-center" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <span>Estate Details</span> <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                </button>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body estate-detail-content">
+                                    <ul class="details d-flex flex-wrap">
+                                        <li class="wow fadeIn">
+                                            <span>Price Range</span>
+                                            <h5>$ 150,000 - $ 190,000</h5>
+                                        </li>
+                                        <li class="wow fadeIn">
+                                            <span>Size Range</span>
+                                            <h5>100-200 M<sup>2</sup></h5>
+                                        </li>
+                                        <!-- <li class="wow fadeIn">
+                                            <span>Street</span>
+                                            <h5>Connecticut 35624</h5>
+                                        </li> -->
+                                        <!-- <li class="wow fadeIn">
+                                            <span>Street no.</span>
+                                            <h5>25</h5>
+                                        </li> -->
+                                        <li class="wow fadeIn">
+                                            <span>Loader type</span>
+                                            <h5>Front</h5>
+                                        </li>
+                                        
+                                        <!-- <li class="wow fadeIn">
+                                            <span>Postcode</span>
+                                            <h5>3564</h5>
+                                        </li> -->
+                                        <!-- <li>
+                                            <span>Suburb</span>
+                                            <h5>Thornridge</h5>
+                                        </li> -->
+                                        <li class="wow fadeIn">
+                                            <span>Developer Rebates</span>
+                                            <h5>Yes</h5>
+                                        </li>
+                                        <li class="wow fadeIn">
+                                            <span>Stormwater</span>
+                                            <h5>Soakwells</h5>
+                                        </li>
+                                        <li class="wow fadeIn">
+                                            <span>Region</span>
+                                            <h5>North</h5>
+                                        </li>
+                                        
+                                        <li class="wow fadeIn">
+                                            <span>Address</span>
+                                            <h5>25, Lead Gen, Connecticut 35624, 3564,Thornridge, North </h5>
+                                        </li>
+                                    </ul>
+                                    <div class="agent-btns d-flex flex-wrap wow fadeIn">
+                                        <button class="btn">Call agent 1</button>
+                                        <button class="btn">Call agent 2</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header wow fadeIn" id="headingTwo">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    <span> Estate PDFs</span> <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body estate-pdf">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6 wow fadeIn">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                            id="gridCheck-1">
+                                                    <label class="form-check-label" for="gridCheck-1">
+                                                        Estate Map PDF File
+                                                    </label>
+                                                    <!-- <div class="d-flex align-items-center">
+                                                        <img src="./img/pdf-icon.svg" alt="pds-iamge" class="img-fluid">
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 wow fadeIn">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                    id="gridCheck-2">
+                                                    <label class="form-check-label" for="gridCheck-2">
+                                                        Estate Facilities PDF File
+                                                    </label>
+                                                    <!-- <div class="d-flex align-items-center">
+                                                        <img src="./img/pdf-icon.svg" alt="pds-iamge" class="img-fluid">
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 wow fadeIn">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                    id="gridCheck-3">
+                                                    <label class="form-check-label" for="gridCheck-3">
+                                                        Master Plan PDF File
+                                                    </label>
+                                                    <!-- <div class="d-flex align-items-center">
+                                                        <img src="./img/pdf-icon.svg" alt="pds-iamge" class="img-fluid">
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 wow fadeIn">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                    id="gridCheck-4">
+                                                    <label class="form-check-label" for="gridCheck-4">
+                                                        Price List PDF File
+                                                    </label>
+                                                    <!-- <div class="d-flex align-items-center">
+                                                        <img src="./img/pdf-icon.svg" alt="pds-iamge" class="img-fluid">
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 wow fadeIn">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                            id="gridCheck-5">
+                                                    <label class="form-check-label" for="gridCheck-5">
+                                                        Current Promotions PDF File
+                                                    </label>
+                                                    <!-- <div class="d-flex align-items-center">
+                                                        <img src="./img/pdf-icon.svg" alt="pds-iamge" class="img-fluid">
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 wow fadeIn">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                    id="gridCheck-6">
+                                                    <label class="form-check-label" for="gridCheck-6">
+                                                        Extra PDF
+                                                    </label>
+                                                    <!-- <div class="d-flex align-items-center">
+                                                        <img src="./img/pdf-icon.svg" alt="pds-iamge" class="img-fluid">
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                    <div class="developer-name d-flex">
+                                        <div class="name-left wow fadeIn">
+                                            <span>Developer Name</span>
+                                            <h5>Developer Name</h5>
+                                        </div>
+                                        <div class="name-right wow fadeIn">
+                                            <span>Developer Logo</span>
+                                            <img src="./img/developer-name-logo.svg" alt="logo-image" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="agent-btns d-flex flex-wrap wow fadeIn">
+                                        <button class="btn">Call agent 1</button>
+                                        <button class="btn">Call agent 2</button>
+                                        <button class="btn">email estate pack</button>
+                                        <button class="btn">download estate pack</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header wow fadeIn" id="headingThree">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    <span>Stage Plans</span> <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body stage-plans">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6 wow fadeIn">
+                                                <label for="exampleFormControlSelect1">Stage Number</label>
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                    <option>11 A </option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-6 wow fadeIn">
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="gridCheck-2">
+                                                        Stage Plan
+                                                    </label>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./img/pdf-icon.svg" alt="pds-iamge" class="img-fluid">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="gridCheck-2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 wow fadeIn">
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="gridCheck-3">
+                                                        DAP PDF File
+                                                    </label>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./img/pdf-icon.svg" alt="pds-iamge" class="img-fluid">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="gridCheck-3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 wow fadeIn">
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="gridCheck-4">
+                                                        Design Guideline PDF
+                                                    </label>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./img/pdf-icon.svg" alt="pds-iamge" class="img-fluid">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="gridCheck-4">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 wow fadeIn">
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="gridCheck-5">
+                                                        Restrictive Convenants
+                                                    </label>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./img/pdf-icon.svg" alt="pds-iamge" class="img-fluid">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="gridCheck-5">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 wow fadeIn">
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="gridCheck-6">
+                                                        Builder Requirements PDF
+                                                    </label>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./img/pdf-icon.svg" alt="pds-iamge" class="img-fluid">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="gridCheck-6">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6 wow fadeIn">
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="gridCheck-7">
+                                                        Extra PDF
+                                                    </label>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="./img/pdf-icon.svg" alt="pds-iamge" class="img-fluid">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="gridCheck-7">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                    <!-- <div class="stage-number d-flex">
+                                    <div class="stage-number-left">
+                                        <form>
+                                            <div class="form-group wow fadeIn">
+                                                <label for="exampleFormControlSelect1">Stage Number</label>
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                    <option>11 A </option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="stage-number-right">
+                                        <form>
+                                            <div class="form-group wow fadeIn">
+                                                <label for="exampleFormControlSelect1">Stage Number</label>
+                                                <select class="form-control" id="exampleFormControlSelect2">
+                                                    <option>12 B</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div> -->
+                                    <div class="agent-btns d-flex flex-wrap wow fadeIn">
+                                        <button class="btn">Call agent 1</button>
+                                        <button class="btn">Call agent 2</button>
+                                        <button class="btn">email stage pack</button>
+                                        <button class="btn">download estate pack</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header wow fadeIn" id="headingFour">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-toggle="collapse" data-target="#collapseFour"
+                                    aria-expanded="false" aria-controls="collapseFour">
+                                    <span>Show Available Lots</span> <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body show-lots">
+                                    <div class="row">
+                                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn">
+                                            <table>
+                                                <tr>
+                                                    <td>Lot Number</td>
+                                                    <td>: 101</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>: 200 M<sup>2</sup></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Price</td>
+                                                    <td>: $ 190,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Depth</td>
+                                                    <td>: 10 M</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Frontage</td>
+                                                    <td>: 20 M</td>
+                                                </tr>
+                                                <tr class="lot-link">
+                                                    <td><a href="lot-details.html"></a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn">
+                                            <table>
+                                                <tr>
+                                                    <td>Lot Number</td>
+                                                    <td>: 101</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>: 200 M<sup>2</sup></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Price</td>
+                                                    <td>: $ 190,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Depth</td>
+                                                    <td>: 10 M</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Frontage</td>
+                                                    <td>: 20 M</td>
+                                                </tr>
+                                                <tr class="lot-link">
+                                                    <td><a href="lot-details.html"></a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn">
+                                            <table>
+                                                <tr>
+                                                    <td>Lot Number</td>
+                                                    <td>: 101</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>: 200 M<sup>2</sup></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Price</td>
+                                                    <td>: $ 190,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Depth</td>
+                                                    <td>: 10 M</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Frontage</td>
+                                                    <td>: 20 M</td>
+                                                </tr>
+                                                <tr class="lot-link">
+                                                    <td><a href="lot-details.html"></a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn">
+                                            <table>
+                                                <tr>
+                                                    <td>Lot Number</td>
+                                                    <td>: 101</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>: 200 M<sup>2</sup></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Price</td>
+                                                    <td>: $ 190,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Depth</td>
+                                                    <td>: 10 M</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Frontage</td>
+                                                    <td>: 20 M</td>
+                                                </tr>
+                                                <tr class="lot-link">
+                                                    <td><a href="lot-details.html"></a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn">
+                                            <table>
+                                                <tr>
+                                                    <td>Lot Number</td>
+                                                    <td>: 101</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>: 200 M<sup>2</sup></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Price</td>
+                                                    <td>: $ 190,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Depth</td>
+                                                    <td>: 10 M</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Frontage</td>
+                                                    <td>: 20 M</td>
+                                                </tr>
+                                                <tr class="lot-link">
+                                                    <td><a href="lot-details.html"></a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn">
+                                            <table>
+                                                <tr>
+                                                    <td>Lot Number</td>
+                                                    <td>: 101</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>: 200 M<sup>2</sup></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Price</td>
+                                                    <td>: $ 190,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Depth</td>
+                                                    <td>: 10 M</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Frontage</td>
+                                                    <td>: 20 M</td>
+                                                </tr>
+                                                <tr class="lot-link">
+                                                    <td><a href="lot-details.html"></a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn">
+                                            <table>
+                                                <tr>
+                                                    <td>Lot Number</td>
+                                                    <td>: 101</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>: 200 M<sup>2</sup></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Price</td>
+                                                    <td>: $ 190,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Depth</td>
+                                                    <td>: 10 M</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Frontage</td>
+                                                    <td>: 20 M</td>
+                                                </tr>
+                                                <tr class="lot-link">
+                                                    <td><a href="lot-details.html"></a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn">
+                                            <table>
+                                                <tr>
+                                                    <td>Lot Number</td>
+                                                    <td>: 101</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>: 200 M<sup>2</sup></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Price</td>
+                                                    <td>: $ 190,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Depth</td>
+                                                    <td>: 10 M</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Frontage</td>
+                                                    <td>: 20 M</td>
+                                                </tr>
+                                                <tr class="lot-link">
+                                                    <td><a href="lot-details.html"></a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header wow fadeIn" id="headingFive">
+                                <button class="d-flex justify-content-between align-items-center collapsed"
+                                    type="button" data-toggle="collapse" data-target="#collapseFive"
+                                    aria-expanded="false" aria-controls="collapseFive">
+                                    <span> Agent Details</span> <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#accordionExample">
+                                <div class="card-body agent-details">
+                                    <ul class="d-flex wow fadeIn">
+                                        <li>
+                                            <span>Agent Name</span>
+                                            <h5>Robert Fox</h5>
+                                        </li>
+                                        <li>
+                                            <span>Email Id</span>
+                                            <span class="d-flex align-items-center m-0">
+                                                <a href="mailto:robert.f@fmail.com">robert.f@fmail.com</a>
+                                                <button class="copy-btn"><img src="./img/copy-icon.svg" alt="copy-image"
+                                                        class="img-fluid"></button>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>Mobile Number</span>
+                                            <a href="tel:(406)555-0120">(406) 555-0120</a>
+                                        </li>
+                                        <li>
+                                            <span>Average Rating</span>
+                                            <span class="rating">
+                                                <input id="input-1" name="input-1" value="4.5"
+                                                    class="rating-loading kv-fa" data-readonly="true">
+                                            </span>
+                                        </li>
+                                        <a href="#" class="agent-details-link"></a>
+                                    </ul>
+                                    <ul class="d-flex wow fadeIn">
+                                        <li>
+                                            <span>Agent Name</span>
+                                            <h5>Robert Fox</h5>
+                                        </li>
+                                        <li>
+                                            <span>Email Id</span>
+                                            <span class="d-flex align-items-center m-0">
+                                                <a href="mailto:robert.f@fmail.com">robert.f@fmail.com</a>
+                                                <button class="copy-btn"><img src="./img/copy-icon.svg" alt="copy-image"
+                                                        class="img-fluid"></button>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>Mobile Number</span>
+                                            <a href="tel:(406)555-0120">(406) 555-0120</a>
+                                        </li>
+                                        <li>
+                                            <span>Average Rating</span>
+                                            <span class="rating">
+                                                <input id="input-2" name="input-2" value="4.5"
+                                                    class="rating-loading kv-fa" data-readonly="true">
+                                            </span>
+                                        </li>
+                                        <a href="#" class="agent-details-link"></a>
+                                    </ul>
+                                    <ul class="d-flex wow fadeIn">
+                                        <li>
+                                            <span>Agent Name</span>
+                                            <h5>Robert Fox</h5>
+                                        </li>
+                                        <li>
+                                            <span>Email Id</span>
+                                            <span class="d-flex align-items-center m-0">
+                                                <a href="mailto:robert.f@fmail.com">robert.f@fmail.com</a>
+                                                <button class="copy-btn"><img src="./img/copy-icon.svg" alt="copy-image"
+                                                        class="img-fluid"></button>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>Mobile Number</span>
+                                            <a href="tel:(406)555-0120">(406) 555-0120</a>
+                                        </li>
+                                        <li>
+                                            <span>Average Rating</span>
+                                            <span class="rating">
+                                                <input id="input-3" name="input-3" value="4.5"
+                                                    class="rating-loading kv-fa" data-readonly="true">
+                                            </span>
+                                        </li>
+                                        <a href="#" class="agent-details-link"></a>
+                                    </ul>
+                                    <ul class="d-flex wow fadeIn">
+                                        <li>
+                                            <span>Agent Name</span>
+                                            <h5>Robert Fox</h5>
+                                        </li>
+                                        <li>
+                                            <span>Email Id</span>
+                                            <span class="d-flex align-items-center m-0">
+                                                <a href="mailto:robert.f@fmail.com">robert.f@fmail.com</a>
+                                                <button class="copy-btn"><img src="./img/copy-icon.svg" alt="copy-image"
+                                                        class="img-fluid"></button>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>Mobile Number</span>
+                                            <a href="tel:(406)555-0120">(406) 555-0120</a>
+                                        </li>
+                                        <li>
+                                            <span>Average Rating</span>
+                                            <span class="rating">
+                                                <input id="input-4" name="input-4" value="4.5"
+                                                    class="rating-loading kv-fa" data-readonly="true">
+                                            </span>
+                                        </li>
+                                        <a href="#" class="agent-details-link"></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content text-center wow fadeIn">
+                    <div class="footer-logo text-center">
+                        <a href="#">
+                            <img src="./img/white-logo.svg" alt="footer-logo" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="footer-link">
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#" class="common-link-style">Home</a></li>
+                            <li><a href="#" class="common-link-style">About Us</a></li>
+                            <li><a href="#" class="common-link-style">projects</a></li>
+                            <li><a href="#" class="common-link-style">Contact us</a></li>
+                            <li><a href="#" class="common-link-style">Privacy Policy</a></li>
+                            <li><a href="#" class="common-link-style">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <p class="copyright">Copyright @ buildonme 2021</p>
+                </div>
+            </div>
+            <img src="./img/footer-bottom-right.png" alt="faq-image" class="img-fluid bottom-right">
+        </footer>
+    </main>
+
+    <!-- set-radius modal -->
+    <div class="modal fade radius-modal" id="radius-modal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="radius-modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="radius-modalLabel">set radius</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="set-radius-content">
+                        <span class="label">Radius</span>
+                        <input type="text" class="js-range-slider-2" name="my_range" value="" />
+                        <button class="set-btn">set</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/lib/jquery2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jcf.js"></script>
+    <script src="js/jcf.checkbox.js"></script>
+    <script src="js/jcf.radio.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/star-rating.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                $("header").toggleClass("dark-bg", scroll > 100);
+            });
+            $(function () {
+                jcf.replaceAll();
+            });
+            // $(".js-range-slider-2").ionRangeSlider({
+            //     skin: "big",
+            //     type: "double",
+            //     grid: true,
+            //     min: 0,
+            //     max: 20,
+            //     from: 3,
+            //     to: 6,
+            //     step: 1,
+            //     grid_num: 2
+            // });
+            $('.estate-slider').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true
+            });
+            jQuery('.kv-fa').rating({
+                theme: 'krajee-fa',
+                filledStar: '<i class="fa fa-star"></i>',
+                emptyStar: '<i class="fa fa-star-o"></i>'
+            });
+            // jQuery('#input-1').rating({ displayOnly: true, step: 0.5, theme: 'krajee-fa' });
+        });
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

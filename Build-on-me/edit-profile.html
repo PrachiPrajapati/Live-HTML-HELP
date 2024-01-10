@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Build On Me</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <!--Font Awsome Included-->
+    <link href="./css/fontawesome4.2.0.css" type="text/css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <!--Main Style Included-->
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <main class="edit-profile-page">
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html"><img src="./img/Logo.svg" alt="logo-image"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active d-lg-none">
+                                <a class="nav-link" href="estate.html">Estates</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="favourite.html">Favorites </a>
+                            </li>
+                            <li class="nav-item d-none">
+                                <a class="nav-link signin-btn" href="#">Sign up</a>
+                            </li>
+                        </ul>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-expanded="false">
+                                <img src="./img/profile.svg" alt="profile-image" class="img-fluid">
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="my-profile.html">My Profile</a>
+                                <a class="dropdown-item" href="change-password.html">Change Password</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="estate.html" class="header-middle d-none d-lg-block">Find Land</a>
+                </nav>
+            </div>
+        </header>
+        <div class="main-content">
+            <!-- Edit profile  -->
+            <div class="edit-profile-inner">
+                <div class="container">
+                    <!-- <div class="common-search-bar">
+                    <div class="search-bar d-flex flex-wrap wow fadeIn">
+                        <form class="flex-shrink-0">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="search-text" placeholder="Search Here">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                        </form>
+                        <a href="#" class="flex-shrink-0 vector-icon" data-toggle="modal" data-target="#radius-modal"><img
+                            src="./img/Vector.svg" alt="vector-icon" class="img-fluid"></a>
+                    </div>
+                </div> -->
+                    <div class="edit-profile-form">
+                        <h3 class="wow fadeIn">Edit Profile</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="file wow fadeIn">
+                                        <img src="./img/edit-profile.png" alt="edit-profile-image" class="img-fluid">
+                                        <input type="file" class="custom-file-input" id="CustomFile">
+                                        <span class="camera-icon"> <img src="./img/camera.svg" alt="camer-icon"
+                                                class="img-fluid"> </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6 wow fadeIn">
+                                            <label for="firstname">First Name</label>
+                                            <input type="text" class="form-control" id="firstname">
+                                        </div>
+                                        <div class="form-group col-md-6 wow fadeIn">
+                                            <label for="lastname">Last Name</label>
+                                            <input type="text" class="form-control" id="lastname">
+                                        </div>
+                                        <div class="form-group col-md-6 wow fadeIn">
+                                            <label for="mobile">Mobile no.</label>
+                                            <input type="number" class="form-control" id="mobile">
+                                        </div>
+                                        <div class="form-group col-md-6 wow fadeIn">
+                                            <label for="company">Company Name</label>
+                                            <input type="text" class="form-control" id="company">
+                                        </div>
+                                        <div class="form-group col-md-6 wow fadeIn">
+                                            <label for="email">Email Id</label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="edit-profile-btn d-flex wow fadeIn">
+                                        <button type="submit" class="save-btn">Save</button>
+                                        <button type="submit">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content text-center wow fadeIn">
+                    <div class="footer-logo text-center">
+                        <a href="#">
+                            <img src="./img/white-logo.svg" alt="footer-logo" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <div class="footer-link">
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#" class="common-link-style">Home</a></li>
+                            <li><a href="#" class="common-link-style">About Us</a></li>
+                            <li><a href="#" class="common-link-style">projects</a></li>
+                            <li><a href="#" class="common-link-style">Contact us</a></li>
+                            <li><a href="#" class="common-link-style">Privacy Policy</a></li>
+                            <li><a href="#" class="common-link-style">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="social-links">
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <p class="copyright">Copyright @ buildonme 2021</p>
+                </div>
+            </div>
+            <img src="./img/footer-bottom-right.png" alt="faq-image" class="img-fluid bottom-right">
+        </footer>
+    </main>
+
+    <!-- set-radius modal -->
+    <div class="modal fade radius-modal" id="radius-modal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="radius-modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="radius-modalLabel">set radius</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="set-radius-content">
+                        <span class="label">Radius</span>
+                        <input type="text" class="js-range-slider-2" name="my_range" value="" />
+                        <button class="set-btn">set</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/lib/jquery2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                $("header").toggleClass("dark-bg", scroll > 100);
+            });
+            // $(".js-range-slider-2").ionRangeSlider({
+            //     skin: "big",
+            //     type: "double",
+            //     grid: true,
+            //     min: 0,
+            //     max: 20,
+            //     from: 3,
+            //     to: 6,
+            //     step: 1,
+            //     grid_num: 2
+            // });
+        });
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

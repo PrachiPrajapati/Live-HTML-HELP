@@ -1,0 +1,93 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.login-section {
+  display: flex;
+  display: -webkit-flex;
+  > *{
+      width: 50%;
+  }
+  .login-bg{
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .content-center{
+      background-color: $color_white;
+        .select-user {
+            margin: 0 -10px 44px;
+            .form-check {
+                text-align: center;
+            }
+        }
+        .common-btn{
+            margin-top: 0;
+        }
+  }
+}
+.choose-user_type .input-group{
+    border: 1px solid rgba(0, 0, 0, 0.22);
+    border-radius: 4px;
+    .form-control{
+        border: none;
+    }
+    .input-group-text { 
+        @include login_input_group_text;
+    }
+    &.group-focused{
+        border-color: $color_medium_blue;
+    }
+}
+
+
+/** responsive **/
+@media (min-width: 1500px){
+    .choose-account {
+        padding: 0 100px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    .login-section {
+        display: block;
+        > *{
+            width: 100%;
+        }
+        .login-bg{
+            height: 400px;
+        }
+        .choose-account{
+            padding: 0 15px;
+        }
+        .content-center{
+            .select-user {
+                margin: 0 0 30px;
+            }
+        }
+        .choose-user_type-form-footer{
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .login-section {
+        display: block;
+        > *{
+            width: 100%;
+        }
+        .login-bg{
+            height: 300px;
+        }
+        .choose-account{
+            padding: 0 15px;
+        }
+        .content-center{
+            .select-user {
+                margin: 0 0 30px;
+            }
+        }
+        .choose-user_type-form-footer{
+            text-align: center;
+        }
+    }
+}

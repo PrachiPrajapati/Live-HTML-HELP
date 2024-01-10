@@ -1,0 +1,14 @@
+{
+    "/js/admin/custom.js": "/js/admin/custom.js",
+    "/js/admin/custom_validations.js": "/js/admin/custom_validations.js",
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/js/frontend/jcf.js": "/js/frontend/jcf.js",
+    "/js/frontend/jcf.select.js": "/js/frontend/jcf.select.js",
+    "/js/frontend/mmenu.js": "/js/frontend/mmenu.js",
+    "/css/admin/custom.css": "/css/admin/custom.css",
+    "/css/frontend/bootstrap.css": "/css/frontend/bootstrap.css",
+    "/css/frontend/jcf.css": "/css/frontend/jcf.css",
+    "/css/frontend/mmenu.css": "/css/frontend/mmenu.css",
+    "/css/frontend/mmenu.positioning.css": "/css/frontend/mmenu.positioning.css"
+}

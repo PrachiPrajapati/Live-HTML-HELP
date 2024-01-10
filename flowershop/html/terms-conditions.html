@@ -1,0 +1,2220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Flower Shop</title>
+    <!--Favicon Included-->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--Extra Style Included-->
+    <link href="css/mmenu.css" rel="stylesheet">
+    <link href="css/mmenu.positioning.css" rel="stylesheet">
+    <link href="css/jcf.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!--Main Style Included-->
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <!--Main Js Included-->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!-- <script src="js/bootstrap.bundle.js"></script> -->
+    <script src="js/bootstrap.js"></script>
+    <!--Extra Js Included-->
+    <script src="js/jcf.js"></script>
+    <script src="js/jcf.select.js"></script>
+    <script src="js/jcf.scrollable.js"></script>
+    <script src="js/mmenu.js"></script>
+    <script src="js/jquery.inputmask.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="logged-in">
+    <div id="content">
+        <!--******************* Header Section Start *********************-->
+        <header>
+            <div class="header-content">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+                <div class="visible-tab mobile-toggle">
+                    <a class="navbar-toggler" href="#menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="header-content_inner">
+                    <div class="selection-links">
+                        <ul>
+                            <li>
+                                <select class="country">
+                                    <option selected disabled hidden>COUNTRY</option>
+                                    <option>London</option>
+                                    <option>London</option>
+                                    <option>London</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select>
+                                    <option>EN</option>
+                                    <option>AR</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#login"><img src="images/icon-user.svg" alt="user"></a>
+                        </li>
+                        <li>
+                            <a href="favourites.html"><img src="images/icon-heart.svg" alt="wishlist"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/icon-cart.svg" alt="cart"><span class="badge">1</span></a>
+                            <div class="cart-list link-dropdown">
+                                <ul class="cart-list-items">
+                                    <li>
+                                        <div class="cart-single-item">
+                                            <div class="cart-single-item_image"
+                                                style="background-image: url('images/flower-img.png');">
+                                                <a href="product-single.html"></a>
+                                            </div>
+                                            <div class="cart-single-item_detail">
+                                                <h4>
+                                                    <a href="product-single.html">Small Festive Faux Flowers Arrangement </a>
+                                                </h4>
+                                                <ul>
+                                                    <li>
+                                                        QTY: 1
+                                                    </li>
+                                                    <li>
+                                                        AED 850
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cart-single-item">
+                                            <div class="cart-single-item_image"
+                                                style="background-image: url('images/flower-img.png');">
+                                                <a href="product-single.html"></a>
+                                            </div>
+                                            <div class="cart-single-item_detail">
+                                                <h4>
+                                                    <a href="product-single.html">Small Festive Faux Flowers Arrangement </a>
+                                                </h4>
+                                                <ul>
+                                                    <li>
+                                                        QTY: 1
+                                                    </li>
+                                                    <li>
+                                                        AED 850
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cart-single-item">
+                                            <div class="cart-single-item_image"
+                                                style="background-image: url('images/flower-img.png');">
+                                                <a href="product-single.html"></a>
+                                            </div>
+                                            <div class="cart-single-item_detail">
+                                                <h4>
+                                                    <a href="product-single.html">Small Festive Faux Flowers Arrangement </a>
+                                                </h4>
+                                                <ul>
+                                                    <li>
+                                                        QTY: 1
+                                                    </li>
+                                                    <li>
+                                                        AED 850
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="divider"></div>
+                                <div class="cart-footer">
+                                    <ul>
+                                        <li>SUBTOTAL: AED 2550</li>
+                                        <li><a href="cart.html" class="view-btn">View Cart <img src="images/arrow-right.svg"
+                                                    alt="arrow"></a></li>
+                                    </ul>
+                                    <a href="checkout.html" class="common-black-btn full">Checkout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="order-history.html">Order History</a>
+                    <form class="header-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                                aria-describedby="search-button">
+                            <div class="input-group-append">
+                                <button type="button" class="input-group-text" id="search-button" onclick="document.location.href='search.html'"><img
+                                        src="images/icon-search.svg" alt="search"></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="freshFlowers" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Fresh Flowers</a>
+                            <div class="dropdown-menu" aria-labelledby="freshFlowers">
+                                <div class="dropdown-menu-links">
+                                    <h1>Fresh Flowers</h1>
+                                    <div class="dropdown-categories">
+                                        <div class="dropdown-cat-1 cat-box">
+                                            <a href="category.html" class="cat-link">Classic Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Medium round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small rectangle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-cat-2 cat-box">
+                                            <a href="category.html" class="cat-link">Classic Acrylic Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">60 cm square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">90 cm square</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-cat-3 cat-box">
+                                            <a href="category.html" class="cat-link">Medium Flowers Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Medium round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small rectangle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a href="category.html" class="view-btn">View All <img src="images/arrow-right.svg" alt="arrow"></a>
+                                </div>
+                                <div class="dropdown-menu-image"
+                                    style="background-image: url('images/flowers-menu-image.jpg');">
+                                    <a href="category.html"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="longLifeRoses" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Long Life Roses</a>
+                            <div class="dropdown-menu" aria-labelledby="longLifeRoses">
+                                <div class="dropdown-menu-links">
+                                    <h1>Long Life Roses</h1>
+                                    <div class="dropdown-categories">
+                                        <div class="dropdown-cat-1 cat-box">
+                                            <a href="category.html" class="cat-link">Classic Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Medium round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small rectangle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-cat-2 cat-box">
+                                            <a href="category.html" class="cat-link">Classic Acrylic Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">60 cm square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">90 cm square</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-cat-3 cat-box">
+                                            <a href="category.html" class="cat-link">Medium Flowers Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Medium round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small rectangle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a href="category.html" class="view-btn">View All <img src="images/arrow-right.svg" alt="arrow"></a>
+                                </div>
+                                <div class="dropdown-menu-image"
+                                    style="background-image: url('images/flowers-menu-image.jpg');">
+                                    <a href="category.html"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="orchids" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Orchids</a>
+                            <div class="dropdown-menu" aria-labelledby="orchids">
+                                <div class="dropdown-menu-links">
+                                    <h1>Orchids</h1>
+                                    <div class="dropdown-categories">
+                                        <div class="dropdown-cat-1 cat-box">
+                                            <a href="category.html" class="cat-link">Classic Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Medium round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small rectangle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-cat-2 cat-box">
+                                            <a href="category.html" class="cat-link">Classic Acrylic Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">60 cm square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">90 cm square</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-cat-3 cat-box">
+                                            <a href="category.html" class="cat-link">Medium Flowers Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Medium round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small rectangle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a href="category.html" class="view-btn">View All <img src="images/arrow-right.svg" alt="arrow"></a>
+                                </div>
+                                <div class="dropdown-menu-image"
+                                    style="background-image: url('images/flowers-menu-image.jpg');">
+                                    <a href="category.html"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="fauxFlowers" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Faux Flowers</a>
+                            <div class="dropdown-menu" aria-labelledby="fauxFlowers">
+                                <div class="dropdown-menu-links">
+                                    <h1>Faux Flowers</h1>
+                                    <div class="dropdown-categories">
+                                        <div class="dropdown-cat-1 cat-box">
+                                            <a href="category.html" class="cat-link">Classic Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Medium round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small rectangle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-cat-2 cat-box">
+                                            <a href="category.html" class="cat-link">Classic Acrylic Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">60 cm square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">90 cm square</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-cat-3 cat-box">
+                                            <a href="category.html" class="cat-link">Medium Flowers Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Medium round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small rectangle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a href="category.html" class="view-btn">View All <img src="images/arrow-right.svg" alt="arrow"></a>
+                                </div>
+                                <div class="dropdown-menu-image"
+                                    style="background-image: url('images/flowers-menu-image.jpg');">
+                                    <a href="category.html"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="seasonalCollection" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seasonal
+                                Collection</a>
+                            <div class="dropdown-menu" aria-labelledby="seasonalCollection">
+                                <div class="dropdown-menu-links">
+                                    <h1>Seasonal Collection</h1>
+                                    <div class="dropdown-categories">
+                                        <div class="dropdown-cat-1 cat-box">
+                                            <a href="category.html" class="cat-link">Classic Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Medium round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small rectangle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-cat-2 cat-box">
+                                            <a href="category.html" class="cat-link">Classic Acrylic Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">60 cm square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">90 cm square</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-cat-3 cat-box">
+                                            <a href="category.html" class="cat-link">Medium Flowers Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Medium round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small rectangle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a href="category.html" class="view-btn">View All <img src="images/arrow-right.svg" alt="arrow"></a>
+                                </div>
+                                <div class="dropdown-menu-image"
+                                    style="background-image: url('images/flowers-menu-image.jpg');">
+                                    <a href="category.html"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="chocolateDates" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chocolates and
+                                Dates</a>
+                            <div class="dropdown-menu" aria-labelledby="chocolateDates">
+                                <div class="dropdown-menu-links">
+                                    <h1>Chocolates and Dates</h1>
+                                    <div class="dropdown-categories">
+                                        <div class="dropdown-cat-1 cat-box">
+                                            <a href="category.html" class="cat-link">Classic Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Medium round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small rectangle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-cat-2 cat-box">
+                                            <a href="category.html" class="cat-link">Classic Acrylic Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">60 cm square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">90 cm square</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-cat-3 cat-box">
+                                            <a href="category.html" class="cat-link">Medium Flowers Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Medium round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small rectangle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a href="category.html" class="view-btn">View All <img src="images/arrow-right.svg" alt="arrow"></a>
+                                </div>
+                                <div class="dropdown-menu-image"
+                                    style="background-image: url('images/flowers-menu-image.jpg');">
+                                    <a href="category.html"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="giftSets" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Gift Sets</a>
+                            <div class="dropdown-menu" aria-labelledby="giftSets">
+                                <div class="dropdown-menu-links">
+                                    <h1>Gift Sets</h1>
+                                    <div class="dropdown-categories">
+                                        <div class="dropdown-cat-1 cat-box">
+                                            <a href="category.html" class="cat-link">Classic Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Medium round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small rectangle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-cat-2 cat-box">
+                                            <a href="category.html" class="cat-link">Classic Acrylic Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">60 cm square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">90 cm square</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-cat-3 cat-box">
+                                            <a href="category.html" class="cat-link">Medium Flowers Boxes</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="category.html">Large round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Medium round</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small square</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Large rectangle</a>
+                                                </li>
+                                                <li>
+                                                    <a href="category.html">Small rectangle</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a href="category.html" class="view-btn">View All <img src="images/arrow-right.svg" alt="arrow"></a>
+                                </div>
+                                <div class="dropdown-menu-image"
+                                    style="background-image: url('images/flowers-menu-image.jpg');">
+                                    <a href="category.html"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services-overview.html">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <div class="selection-links mm-custom-div mm-panel">
+                            <select class="country">
+                                <option selected disabled hidden>COUNTRY</option>
+                                <option>London</option>
+                                <option>London</option>
+                                <option>London</option>
+                            </select>
+                            <select>
+                                <option>EN</option>
+                                <option>AR</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="freshFlowers1" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Fresh Flowers</a>
+                        <div class="dropdown-menu" aria-labelledby="freshFlowers1">
+                            <div class="dropdown-menu-image" style="background-image: url('images/flowers-menu-image.jpg');">
+                                <a href="category.html"></a>
+                            </div>
+                            <div class="dropdown-menu-links">
+                                <h1>Fresh Flowers</h1>
+                                <div class="dropdown-categories">
+                                    <div class="dropdown-cat-1 cat-box">
+                                        <a href="category.html" class="cat-link">Classic Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Medium round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small rectangle</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-cat-2 cat-box">
+                                        <a href="category.html" class="cat-link">Classic Acrylic Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">60 cm square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">90 cm square</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-cat-3 cat-box">
+                                        <a href="category.html" class="cat-link">Medium Flowers Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Medium round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small rectangle</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="category.html" class="view-btn">View All <img src="images/arrow-right.svg" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="longLifeRoses1" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Long Life Roses</a>
+                        <div class="dropdown-menu" aria-labelledby="longLifeRoses1">
+                            <div class="dropdown-menu-image" style="background-image: url('images/flowers-menu-image.jpg');">
+                                <a href="category.html"></a>
+                            </div>
+                            <div class="dropdown-menu-links">
+                                <h1>Long Life Roses</h1>
+                                <div class="dropdown-categories">
+                                    <div class="dropdown-cat-1 cat-box">
+                                        <a href="category.html" class="cat-link">Classic Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Medium round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small rectangle</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-cat-2 cat-box">
+                                        <a href="category.html" class="cat-link">Classic Acrylic Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">60 cm square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">90 cm square</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-cat-3 cat-box">
+                                        <a href="category.html" class="cat-link">Medium Flowers Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Medium round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small rectangle</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="category.html" class="view-btn">View All <img src="images/arrow-right.svg" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="orchids1" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Orchids</a>
+                        <div class="dropdown-menu" aria-labelledby="orchids1">
+                            <div class="dropdown-menu-image" style="background-image: url('images/flowers-menu-image.jpg');">
+                                <a href="category.html"></a>
+                            </div>
+                            <div class="dropdown-menu-links">
+                                <h1>Orchids</h1>
+                                <div class="dropdown-categories">
+                                    <div class="dropdown-cat-1 cat-box">
+                                        <a href="category.html" class="cat-link">Classic Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Medium round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small rectangle</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-cat-2 cat-box">
+                                        <a href="category.html" class="cat-link">Classic Acrylic Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">60 cm square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">90 cm square</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-cat-3 cat-box">
+                                        <a href="category.html" class="cat-link">Medium Flowers Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Medium round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small rectangle</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="category.html" class="view-btn">View All <img src="images/arrow-right.svg" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="fauxFlowers1" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Faux Flowers</a>
+                        <div class="dropdown-menu" aria-labelledby="fauxFlowers1">
+                            <div class="dropdown-menu-image" style="background-image: url('images/flowers-menu-image.jpg');">
+                                <a href="category.html"></a>
+                            </div>
+                            <div class="dropdown-menu-links">
+                                <h1>Faux Flowers</h1>
+                                <div class="dropdown-categories">
+                                    <div class="dropdown-cat-1 cat-box">
+                                        <a href="category.html" class="cat-link">Classic Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Medium round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small rectangle</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-cat-2 cat-box">
+                                        <a href="category.html" class="cat-link">Classic Acrylic Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">60 cm square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">90 cm square</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-cat-3 cat-box">
+                                        <a href="category.html" class="cat-link">Medium Flowers Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Medium round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small rectangle</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="category.html" class="view-btn">View All <img src="images/arrow-right.svg" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="seasonalCollection1" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seasonal
+                            Collection</a>
+                        <div class="dropdown-menu" aria-labelledby="seasonalCollection1">
+                            <div class="dropdown-menu-image" style="background-image: url('images/flowers-menu-image.jpg');">
+                                <a href="category.html"></a>
+                            </div>
+                            <div class="dropdown-menu-links">
+                                <h1>Seasonal Collection</h1>
+                                <div class="dropdown-categories">
+                                    <div class="dropdown-cat-1 cat-box">
+                                        <a href="category.html" class="cat-link">Classic Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Medium round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small rectangle</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-cat-2 cat-box">
+                                        <a href="category.html" class="cat-link">Classic Acrylic Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">60 cm square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">90 cm square</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-cat-3 cat-box">
+                                        <a href="category.html" class="cat-link">Medium Flowers Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Medium round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small rectangle</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="category.html" class="view-btn">View All <img src="images/arrow-right.svg" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="chocolateDates1" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Chocolates and
+                            Dates</a>
+                        <div class="dropdown-menu" aria-labelledby="chocolateDates1">
+                            <div class="dropdown-menu-image" style="background-image: url('images/flowers-menu-image.jpg');">
+                                <a href="category.html"></a>
+                            </div>
+                            <div class="dropdown-menu-links">
+                                <h1>Chocolates and Dates</h1>
+                                <div class="dropdown-categories">
+                                    <div class="dropdown-cat-1 cat-box">
+                                        <a href="category.html" class="cat-link">Classic Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Medium round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small rectangle</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-cat-2 cat-box">
+                                        <a href="category.html" class="cat-link">Classic Acrylic Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">60 cm square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">90 cm square</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-cat-3 cat-box">
+                                        <a href="category.html" class="cat-link">Medium Flowers Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Medium round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small rectangle</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="category.html" class="view-btn">View All <img src="images/arrow-right.svg" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="giftSets1" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Gift Sets</a>
+                        <div class="dropdown-menu" aria-labelledby="giftSets1">
+                            <div class="dropdown-menu-image" style="background-image: url('images/flowers-menu-image.jpg');">
+                                <a href="category.html"></a>
+                            </div>
+                            <div class="dropdown-menu-links">
+                                <h1>Gift Sets</h1>
+                                <div class="dropdown-categories">
+                                    <div class="dropdown-cat-1 cat-box">
+                                        <a href="category.html" class="cat-link">Classic Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Medium round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small rectangle</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-cat-2 cat-box">
+                                        <a href="category.html" class="cat-link">Classic Acrylic Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">60 cm square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">90 cm square</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-cat-3 cat-box">
+                                        <a href="category.html" class="cat-link">Medium Flowers Boxes</a>
+                                        <ul>
+                                            <li>
+                                                <a href="category.html">Large round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Medium round</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small square</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Large rectangle</a>
+                                            </li>
+                                            <li>
+                                                <a href="category.html">Small rectangle</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="category.html" class="view-btn">View All <img src="images/arrow-right.svg" alt="arrow"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services-overview.html">Services</a>
+                    </li>
+                    <li class="nav-item order-history">
+                        <a class="nav-link" href="order-history.html">Order History</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--******************* Header Section End *********************-->
+        <!--******************* Middle Section Start ******************-->
+        <main>
+            <!-- policy -->
+            <section class="policy common-spacing">
+                <article class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <h1 class="mb-3">Terms & Conditions</h1>
+                            <p>These terms and conditions (the "Terms and Conditions") are the terms and conditions upon which Maison Des Fleurs
+                                ("we/us") make this website <a href="www.maisondesfleurs.com">www.maisondesfleurs.com</a> (the "Maison Des Fleurs
+                                Service") available to you and any of our
+                                services which are accessible on or via the <a href="www.maisondesfleurs.com">www.maisondesfleurs.com</a> site (the
+                                "Maison Des Fleurs Service").</p>
+                            <h5><strong>These terms and conditions govern your use of the www.Maisondesfleurs.Com site and the maison des fleurs
+                                    service: </strong></h5>
+                            <ul>
+                                <li>Products</li>
+                                <li>Prices</li>
+                                <li>Orders / Payment </li>
+                                <li>Delivery</li>
+                                <li>Cancellation</li>
+                                <li>Maison Des Fleurs</li>
+                                <li>Customer Contact Centre </li>
+                                <li>Disclaimer</li>
+                                <li>Terms and Conditions</li>
+                                <li>Social Media Terms of Use Policy </li>
+                            </ul>
+                            <h5><strong>Products</strong></h5>
+                            <p>If you require further information about specific products before submitting an order, please contact our team.</p>
+                            <p>All floral products are subject to availability. In the event of unavailability of the product, we reserve the right
+                                to
+                                substitute with a product of equivalent value and quality, without prior notice.
+                                In the event that we are unable to supply all or part of your order (the product or any substitute product to you at
+                                all) we will contact you as soon as possible to offer alternatives. If you are unhappy with the alternatives
+                                offered,
+                                you can cancel your order and receive a credit note for the amount paid.</p>
+                            <h5><strong>Prices</strong></h5>
+                            <p>Stated product prices exclude Maison Des Fleurs delivery charges.
+                                Please note that from time to time, product and delivery prices on <a
+                                    href="www.maisondesfleurs.com">www.maisondesfleurs.com</a> may vary to those offered in
+                                a Maison Des Fleurs boutique or via the telephone or WhatsApp.</p>
+                            <h5><strong>Orders / Payment</strong></h5>
+                            <p>We accept online payments using all major credit and debit cards (Visa and MasterCard).
+                                You will be provided with the steps to navigate the order and payment process and will be required to provide us
+                                with
+                                your details, delivery address, together with contact details for the recipient.
+                                By clicking the 'Pay Now' button at the end of the order process, you are agreeing to our terms and conditions. Once
+                                the
+                                order is received and accepted at our end, we will send an email confirmation to the email address you have
+                                provided.</p>
+                            <h5><strong>Delivery</strong></h5>
+                            <p>If you request a delivery to a remote area, or an area which is not included in the locations where Maison Des Fleurs
+                                can deliver, there will be extra delivery charges incurred. You will be notified of these charges once we receive
+                                your
+                                order.</p>
+                            <p>Certain products may not be available for delivery to certain areas and you will be notified once we receive your
+                                order.
+                                In order to avoid delays with delivery, please ensure that the full address details are provided as well as the
+                                telephone number for the intended recipient, Please also provide your telephone number and e-mail address so that we
+                                can
+                                notify you of any issues encountered.</p>
+                            <p>If you would like us to deliver to locations where a third party is involved, such as offices, hospitals, airports
+                                and
+                                hotels, the signature of a person authorized to accept delivery on behalf of the individual or organization will be
+                                accepted as proof of delivery to your chosen recipient.</p>
+                            <p>In cases where we are unable to find someone to accept delivery, or make contact and rearrange delivery, or if the
+                                recipient fails to make contact in good time, we reserve the right to charge for re-delivery to that or an
+                                alternative
+                                address.</p>
+                            <p>We will deliver the goods to the address provided in good faith and we cannot accept responsibility if the intended
+                                recipient is no longer at that address and the receiver refuses or fails to return the items.
+                                Cancellation/Amendments</p>
+                            <p>If you wish to change or cancel your order you can do so, however we would ask that you contact us within 4 hours. We
+                                usually start processing same day orders within 2 – 4 hours; therefore, please contact us within this time period if
+                                you
+                                wish to change your order. As we are working with fresh products, one your arrangement has been created, we will
+                                unfortunately not be able to cancel or amend the order.</p>
+                            <p>If you cancel your order within the time period mentioned, we are happy to provide you with a credit note valid for
+                                six
+                                (6) months; there will be no cash refunds.
+                                You can reach us using the following contact details:</p>
+                            <p>Email: <a href="mailto:mail@maisondesfleurs.com">mail@maisondesfleurs.com</a><br />
+                                Mobile: <a href="tel:+971552236866">+971 55 223 6866</a><br />
+                                Telephone:<a href="tel:+97142765886">+971 4 276 5886</a></p>
+                            <p>You can reach out to our team using the following contact details:<br />
+                                Email: <a href="mailto: info@maisondesfleurs.com"> info@maisondesfleurs.com</a><br />
+                                Telephone: <a href="tel:+97145898195">+ 971 4 5898195</a></p>
+                            <h5><strong>Feedback and suggestions</strong></h5>
+                            <p>If you are unsatisfied with any of our services or would like to raise any concerns, please let us know and we will
+                                do
+                                our best to resolve the matter. Due to the perishable nature of the products, we would kindly ask that you reach out
+                                to
+                                us within 24 hours of receiving the delivery in case of quality-related concerns.</p>
+                            <h5><strong>Disclaimer</strong></h5>
+                            <p>Whilst we agree to use all reasonable endeavors to ensure that the <a
+                                    href="www.maisondesfleurs.com">www.maisondesfleurs.com</a> site and/or the Maison Des
+                                Fleurs service is fully operational and free of errors, we cannot guarantee this. Therefore, we accept no
+                                responsibility
+                                for any defects and/or interruption of the <a href="www.maisondesfleurs.com">www.maisondesfleurs.com</a> site and/or
+                                the Maison Des Fleurs service. We shall
+                                be released from our obligations under these Terms and Conditions in the event of any cause beyond our reasonable
+                                control, which renders the provision of the <a href="www.maisondesfleurs.com">www.maisondesfleurs.com</a> and/or the
+                                Maison Des Fleurs service impossible or
+                                impractical.</p>
+                            <p>Maison Des Fleurs understands that it is under a legal duty to supply goods that are in accordance with the contract.
+                            </p>
+                            <h5><strong>General</strong></h5>
+                            <p>We reserve the right to supplement and amend the Terms and Conditions on which you are permitted access to the
+                                <a href="www.maisondesfleurs.com">www.maisondesfleurs.com</a> site and/or the Maison Des Fleurs service from time to
+                                time. We will post any changes on the
+                                site and it is your responsibility as a customer to review the Terms and Conditions on each occasion you access the
+                                Maison Des Fleurs service or <a href="www.maisondesfleurs.com">www.maisondesfleurs.com</a> site.</p>
+                            <p>Additionally, we reserve the right to suspend, restrict or terminate access to the <a
+                                    href="www.maisondesfleurs.com">www.maisondesfleurs.com</a> site and/or
+                                the Maison Des Fleurs services for any reason at any time.
+                                These Terms and Conditions are deemed to include all other notices, policies, disclaimers and other terms contained
+                                in
+                                the <a href="www.maisondesfleurs.com">www.maisondesfleurs.com</a> site, provided that in the event of a conflict
+                                between any such other notices, policies,
+                                disclaimers and other terms, these Terms and Conditions shall prevail. If any of these Terms and Conditions is held
+                                to
+                                be invalid or unenforceable, the remaining provisions shall remain in full force and effect.</p>
+                            <p>We shall ensure that we comply with the requirement of all current data protection legislation including, without
+                                limitation, the Data Protection Act 1998 (as replaced, modified or re-enacted from time to time). We shall only use
+                                personal data received from you for the purpose of fulfilling our obligations under these Terms and Conditions and
+                                as
+                                stated in our Privacy Policy.
+                                A person who is not a party to the agreement between you and us has no rights under the Contracts (Rights of Third
+                                Parties) Act 1999 to enforce any of the Terms and Conditions but this does not affect any right or remedy which
+                                exists
+                                apart from that Act.</p>
+                            <p>In respect of fraudulent misrepresentation, this agreement (including any documents and instruments referred to
+                                herein)
+                                supersedes all prior representations, arrangements, understandings, and agreements between you and us (whether
+                                written
+                                or oral) and sets forth the entire agreement and understanding between you and us relating to the subject matter
+                                hereof.
+                                Intellectual Property</p>
+                            <p>All rights, including copyright, in this website are owned by Maison Des Fleurs. Any use of this website or its
+                                contents, including copying or storing it or them in whole or part, other than for your own personal, non-commercial
+                                use
+                                is prohibited without the permission of Maison Des Fleurs you may not modify, distribute or repost something on this
+                                website for any reason.</p>
+                            <h5><strong>Social Media Terms of Use Policy</strong></h5>
+                            <p>The following Terms of Use Policy applies to anyone accessing or posting to Maison Des Fleurs social media sites.</p>
+                            <p>Maison Des Fleurs social media sites are defined as the following:<br />
+                                Facebook: <a href="https://www.facebook.com/pages/Maisondesfleurs_ae"
+                                    target="_blank">https://www.facebook.com/pages/Maisondesfleurs_ae</a><br />
+                                Twitter: <a href="https://twitter.com/mdf_uae" target="_blank">https://twitter.com/mdf_uae</a><br />
+                                Instagram: <a href="https://www.instagram.com/maisondesfleursofficial/"
+                                    target="_blank">https://www.instagram.com/maisondesfleursofficial/</a></p>
+                            <p>By using or accessing any of Maison Des Fleurs social media sites, you agree to comply with this Terms of Use Policy
+                                as
+                                well as other engagement rules as defined by the individual social media platforms (e.g. Facebook Statement of
+                                Rights
+                                and Responsibilities, Twitter Terms of Use etc.).
+                                Posting on Maison Des Fleurs Social Media Sites.</p>
+                            <p>By posting to a Maison Des Fleurs social media site you agree to be solely responsible for the content of all
+                                information you contribute, link to or otherwise upload.
+                                You agree that everything you post shall be truthful, accurate, not misleading and offered in good faith and that
+                                you
+                                have the right to post such content.</p>
+                            <p>You agree not to post any of the following:</p>
+                            <ul>
+                                <li>False, misleading or deceptive comments</li>
+                                <li>Materials that contain confidential material or violate a third party’s right of privacy</li>
+                                <li>Any photos or comments that include or depict profanity, pornography, threats, hate speech, incite violence,
+                                    personal
+                                    attacks, illegal statements or unsafe practices</li>
+                                <li>Content attempting to impersonate someone else including, but not limited to, customers, clients, Maison Des
+                                    Fleurs
+                                    employees, member florists, suppliers, partners or other community members.</li>
+                                <li>Unauthorized commercial communications (spam).</li>
+                                <li>Viruses or other malicious codes</li>
+                                <li>By posting to a Maison Des Fleurs social media site, you agree to be respectful to other community members as
+                                    well as
+                                    Maison Des Fleurs community management team.</li>
+                            </ul>
+                            <h5><strong>Privacy Protection</strong></h5>
+                            <p>Be smart about protecting yourself, your privacy and the privacy of others. What you publish is widely accessible and
+                                may be around for a long time, so carefully consider what you post.
+                                Do not post personal or sensitive information about yourself or others, including bank account information,
+                                information
+                                that may be used to locate yourself or another, or information which could otherwise be deemed to constitute an
+                                invasion
+                                of another’s privacy.</p>
+                            <p>We shall ensure that we comply with the requirement of all current data protection legislation including, without
+                                limitation, the Data Protection Act 1998 (as replaced, modified or re-enacted from time to time). We shall only use
+                                personal data received from you for the purpose of fulfilling our obligations under Terms and Conditions and as
+                                stated
+                                in our Privacy Policy.</p>
+                            <h5><strong>Content and Copyright</strong></h5>
+                            <p>Maison Des Fleurs assumes no liability for errors or omissions in any material on Maison Des Fleurs social media
+                                sites.
+                                For any content you post on Maison Des Fleurs social media sites, you warrant that it is your own original work or
+                                if it
+                                is covered by intellectual property rights owned by third parties, you represent and warrant that you have obtained
+                                all
+                                rights to that third party content and specifically grant to Maison Des Fleurs a worldwide, perpetual, irrevocable,
+                                royalty-free and fully-paid, transferable right and license to exercise all copyright, publicity, moral rights and
+                                any
+                                other IP rights with respect to any such content you provide.</p>
+                            <h5><strong>Social Media Complaints Policy</strong></h5>
+                            <p>We welcome feedback about our products and services. If you contact us about a complaint on Maison Des Fleurs social
+                                media sites, a member of our team will respond to you and aim to resolve your complaint in a timely manner in
+                                accordance
+                                with Maison Des Fleurs Customer Services Policy.
+                                Maison Des Fleurs has a zero tolerance approach to customers who use abusive or threatening language and will take
+                                action to protect our customer service team including removing offensive posts and reporting the user to the
+                                appropriate
+                                social media platforms and, if deemed necessary, the police.</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <!--******************* Middle Section End ******************-->
+        <!--******************* Footer Section Start ******************-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="footer-links">
+                            <div class="footer-links_title">
+                                Small Print
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="delivery.html">Delivery</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQ's</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">Privacy Policy </a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="careers.html">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="franchise-request.html">Franchise Requests</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="footer-links">
+                            <div class="footer-links_title">
+                                Company
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="about-us.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="locations.html">Locations</a>
+                                </li>
+                                <li>
+                                    <a href="news.html">News</a>
+                                </li>
+                            </ul>                            
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="footer-links">
+                            <div class="footer-links_title">
+                                Contact Us
+                            </div>
+                            <ul class="site-info_contact-links">
+                                <li>
+                                    <span>Telephone:</span> <a href="tel:+97142765886">+ 971 4 276 5886</a>
+                                </li>
+                                <li>
+                                    <span>Mobile:</span> <a href="tel:+971552236866">+ 971 55 223 6866</a>
+                                </li>
+                                <li>
+                                    <span>For orders and follow-ups:</span>
+                                    <a href="mailto:orders@maisondesfleurs.com">orders@maisondesfleurs.com</a>
+                                </li>
+                                <li>
+                                    <span>For general inquiries:</span>
+                                    <a href="mailto:info@maisondesfleurs.com">info@maisondesfleurs.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>                   
+                    <div class="col-md-3">
+                        <div class="footer-links_title">
+                            Connect With Us
+                        </div>
+                        <ul class="footer-social">
+                            <li>
+                                <a href="#" target="_blank"><img src="images/facebook.svg"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="images/linkedin.svg"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="images/instagram.svg"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="images/pintrest.svg"></a>
+                            </li>
+                        </ul>
+                        <div class="subscribe">
+                            <p>Subscribe</p>
+                            <p class="subtitle">We will only send you awesome emails.</p>
+                            <form>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Email Address"
+                                        aria-label="Email Address" aria-describedby="email-address-addon">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="input-group-text common-black-btn"
+                                            id="email-address-addon">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-info">
+                <div class="container">
+                   <div class="site-info_block d-md-flex align-items-center justify-content-between">
+                        <p>All rights reserved @ 2020 MaisonDesFleurs</p>
+                        <div class="cards-accepted">
+                            <p>We accept</p>
+                            <img src="images/card.png" alt="images">
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </footer>
+        <!--******************* Footer Section End ******************-->
+        <!-- Edit Acc Info Modal -->
+        <div class="modal fade right" id="edit-info" tabindex="-1" role="dialog" aria-labelledby="editAccountInfo"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><img src="images/close.png" alt="close"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="title-block">
+                            <h2>Edit Account Information</h2>
+                        </div>
+                        <form class="common-form">
+                            <div class="form-group input-focused">
+                                <label>Email</label>
+                                <input type="email" class="form-control" value="BeatriceLWaddle@rhyta.com">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="form-group input-focused">
+                                <label>Create New Password</label>
+                                <input type="password" class="form-control">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="form-group input-focused">
+                                <label>Confirm New Password</label>
+                                <input type="password" class="form-control">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <button type="submit" class="btn-outline" data-dismiss="modal">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Edit address Modal -->
+        <div class="modal fade right" id="edit-address" tabindex="-1" role="dialog" aria-labelledby="editAddress"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><img src="images/close.png" alt="close"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="common-form">
+                            <div class="form-group input-focused">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" value="Beatrice">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="form-group input-focused">
+                                <label>City</label>
+                                <input type="text" class="form-control" value="Chicago">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="form-group input-focused">
+                                <label>State/Province</label>
+                                <select class="form-select">
+                                    <option>Abu Dhabi</option>
+                                    <option>Abu Dhabi</option>
+                                    <option>Abu Dhabi</option>
+                                </select>
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="form-group input-focused">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" value="Waddle">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="form-group input-focused">
+                                <label>Postal Code / Zip</label>
+                                <input type="text" class="form-control" value="MA 02129">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="form-group input-focused">
+                                <label>Address</label>
+                                <input type="text" class="form-control" value="1391 Single Street">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="form-group input-focused">
+                                <label>Phone Number</label>
+                                <input type="text" class="form-control" value="+5 781-644-3627">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <button type="submit" class="btn-outline" data-dismiss="modal">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Edit card Modal -->
+        <div class="modal fade right" id="edit-card" tabindex="-1" role="dialog" aria-labelledby="editCard"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><img src="images/close.png" alt="close"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="common-form">
+                            <div class="form-group input-focused">
+                                <label>Cardholder Name</label>
+                                <input type="text" class="form-control" value="Beatrice Waddle">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="form-group input-focused">
+                                <label>Card Number</label>
+                                <input type="text" class="form-control card-field" placeholder="0000 0000 0000 0000">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group input-focused">
+                                        <label>Expiration Date </label>
+                                        <input type="text" class="form-control date-field" placeholder="MM / YY">
+                                        <span class="error-help">Your error here</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group input-focused">
+                                        <label>CVV</label>
+                                        <input type="text" class="form-control" value="123">
+                                        <span class="error-help">Your error here</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-outline" data-dismiss="modal">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Login Modal -->
+        <div class="modal fade common-modal" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="images/flower.png" alt="flower">
+                        <h2 class="modal-title" id="login">Log in to Continue</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><img src="images/close.png" alt="close"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="common-form">
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" class="form-control">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="forgot-link"><a href="#" data-target="#forgot" data-toggle="modal"
+                                        data-dismiss="modal" class="forgot">Forgot Password?</a></div>
+                                <button type="button" class="common-black-btn" data-dismiss="modal" onclick="document.location.href='account-settings.html'">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="link-text">
+                            New to Maison Des Fleur? <a href="#" data-toggle="modal" data-target="#signup"
+                                data-dismiss="modal"><span>Sign Up!</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Create Account Modal -->
+        <div class="modal fade common-modal" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="images/flower.png" alt="flower">
+                        <h2 class="modal-title" id="signup">Create Account</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><img src="images/close.png" alt="close"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="common-form">
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" class="form-control">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Confirm Password</label>
+                                <input type="password" class="form-control">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="common-black-btn" data-dismiss="modal">Create Account</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="link-text">
+                            Have an account? <a href="#" data-toggle="modal" data-target="#login"
+                                data-dismiss="modal"><span>Login</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Forgot Password Modal -->
+        <div class="modal fade common-modal" id="forgot" tabindex="-1" role="dialog" aria-labelledby="forgot" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="images/flower.png" alt="flower">
+                        <h2 class="modal-title" id="forgot">Forgot Password</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><img src="images/close.png" alt="close"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="common-form">
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control">
+                                <span class="error-help">Your error here</span>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="common-black-btn" data-dismiss="modal"
+                                    onclick="document.location.href='reset-password.html'">Reset Password</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Logout Modal -->
+        <div class="modal fade common-modal" id="logout" tabindex="-1" role="dialog" aria-labelledby="logout" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content logout">
+                    <div class="modal-header">
+                        <img src="images/flower.png" alt="flower">
+                        <h2 class="modal-title" id="logout">Do you want to logout?</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><img src="images/close.png" alt="close"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="common-form">
+                            <div class="button-group">
+                                <button type="button" class="common-black-btn" data-dismiss="modal">Yes</button>
+                                <button type="button" class="btn-outline" data-dismiss="modal">No</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Thank you Modal -->
+    <div class="modal fade common-modal thank-you" id="thank-you" tabindex="-1" role="dialog" aria-labelledby="thank-you" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="images/logo.svg" alt="logo">
+                    <h2 class="modal-title" id="thank-you">Thank You</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="images/close.png" alt="close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+                        approaches to corporate strategy foster collaborative thinking to further the overall value
+                        proposition.</p>
+                       <div class="text-center">
+                           <a href="#" class="common-black-btn">Verify Your Email Address</a>
+                           <img src="images/product-single-image.png" alt="flower-box" class="flower-box">
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--*********************** All End ************************-->
+    <script>
+        $(document).ready(function () {
+            // select 
+            $(function () {
+                var customSelect = $('select:not(.cart-select)');
+                // Options for custom Select
+                jcf.setOptions('Select', {
+                    wrapNative: false,
+                    wrapNativeOnMobile: false,
+                    fakeDropInBody: false
+                });
+                jcf.replace(customSelect);
+                jcf.refresh();
+
+                var cartSelect = $('.cart-list select');
+                // Options for custom Select
+                jcf.setOptions('Select', {
+                    wrapNative: false,
+                    wrapNativeOnMobile: false,
+                    fakeDropInBody: true
+                });
+                jcf.replace(cartSelect);
+                jcf.refresh();
+            });
+
+            // navbar toggle
+            var $navbartoggle = $("body");
+            $('.navbar-toggler').click(function () {
+                $navbartoggle.toggleClass("menu-open");
+            });
+           $('.navbar-nav .nav-link').click(function () {
+                $('body').removeClass('menu-open');
+            });
+
+            // show dropdown 
+            $('.header-content_inner > ul > li:last-child').click(function () {
+                $(this).toggleClass('show')
+            });
+
+           // dropdown
+            $(".navbar li").on('mouseenter mouseleave', function (e) {
+                if ($('.dropdown-menu', this).length) {
+                    var elm = $('.dropdown-menu', this);
+                    var off = elm.offset();
+                    var l = off.left;
+                    var r = ($(window).width() - (elm.offset().left + elm.outerWidth()));
+                    var w = elm.outerWidth();
+                    var docH = $(".container").height();
+                    var docW = $(".container").width();
+                    var wWidth = $(window).width();
+
+                    var isEntirelyVisible = (l + w <= wWidth);
+                    var isCenterVisible = (l - r + w > docW);
+                    var isSndLastChild = $(this).is(':nth-last-child(2)');
+
+                    if (!isEntirelyVisible) {
+                         if (isCenterVisible && !isSndLastChild){
+                                $(this).addClass('center');
+                                var drpW = $('.navbar .navbar-nav .nav-item .dropdown-menu').width();
+                                $('.navbar .navbar-nav .nav-item.center .dropdown-menu').css('left', 'calc(-50% - ' + drpW + 'px / 2)');
+                         }
+                         else{
+                            $(this).addClass('out');
+                         }
+                    } else {
+                        $(this).removeClass('out center');
+                        $('.navbar .navbar-nav .nav-item.center .dropdown-menu').removeAttr('style');
+                    }
+                }
+            });
+            
+           // cart quantity
+           if ($('#quantity').val() == 1) {
+                $('.minus').attr('disabled', true);
+                $('.minus').css('cursor', 'not-allowed');
+            }
+            $('.minus').click(function () {
+                if ($(this).is('[disabled=disabled]') == true) {
+                    return false;
+                }
+                var $input = $(this).parent().find('input');
+                var count = parseInt($input.val()) - 1;
+                if (count == 1) {
+                    $(this).attr('disabled', 'disabled');
+                    $(this).css('cursor', 'not-allowed');
+                }
+                // count = count < 1 ? 1 : count;
+                $input.val(count);
+                $input.change();
+                return false;
+            });
+            $('.plus').click(function () {
+                var $input = $(this).parent().find('input');
+                var count = parseInt($input.val()) + 1;
+                if (count > 1) {
+                    console.log(count);
+                    $('.minus').attr('disabled', false);
+                    $('.minus').css('cursor', 'pointer');
+                }
+                $input.val(count);
+                $input.change();
+                return false;
+            });
+            
+            // modal form style
+            $('.common-form .form-control').focus(function () {
+                $(this).parent().addClass('input-focused');
+            }).blur(function () {
+                var inputLength = $(this).val();
+                if (inputLength.length > 0 || $(this).is('[placeholder]') == true) {
+                    $(this).parent().addClass('input-focused');
+                } else {
+                    $(this).parent().removeClass('input-focused');
+                }
+            });
+             // input mask
+            $('.card-field').inputmask({ mask: ["9999 9999 9999 9999", "9999 9999 9999 9999",], keepStatic: true, "placeholder": "0000 0000 0000 0000" });
+            $('.date-field').inputmask({ mask: ["99 / 99", "99 / 99",], keepStatic: true, "placeholder": "MM / YY" });
+
+            // modal open 
+            $(document).on('hidden.bs.modal', function () {
+                if ($('.modal.show').length) {
+                    $('body').addClass('modal-open');
+                }
+            });
+        });
+        // mmenu 
+            var width = $(window).width();
+            if (width < 1200) {
+                document.addEventListener(
+                    "DOMContentLoaded", () => {
+                        const menu = new Mmenu("#menu", {
+                            navbar: {
+                                sticky: false
+                            },
+                            offCanvas: {
+                                blockUI: false
+                            },
+                            "extensions": [
+                                "position-front"
+                            ]
+
+                        }, {
+                            offCanvas: {
+                                menu: {
+                                    insertSelector: 'header'
+                                }
+                            }
+                        });
+                        const api = menu.API;
+                        document.querySelector(".navbar-toggler")
+                            .addEventListener(
+                                "click", (evnt) => {
+                                    if (document.body.classList.contains('mm-wrapper_opened')) {
+                                        api.close();
+                                        document.body.classList.add("mm-wrapper"); /* replace this script when logged in 
+document.body.classList.add("mm-wrapper","logged-in");*/
+                                    }
+                                    else {
+                                        evnt.preventDefault();
+                                        api.open();
+                                    }
+                                }
+                            );
+                    }
+                );
+            }
+    </script>
+</body>
+
+</html>

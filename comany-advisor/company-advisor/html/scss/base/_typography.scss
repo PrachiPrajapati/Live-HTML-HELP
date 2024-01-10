@@ -1,0 +1,21 @@
+@import '../abstracts/variables';
+
+h1							{ font-size: 45px; line-height: 51px; font-weight: $font_weight_700;}
+h2							{ font-size: 30px; line-height: 51px; font-weight: $font_weight_700;}
+h3							{ font-size: 20px; line-height: 51px; font-weight: $font_weight_700;}
+h4							{ font-size: 15px; line-height: 51px; font-weight: $font_weight_700;}
+p							{ font-size: 14px; line-height: 27px;}
+p.large-font                { font-size: 16px; line-height: 27px;}
+/** responsive **/
+@media (min-width: 1200px) and (max-width: 1499px){
+    h1                      { font-size: 40px; line-height: 45px; }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    h1                      { font-size: 36px; line-height: 45px; }
+}
+
+@media (max-width: 767px){
+    h1                      { font-size: 34px; line-height: 42px; }
+    h2                      { font-size: 27px; line-height: 42px; }
+    h3                      { font-size: 18px; line-height: 42px; }
+}

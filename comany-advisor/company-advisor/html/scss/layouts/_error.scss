@@ -1,0 +1,30 @@
+.error-pages {
+    height: 100vh;
+    > div {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        img{
+            width: 100px;
+        }
+    }
+}
+
+@media (max-height: 439px) and (orientation: landscape){
+    .error-pages {
+    height: auto;
+    > div {
+        position: static;
+        top: 50%;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+    }
+}
+}

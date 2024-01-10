@@ -1,0 +1,351 @@
+/* font included */
+@font-face                                                                                      { font-family: 'Avenir LT Std Roman'; src: url('../fonts/AvenirLTStd-Roman.eot'); src: url('../fonts/AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'), url('../fonts/AvenirLTStd-Roman.woff2') format('woff2'), url('../fonts/AvenirLTStd-Roman.woff') format('woff'), url('../fonts/AvenirLTStd-Roman.ttf') format('truetype'), url('../fonts/AvenirLTStd-Roman.svg#AvenirLTStd-Roman') format('svg'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face                                                                                      { font-family: 'Avenir LT Std Book'; src: url('../fonts/AvenirLTStd-Book.eot'); src: url('../fonts/AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/AvenirLTStd-Book.woff2') format('woff2'), url('../fonts/AvenirLTStd-Book.woff') format('woff'), url('../fonts/AvenirLTStd-Book.ttf') format('truetype'), url('../fonts/AvenirLTStd-Book.svg#AvenirLTStd-Book') format('svg'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face                                                                                      { font-family: 'Avenir LT Std Black'; src: url('../fonts/AvenirLTStd-Black.eot'); src: url('../fonts/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/AvenirLTStd-Black.woff2') format('woff2'), url('../fonts/AvenirLTStd-Black.woff') format('woff'), url('../fonts/AvenirLTStd-Black.ttf') format('truetype'), url('../fonts/AvenirLTStd-Black.svg#AvenirLTStd-Black') format('svg'); font-weight: 900; font-style: normal; font-display: swap; }
+/* Common Css */
+*                                                                                               { padding: 0; margin: 0; }
+body,html                                                                                       { padding: 0; margin:0; overflow-x: hidden; background: linear-gradient(144.75deg, #241A19 20.73%, #312624 88.69%); font-family: 'Avenir LT Std Roman'; }
+ul,li                                                                                           { list-style: none; margin: 0; padding: 0; }
+a:focus,a,a:active,a:hover                                                                      { text-decoration: none; display: inline-block; }
+img                                                                                             { max-width: 100% ; }
+/* typography */
+h1,h2,h3,h4,h5,h6,a,ul li                                                                       { margin: 0; padding: 0; font-weight: 400; }
+h1                                                                                              { margin-bottom: 14px; font-size: 48px; line-height: 62px; font-weight: 500; color: #fff; font-family: 'Avenir LT Std Roman'; text-transform: capitalize; position: relative; display: inline-block; }
+h1:before,.line-heading:before                                                                  { content: ""; width: 100%; height: 10px; background: rgba(228, 114, 100, 0.2); position: absolute; bottom: 10px; left: 0; }
+h1 span                                                                                         { color: #E47263; }
+h2                                                                                              { margin-bottom: 14px; font-size: 32px; line-height: 38px; }
+h3                                                                                              { margin-bottom: 12px; font-size: 24px; line-height: 28px; }
+h4                                                                                              { margin-bottom: 12px; font-size: 20px; line-height: 28px; }
+h5                                                                                              { font-size: 18px; line-height: 28px; }
+/* h6                                                                                              { margin-bottom: ; font-size: ; line-height: ; } */
+ul li,p                                                                                         { margin-bottom: 32px; font-family: 'Avenir LT Std Roman'; font-size: 16px; line-height: 28px; text-transform: capitalize; color: #ADAAA9; font-weight: 400; }
+p.small-font                                                                                    { font-family: 'Avenir LT Std Roman'; font-size: 14px; line-height: 18px; text-transform: capitalize; font-weight: 400; }
+a.small-text                                                                                    { font-size: 12px; line-height: 18px; color: black; }
+a.small-text:hover                                                                              { color: #E47264 !important; }
+/* form label                                                                                      { margin-bottom: ; font-size: ; line-height: ; } */
+/* .form-control                                                                                   { padding: ; margin-bottom: ; font-size: ; line-height: ; } */
+/* common element styling */
+a.common-button,button.common-button                                                            { padding: 18px 32px; background: #E47263; box-shadow: 0px 29px 89px rgba(0, 0, 0, 0.07), 0px 5.8px 14.4625px rgba(0, 0, 0, 0.035); border-radius: 42px; font-weight: 500; font-size: 18px; line-height: 18px; text-transform: uppercase; color: #251C1C; border: 1px solid #E47263; transition: 0.6s; }
+a.common-button i,button.common-button i                                                        { margin-left: 10px; font-size: 20px;  }
+a.common-button:hover,button.common-button:hover                                                { background: transparent; color: #E47263; }
+.common-padding-top                                                                             { padding: 160px 0 40px; }
+.theme-color,.theme-color a                                                                     { color: #E47264; }
+.secondery-color                                                                                { color: #312624; }
+.white-color                                                                                    { color: #fff; }
+.black-font                                                                                     { color: black; }
+.lh-60                                                                                          { line-height: 60px; }
+.lh-22                                                                                          { line-height: 22px; }
+.lh-24                                                                                          { line-height: 24px; }
+.lh-18                                                                                          { line-height: 18px; }
+.mb-12                                                                                          { margin-bottom: 12px; }
+.common-area                                                                                    { padding: 34px; background: #312624; box-shadow: 106.748px 125.817px 228px rgba(0, 0, 0, 0.06), 69.1884px 81.548px 133.528px rgba(0, 0, 0, 0.0455556), 41.1177px 48.4628px 72.6222px rgba(0, 0, 0, 0.0364444), 21.3496px 25.1634px 37.05px rgba(0, 0, 0, 0.03), 8.69797px 10.2518px 18.5778px rgba(0, 0, 0, 0.0235556), 1.97681px 2.32994px 8.97222px rgba(0, 0, 0, 0.0144444); border-radius: 20px; }
+.grey-color                                                                                     { color: #ADAAA9; }
+.corners::after                                                                                 { content: ""; background:  url(../images/corners.png) bottom left / cover no-repeat; width: 190px; height: 190px; position: absolute; bottom: 0; left: 0; z-index: 1; }
+.corners::before                                                                                { content: ""; background:  url(../images/up-corner.png) top left / cover no-repeat; width: 300px; height: 300px; position: absolute; top: 80px; left: 0; z-index: 1; }
+.corner-div                                                                                     { z-index: 1000; }
+/* header section */
+header nav.navbar                                                                               { padding: 9px 40px; position: fixed; width: 100%; top: 0; left: 0; background: #312624; box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.25); z-index: 99999; }
+.footer-navigation li,
+header nav.navbar .navbar-nav .nav-item                                                         { margin: 0; }
+.footer-navigation li a,
+header nav.navbar .navbar-nav .nav-link                                                         { padding: 0; margin: 0 16px 0; font-size: 18px; line-height: 18px; color: #ADAAA9; font-weight: 500; transition: 0.5s; display: block; }
+.footer-navigation li a:hover,
+header nav.navbar .navbar-nav .nav-link:hover                                                   { color: #E47264; display: block; }
+ header nav.navbar .navbar-nav .nav-link.member-profile-link                                    { display: flex; align-items: center; padding: 12px 18px; border: 1px solid rgba(112, 103, 102, 0.2); border-radius: 10px; }
+.member-dp-image                                                                                { margin-right: 10px; height: 32px; width: 32px; border-radius: 50%; }
+.nav-user                                                                                       { width: 40px; }
+/* banner section */
+.banner                                                                                         { min-height: 100vh; box-sizing: border-box; display: flex; align-items: center; justify-content: center; }
+.banner h1::before,.no-before::before                                                           { display: none; }
+.banner-info                                                                                    { margin-bottom: 42px; max-width: 80%; }
+/* buy nft section */
+.buy-nft                                                                                        { padding-bottom: 44px; }
+.buy-nft-area                                                                                   { padding: 42px 48px 35px; margin-top: -42px; background: #312624; box-shadow: 106.748px 125.817px 228px rgba(0, 0, 0, 0.06), 69.1884px 81.548px 133.528px rgba(0, 0, 0, 0.0455556), 41.1177px 48.4628px 72.6222px rgba(0, 0, 0, 0.0364444), 21.3496px 25.1634px 37.05px rgba(0, 0, 0, 0.03), 8.69797px 10.2518px 18.5778px rgba(0, 0, 0, 0.0235556), 1.97681px 2.32994px 8.97222px rgba(0, 0, 0, 0.0144444); border-radius: 20px; }
+.buy-nft .buy-image                                                                             { margin-bottom: 19px; }
+.buy-nft-area  .buy-image {width: 100% !important; height: 394px; object-fit: cover; border-radius: 10px; object-position: top;}
+.corner-div .buy-image {width: 100% !important; height: 450px; object-fit: cover; border-radius: 10px; object-position: top;}
+.corner-div .buy-box{width: 100%;}
+.buy-nft .title, .buy-nft .title-desc p:last-child{margin-bottom: 0px;}
+.buy-nft .title-desc p{margin-bottom: 16px; color: #fff;}
+.buy-nft .buy-nft-title{margin-bottom: 40px;}
+/* about-us section */
+.about-us                                                                                       { padding: 78px 0 75px; }
+.about-us .about-area li{margin-bottom: 5px;}
+.about-image-area figure {position: relative; width: fit-content; margin: 0px 0px 0px auto;}
+.about-image-area img{transform: rotate(2.33deg); position: relative; z-index: 2; -webkit-transform: rotate(2.33deg); width: 368px; height: 394px; object-fit: cover; border-radius: 10px; margin: 0px auto; display: block}
+.about-image-area img:first-child{position: absolute; top: -50px; left: 60px; z-index: 5;}
+.about-image-area img:last-child{position: absolute; top: 50px; left: -50px; z-index: 1;}
+/* how it works */
+.how-it-works                                                                                   { padding: 44px 0 42px; }
+.how-it-works h1                                                                                { margin-bottom: 41px; }
+.work-area                                                                                      { padding: 70px 30px 34px; background: #312624; box-shadow: 106.748px 125.817px 228px rgba(0, 0, 0, 0.06), 69.1884px 81.548px 133.528px rgba(0, 0, 0, 0.0455556), 41.1177px 48.4628px 72.6222px rgba(0, 0, 0, 0.0364444), 21.3496px 25.1634px 37.05px rgba(0, 0, 0, 0.03), 8.69797px 10.2518px 18.5778px rgba(0, 0, 0, 0.0235556), 1.97681px 2.32994px 8.97222px rgba(0, 0, 0, 0.0144444); border-radius: 20px; }
+.work-box                                                                                       { height: 100%; padding: 77px 33px 32px 34px; border-radius: 20px; border: 1px solid #6E6665;  }
+.work-image                                                                                     { margin-bottom: 66px; }
+/* testimonials */
+.testimonials                                                                                   { padding: 80px 0 48px; }
+.testi-slider                                                                                   { padding: 48px; margin: 60px 33px 60px !important; background: #312624; box-shadow: 106.748px 125.817px 228px rgba(0, 0, 0, 0.06), 69.1884px 81.548px 133.528px rgba(0, 0, 0, 0.0455556), 41.1177px 48.4628px 72.6222px rgba(0, 0, 0, 0.0364444), 21.3496px 25.1634px 37.05px rgba(0, 0, 0, 0.03), 8.69797px 10.2518px 18.5778px rgba(0, 0, 0, 0.0235556), 1.97681px 2.32994px 8.97222px rgba(0, 0, 0, 0.0144444); border-radius: 20px; }
+.testimonials-image-box                                                                         { position: relative; position: relative; border-radius: 16px; margin-right: 60px; min-width: 181px; height: 181px;}
+.testimonials-image-box:not(.products-images):after                                              { content: ''; position: absolute; top: 5px; left: 5px; width: 100%; height: 100%; background: #E47264; border-radius: 16px; z-index: -1;} 
+.testimonials-info-box  .wired-image{width: 180px;}
+.testimonials-info-box  .singapore-image{width: 100px;}
+.testi-slide                                                                                    { margin: 0px 10px;}
+.testi-slider .slick-dots                                                                       { bottom: -70px; }
+.slick-dots li                                                                                  { height: auto; width: auto; margin:0 10px; border-radius: 50%; }
+.testi-slider .slick-dots li button                                                             { padding: 0; width: 10px; height: 10px; background: #F7F6FD; opacity: 0.3; border-radius: 50%; border: 3px solid #F7F6FD; overflow: hidden; }
+.slick-dots li.slick-active button                                                              { border-color: #E47264; opacity: 1; }
+.slick-dots li button:before                                                                    { font-size: 0; }
+
+
+
+/* contact us */
+.contact-us                                                                                     { padding: 100px 0 84px; }
+.contact-us .input-box                                                                          { margin: 15px 0 0; padding-bottom: 15px; }
+.contact-us .form-control                                                                       { padding: 13px 10px; background: transparent; border: 1px solid #6E6665; border-radius: 5px; color: #F7F6FD; font-size: 16px; line-height: 24px; font-weight: 400; position: relative; z-index: 2; resize: none; }
+.form-control:focus                                                                             { outline: none; box-shadow: none; border-color: #F7F6FD; }
+.form-control ~ label                                                                           { position: absolute; left: 10px; width: 100%; top: 15px; color: #F7F6FD; transition: 0.3s; letter-spacing: 0.5px; color: #F7F6FD; }
+.form-control:focus ~ label                                                                     { top: -18px; left: 0; font-size: 12px; color: #F7F6FD; transition: 0.3s; }
+.form-control::placeholder                                                                      { color: #F7F6FD; }
+form button.common-button                                                                       { margin-top: 30px; }
+.contact-us .about-area a {position: relative; color: #E47264;}
+.contact-us .about-area a::after{content: ''; position: absolute; bottom: 0px; left: 0px; background: #E47264; height: 1px; width: 0%;  transition: all 0.5s; -webkit-transition: all 0.5s;}
+.contact-us .about-area a:hover::after{width: 100%;}
+.contact-us .qr-desc{margin-top: 30px;}
+.contact-us .qr-desc img{width: 180px; height: 180px; object-fit: cover; border-radius: 15px;}
+.contact-us .qr-desc-right {margin-left: 40px;}
+.contact-us .qr-desc-right p:last-child{margin-bottom: 0px;}
+
+/* footer section */
+footer                                                                                          { padding: 20px 0 26px; }
+.social-navigation li                                                                           { margin: 0; }
+.social-navigation li a                                                                         { margin: 0 7px; width: 32px; height: 32px; border: 1px solid #ADAAA9; border-radius: 5px; display: flex; align-items: center; justify-content: center; font-size: 18px; line-height: 18px; color: #ADAAA9; }
+.social-navigation li a:hover                                                                   { border-color: #E47264; color: #E47264; }
+.copyright-text                                                                                 { font-weight: 500; font-size: 14px; line-height: 28px; margin: 50px 0 0; color: #ADAAA9; }
+/* nft listing styling */
+.nft-box                                                                                        { padding: 14px; margin-bottom: 30px; border: 1px solid rgba(112, 103, 102, 0.2); border-radius: 10px; }
+.nft-box p                                                                                      { margin: 0; }
+.user-detail-box                                                                                { padding-bottom: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(112, 103, 102, 0.2); }
+.nft-image-box                                                                                  { margin-bottom: 22px; padding-top: 110%; border-radius: 10px; }
+.user-image-box                                                                                 { margin-right: 10px; width: 32px; height: 32px; border-radius: 5px; }
+.rating-box                                                                                     { height: 28px; width: 28px; border-radius: 50%; background: #E47264; color: black; display: flex; justify-content: center; align-items: center; }
+.search-input-group                                                                             { margin-bottom: 47PX; padding: 13px 15px; border: 1px solid rgba(112, 103, 102, 0.2); border-radius: 12px; }
+.search-input-group .input-group                                                                { padding: 10px 18px; background: #312624; border-radius: 12px; }
+.search-input-group button                                                                      { color: #ADAAA9; background-color: transparent; border: transparent; }
+.search-input-group input                                                                       { font-size: 18px; line-height: 28px; color: #ADAAA9; background: none; border: none; color: white; }
+.nav.nav-tabs                                                                                   { border: none; }
+.nav.nav-tabs .nav-link                                                                         { margin-bottom: 0; margin-right: 15px; padding: 15px; color: #ADAAA9; font-size: 18px; line-height: 28px; opacity: 0.7; border-radius: 12px; }
+.nav.nav-tabs .nav-link:focus                                                                   { border: none; }
+.nav.nav-tabs .nav-link.active                                                                  { background: #312624; border: 1px solid rgba(112, 103, 102, 0.2); }
+.border-box                                                                                     { margin-bottom: 20px; padding: 15px; border: 1px solid #3E3331; border-radius: 12px; }
+.search-input-group .form-control:focus                                                         { background: transparent; color: #ADAAA9; }
+/* life nft */
+.life-nft-sec                                                                                   { padding: 160px 0 80px; }
+.life-nft-price-box                                                                             { margin-bottom: 62px; border-radius: 12px; background: #312624; display: inline-block; padding: 20px; }
+.life-nft-image-box                                                                             { padding-top: 135%; border-radius: 16px; }
+.life-nfts-image-box                                                                            { padding-top: 90%; border-radius: 16px; }
+.life-nft-detail-area                                                                           { background: #312624; border-radius: 16px; }
+.life-nft-info-box                                                                              { padding-left: 45px; }
+.info                                                                                           { position: absolute; bottom: 17px; right: 17px;  -webkit-filter: invert(100%); filter: invert(100%);}
+.nft-price                                                                                      { margin-bottom: 40px; }
+
+.life-nft-left > h2, .style-nft-left > h2, .tech-nft-left > h2{color: #fff; font-size: 35px; line-height: 45px;}
+.life-nft-left > p, .style-nft-left > p, .tech-nft-left > p{margin-bottom: 16px;}
+
+
+/* pop up designs */
+.modal                                                                                          { z-index: 9999999; background: rgba(49, 38, 36,0.8); }
+.modal-body                                                                                     { padding: 0; }
+.profile-setup-modLal .modal-body                                                               { padding: 0 40px 61px; }
+.modal-content                                                                                  { padding: 24px; background: #FFFFFF; box-shadow: 4px 16px 48px rgba(0, 0, 0, 0.24); backdrop-filter: blur(8px); border-radius: 30px; }
+.profile-setup-modLal .modal-content                                                            { padding: 24px 24px 0; }
+.modal-header                                                                                   { border: none; padding: 0px; }
+.modal-header .btn-close                                                                        { opacity: 1; height: 26px; width: 26px; padding: 0; background: url(../images/close.png) center center / cover no-repeat; }
+.font-weight-bold                                                                               { font-weight: 800; }
+.profile-picture-box                                                                            { border-radius: 50%; margin: 20px auto 46px; overflow: hidden; height: 180px; width: 180px; background: #EBEBEB; border: 14px solid rgba(215, 215, 215,0.2); display: flex; justify-content: center; align-items: center; }
+.modal-body .form-control                                                                       { padding: 10px 14px; margin-bottom: 14px; border: 1px solid #D7D7D7; box-sizing: border-box; border-radius: 5px; font-weight: 500; font-size: 16px; line-height: 24px; text-transform: capitalize; color: #312624; }
+.modal-body .form-control::placeholder                                                          { color:#312624; }
+.modal-body .form-control:focus                                                                 { background: #F2F2F2; border: 1px solid #D7D7D7; }
+.modal h2                                                                                       { margin-bottom: 23px; font-weight: bold; text-transform: capitalize; }
+.congo-popup .modal-body                                                                        { padding: 16px 60px 24px; }
+.wallet-info-box                                                                                { padding: 18px 0; border-top: 1px solid #F5F5F5; }
+.profile-pic-box                                                                                { margin-right: 18px; height: 94px; width: 94px; border-radius: 12px; border: 8px solid rgba(235, 235, 235,0.5); }
+.member-info                                                                                    { margin-bottom: 18px; }
+.profile-account-modal .modal-body                                                              { padding-bottom: 95px; }
+.life-nft-info                                                                                  { max-width: 1096px; }
+.life-nft-info .modal-body                                                                      { padding: 0 65px 46px 41px; }
+.info-list li                                                                                   { position: relative;padding-left: 38px; }
+.info-list li::before                                                                           { content: ""; width: 19px; height: 11px; background: url(../images/list-arrow.png) center center / cover no-repeat; position: absolute; top: 10px; left: 0; }
+.btn-close:focus                                                                                { box-shadow: none; }
+.modal-header .btn-close                                                                        { margin: 0 0 0 auto; }
+/* faq page */
+.accordion-button                                                                               { background: transparent; padding: 24px 0; border-top: 1px solid #3E3331; font-weight: 500; font-size: 18px; line-height: 28px; text-transform: capitalize; color: #FFFFFF; }
+.accordion-button::after                                                                        { filter: brightness(100); width: 12px; background-size: cover; height: 8px; }
+.accordion-item:focus,.accordion-button:not(.collapsed),.accordion-button:focus                 { box-shadow: none; border: none; border-top: 1px solid #3E3331; background: transparent; color: white; }
+.accordion-item                                                                                 { background-color: transparent; border: unset; }
+.accordion-body { padding: 0; }
+.accordion-body ul{padding: 0px;}
+.accordion-body ul li{color: #ADAAA9; margin-bottom: 8px;}
+
+@media(min-width: 1400px) and (max-width: 1699px) {
+    .about-image-area figure{margin: 0px 0px 0px 30%;}
+}
+
+@media(min-width: 1200px) and (max-width: 1399px) {
+    .buy-nft-area  .buy-image, .corner-div .buy-image{height: 364px;}
+    .about-image-area figure{margin: 0px 0px 0px 30%;}
+    .about-image-area img{width: 300px; height: 320px;}
+
+}
+
+
+/* (min-width: 768px) and */
+@media  (max-width: 1199px)                                                                     {  
+    /* header section */
+    header nav.navbar                                                                           { padding: 9px 0; }
+    .navbar-toggler                                                                             { padding: 0; font-size: 20px; color: #ADAAA9; line-height: 0; }
+    .navbar-toggler:focus                                                                       { border: none; box-shadow: none; }
+    .navbar-collapse                                                                            { padding: 50px; position: absolute; top: 100%; left: 0; width: 100%; background: #312624; z-index: 99999; }
+    .footer-navigation li a, header nav.navbar .navbar-nav .nav-link                            { margin: 0 0px 20px; font-size: 21px; line-height: 24px; }
+    header .nav-link img                                                                        { max-width: 22px; margin-right: 10px; }
+    img.logo                                                                                    { max-width: 42px; }
+    /* typography */
+    h1                                                                                          { margin-bottom: 14px; font-size: 30px; line-height: 40px; }
+    h2                                                                                          { margin-bottom: 14px; font-size: 24px; line-height: 30px; }
+    h3                                                                                          { font-size: 18px; line-height: 22px; }
+    h4                                                                                          { margin-bottom: 12px; font-size: 15px; line-height: 21px; }
+    ul li, p                                                                                    { margin-bottom: 16px; font-size: 14px; line-height: 20px; }
+    /* common styling */
+    .banner-info                                                                                { margin-bottom: 32px; max-width: 100%; }
+    a.common-button, button.common-button                                                       { padding: 10px 16px 8px; font-size: 14px; line-height: 14px; }
+    a.common-button i, button.common-button i                                                   { margin-left: 5px; font-size: 15px; }
+    .common-padding-top                                                                         { padding: 120px 0 50px; }
+    .common-area                                                                                { padding: 25px 15px; }
+    /* buy now css */
+    .buy-nft                                                                                    { padding-bottom: 0; }
+    .buy-nft-area                                                                               { padding: 35px 20px; margin-top: -32px; }
+    .buy-box                                                                                    { margin-bottom: 25px; }
+    .buy-nft-area .row .col-md-4:last-child .buy-box                                            { margin-bottom: 0; }
+    /* about us */
+    .about-us                                                                                   { padding: 50px 0; } 
+    .about-image-area figure{margin: 0px 0px 0px 30%;}
+    .about-image-area img{width: 230px; height: 260px;}
+    /* work section */
+    .work-area                                                                                  { padding: 40px 20px; }
+    .work-box                                                                                   { padding: 25px 15px; margin-bottom: 20px; }
+    .work-area .row .col-md-4:last-child .work-box                                                         { margin-bottom: 0; }
+    .work-image                                                                                 { margin-bottom: 20px; }
+    /* testimonials */
+    .testimonials                                                                               { padding: 50px 0 30px; text-align: center; }
+    .testi-slider                                                                               { padding: 15px; margin: 15px 0 50px !important; }
+    .testimonials-image-box                                                                     { margin: 0 auto; width: 135px; margin-bottom: 20px; }
+    .testi-slider .slick-dots                                                                   { bottom: -38px; }
+    /* contact us */
+    .contact-us                                                                                 { padding: 50px 0; }
+    .contact-us .input-box                                                                      { margin: 15px 0 0; padding-bottom: 15px; }
+    .contact-us .form-control                                                                   { padding: 10px 10px; font-size: 14px; line-height: 20px; }
+    .form-control ~ label                                                                       { font-size: 14px; line-height: 14px; }
+    form button.common-button                                                                   { margin-top: 20px; }
+    .contact-us .qr-desc{margin-top: 20px;}
+    .contact-us .qr-desc img{width: 140px; height: 140px;}
+    .contact-us .qr-desc-right{margin-left: 25px;}
+    /* footer section */
+    footer                                                                                      { padding: 50px 0 25px; }
+    .footer-logo                                                                                { margin-bottom: 25px; }
+    .footer-navigation                                                                          { margin-bottom: 35px; }
+    .footer-navigation li a                                                                     { margin: 0 8px 10px ; font-size: 16px; line-height: 16px; }
+    .copyright-text                                                                             { margin-top: 30px; }
+    /* explore nft */
+    .search-input-group .input-group                                                            { padding: 10px 10px; }
+    .search-input-group                                                                         { margin: 0 0px 40PX; padding: 10px 10px; }
+    .search-input-group input                                                                   { font-size: 14px; line-height: 20px; }
+    /* collection */
+    .nft-listing .col-md-4:last-child .nft-box                                                  { margin-bottom: 0; }
+    .nav.nav-tabs .nav-link                                                                     { margin-bottom: 0; margin-right: 10px; padding: 9px; font-size: 14px; line-height: 20px; }
+    .border-box                                                                                 { margin-bottom: 25px; padding: 10px; }
+    .life-nft-image-box                                                                         { padding-top: 100%; margin: 50px 0; }
+    .life-nft-info-box                                                                          { padding-left: 0; padding: 25px 20px 30px; }
+    .life-nft-left > h2, .style-nft-left > h2, .tech-nft-left > h2                              {font-size: 28px; line-height: 38px;}
+    .life-nft-left > p, .style-nft-left > p, .tech-nft-left > p                                 {margin-bottom: 14px;}
+    /* popup styling */
+    .life-nft-price-box                                                                         { margin-bottom: 35px; padding: 15px; }
+    .life-nft-info .modal-body                                                                  { padding: 0; }
+    .modal-content                                                                              { padding: 20px 15px; margin: 0 auto; width: 80vw; }
+    .modal-header .btn-close                                                                    { height: 18px; width: 18px; margin-bottom: 20px; }
+    .profile-picture-box                                                                        { margin: 20px auto 30px; height: 100px; width: 100px; border: 7px solid rgba(215, 215, 215,0.2); }
+    .profile-picture-box img                                                                    { max-width: 50%; }
+    .modal-body .form-control                                                                   { padding: 7px 10px; margin-bottom: 14px; font-size: 14px; line-height: 24px; }
+    .profile-setup-modLal .modal-body                                                           { padding: 0 0px 46px; }
+    .modal h2                                                                                   { font-size: 18px; line-height: 26px; }
+    .modal-content                                                                              { max-width: 400px; }
+    .profile-pic-box                                                                            { margin-bottom: 15px; }
+    .profile-account-modal .modal-body                                                          { padding-bottom: 0; }
+    .wallet-info-box                                                                            { padding: 12px 0; }
+    .congo-popup .modal-body                                                                    { padding: 0; }
+    .info-list li                                                                               { position: relative; padding-left: 25px; }
+    .info-list li::before                                                                       { width: 14px; height: 9px; }
+    .profile-pic-box                                                                            { margin-right: 10px; height: 70px; width: 70px; border-radius: 8px; }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+    .footer-logo, .footer-navigation, .footer-navigation li a{margin-bottom: 0px;}
+    .navbar-expand-lg .navbar-toggler {display: block;}
+    .navbar-expand-lg .navbar-collapse {
+        display: none!important;
+        padding: 25px;
+    }
+    .navbar-expand-lg .navbar-collapse.show { display:block !important }
+    .navbar-expand-lg .navbar-nav{flex-direction: column; -webkit-flex-direction: column;}  
+    header nav.navbar .navbar-nav .nav-link {
+        padding: 0;
+    margin:  0px 0px 16px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ADAAA9;
+    font-weight: 500;
+    transition: 0.5s;
+    display: block;
+    }
+    header .navbar-nav .nav-link img{display: none;}
+    .buy-nft-area .buy-image, .corner-div .buy-image{height: 310px;}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    .buy-nft-area .buy-image, .corner-div .buy-image{height: 230px;}
+    .about-image-area figure{margin: 0px 0px 0px 30%;}
+    .about-image-area img{width: 190px; height: 210px;}
+    .about-image-area img:first-child{top: -30px; left: 30px;}
+    .about-image-area img:last-child{top: 30px; left: -30px;}
+}  
+
+@media (min-width: 768px) and (max-width: 1199px)                                               {
+    .banner                                                                                     { min-height: 500px; }
+    .testimonials                                                                               { padding: 50px 0 30px; text-align: left; }
+    .testimonials-image-box                                                                     { margin: 0 20px 0 0; min-width: 125px; height: 122px;}
+    .testimonials-info-box .wired-image{width: 140px;}
+    .testimonials-info-box .singapore-image{width: 80px;}
+    .contact-us .qr-desc img{width: 120px; height: 120px;}
+    .buy-nft                                                                                    { padding-bottom: 50px; }
+    .life-nft-info-box                                                                          { padding: 0; }
+    .life-nft-left > h2, .style-nft-left > h2, .tech-nft-left > h2                              {font-size: 28px; line-height: 38px;}
+    .life-nft-left > p, .style-nft-left > p, .tech-nft-left > p                                 {margin-bottom: 14px;}
+    .profile-pic-box                                                                            { margin-bottom: 0px; }
+    .modal-dialog.life-nft-info.modal-dialog-centered .modal-content                            { max-width: 800px; }
+    img.logo                                                                                    { max-width: 50px; }
+}
+
+@media (max-width: 767px) {
+    .buy-nft-area  .buy-image, .corner-div .buy-image{height: 250px;}
+    .about-us .row{flex-direction: column-reverse; -webkit-flex-direction: column-reverse;}
+    .about-image-area{margin: 40px 0px 70px;}
+    .about-image-area figure {margin: 0px auto;}
+    .about-image-area img{width: 180px; height: 200px;}
+    .about-image-area img:first-child{top: -30px; left: 30px;}
+    .about-image-area img:last-child{top: 25px; left: -30px;}
+    .testimonials-image-box{min-width: 130px; height: 130px;}
+    .testimonials-info-box .wired-image{margin: 0px auto;}
+    .testimonials-info-box .singapore-image{margin: 20px 0px 0px;}
+    .contact-us .qr-desc{flex-direction: column; -webkit-flex-direction: column;}
+    .contact-us .qr-desc-right{margin: 25px 0px 0px;}
+    /*buy-nft-page*/
+    .buy-nft .title{margin-bottom: 20px;}
+}
